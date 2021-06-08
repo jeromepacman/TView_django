@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
 
 {% block content %}
     <!-- navigation -->
@@ -79,7 +80,7 @@
                                          src="https://sioarypo.sirv.com/assets/siteperso.jpg"/>
                                     <div class="carousel-caption carousel-caption-center">
                                         <h2 class="mg-md h2-carousel-style animDelay08">
-                                            Votre site perso dont vous êtes le propriétaire
+                                            {% translate "Votre site perso dont vous êtes le propriétaire" %}
                                         </h2>
                                     </div>
                                 </div>

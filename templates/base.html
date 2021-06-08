@@ -1,20 +1,72 @@
 <!doctype html>
 {% load static %}
 <html lang="fr">
-    <head>
-        <title>{% block title %}TView sites web{% endblock %}</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="Création de sites et applications web">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="shortcut icon" type="image/png" href="{% static 'favicon.png' %}">
-        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<head>
+    <title>{% block title %}TView sites web{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Création de sites et applications web">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.png' %}">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet" type="text/css">
+</head>
 
-    </head>
-<body>
-  {% block content %}
-  {% endblock content %}
+<body class="mob-disable-anim ">
+<!-- Main container -->
+<div class="page-container">
+
+    <!-- header -->
+    <div class="bloc bg-backhead none bgc-oxford-blue full-width-bloc " id="header">
+        <div class="container bloc-sm-lg bloc-sm">
+            <div class="row">
+                <div class="col">
+                    <h1 class="mg-md text-lg-center float-none text-center h1-style">
+                        TView
+                    </h1>
+                    <h2 class="mg-md text-lg-center h2-style text-center tc-silver">
+                        Création de sites &amp; applications web
+                    </h2><img src="{% static 'img/fewww.jpeg' %}"
+                              class="img-fluid img-protected rounded-circle mx-auto d-block logo-style" alt="logo"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% block content %}
+    {% endblock content %}
+    <!-- ScrollToTop Button -->
+    <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1',this)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32">
+            <path class="scroll-to-top-btn-icon" d="M30,22.656l-14-13-14,13"/>
+        </svg>
+    </a>
+    <!-- ScrollToTop Button END-->
+
+
+    <!-- footer -->
+    <div class="bloc none d-bloc b-parallax" id="footer">
+        <div class="parallax bg-backhead2x">
+        </div>
+        <div class="container bloc-sm bloc-md-lg">
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <div id="particles-js"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer END -->
+</div>
+<!-- Additional JS -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/blocs.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/universal-parallax.min.js' %}"></script>
+<script src="{% static 'js/particles.min.js' %}"></script>
+<script src="{% static 'js/particles-setup.js' %}"></script>
 </body>
 </html>

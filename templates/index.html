@@ -80,7 +80,10 @@
                                          src="https://sioarypo.sirv.com/assets/siteperso.jpg"/>
                                     <div class="carousel-caption carousel-caption-center">
                                         <h2 class="mg-md h2-carousel-style animDelay08">
+                                            {% language 'en' %}
+                                            {% get_current_language as LANGUAGE_CODE %}
                                             {% translate "Votre site perso dont vous êtes le propriétaire" %}
+                                            {% endlanguage %}
                                         </h2>
                                     </div>
                                 </div>

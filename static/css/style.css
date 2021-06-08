@@ -23,6 +23,14 @@ a:hover {
     cursor: pointer;
 }
 
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato'),
+       url('/static/fonts/lato-v17-latin-regular.woff2') format('woff2');
+}
+
 /* = Blocs
 -------------------------------------------------------------- */
 
@@ -656,7 +664,7 @@ h1, h2, h3, h4, h5, h6, p, label, .btn, a {
     font-family: "Lato";
     font-weight: 700;
     color: #919191 !important;
-    text-shadow: -2px 0 0 rgba(254, 255, 255, 0.89);
+    text-shadow: -2px 0px 0px rgba(254, 255, 255, 0.89);
     letter-spacing: -2px;
 
 }
@@ -681,7 +689,7 @@ h1, h2, h3, h4, h5, h6, p, label, .btn, a {
 .h2-carousel-style {
     letter-spacing: -2px;
     background-color: #5E5E5E;
-    text-shadow: 0 2px 0 #000000;
+    text-shadow: 0px 2px 0px #000000;
     overflow: hidden;
     border-color: #5E5E5E !important;
     border-style: solid;

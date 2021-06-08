@@ -9,7 +9,7 @@ SECRET_KEY = '@yuqdllm+%m2@%dig5clgeivo$+!jj$*a&1-fw9g^jkt^ld@em'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['tview.jcloud-ver-jpe.ik-server.com', 'node66819-tview.jcloud-ver-jpe.ik-server.com', '127.0.0.1']
 
 
 # Application definition

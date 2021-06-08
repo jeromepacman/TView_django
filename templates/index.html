@@ -46,7 +46,7 @@
 
     <!-- carousel -->
     <div class="bloc none b-parallax l-bloc" id="carousel">
-        <div class="parallax bg-devices">
+        <div class="parallax" style="background-image: url('{% static "img/devices.jpg"%}')">
         </div>
         <div class="container bloc-md bloc-md-lg">
             <div class="row">
@@ -56,28 +56,28 @@
                              data-ride="carousel" data-interval="3000">
                             <ul class="carousel-indicators hide-indicators list-unstyled">
                                 <li class="active">
-                                    <a href="./" data-active-page="active" class="a-btn">Accueil</a>
+                                    <a href="/" data-active-page="active" class="a-btn">Accueil</a>
                                 </li>
                                 <li>
-                                    <a href="./you/" class="a-btn">You</a>
+                                    <a href="{% url 'you' %}" class="a-btn">You</a>
                                 </li>
                                 <li>
-                                    <a href="./shop/" class="a-btn">Shop</a>
+                                    <a href="{% url 'shop' %}" class="a-btn">Shop</a>
                                 </li>
                                 <li>
-                                    <a href="./apps/" class="a-btn">Apps</a>
+                                    <a href="{% url 'apps' %}" class="a-btn">Apps</a>
                                 </li>
                                 <li>
-                                    <a href="./infos/" class="a-btn">Infos</a>
+                                    <a href="{% url 'infos' %}" class="a-btn">Infos</a>
                                 </li>
                                 <li>
-                                    <a href="./contact/" class="a-btn nav-link">Contact</a>
+                                    <a href="{% url 'contact' %}" class="a-btn nav-link">Contact</a>
                                 </li>
                             </ul>
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item img-protected active">
                                     <img class="d-inline-block w-100" alt="slide1"
-                                         src="https://sioarypo.sirv.com/assets/siteperso.jpg"/>
+                                         src="{% static 'img/siteperso.jpg' %}">
                                     <div class="carousel-caption carousel-caption-center">
                                         <h2 class="mg-md h2-carousel-style animDelay08">
                                             {% language 'en' %}
@@ -89,7 +89,7 @@
                                 </div>
                                 <div class="carousel-item img-protected">
                                     <img alt="slide2" class="d-inline-block w-100"
-                                         src="https://sioarypo.sirv.com/assets/site_pro1200.jpg"/>
+                                         src="{% static 'img/site_pro1200.jpg' %}">
                                     <div class="carousel-caption carousel-caption-center">
                                         <h2 class="mg-md h2-carousel-style">
                                             Des sites pro, sur mesure, fiables et sécurisés
@@ -98,7 +98,7 @@
                                 </div>
                                 <div class="carousel-item img-protected">
                                     <img class="d-inline-block w-100" alt="slide3"
-                                         src="https://sioarypo.sirv.com/assets/humanitarian.jpg"/>
+                                         src="{% static 'img/humanitarian.jpg' %}">
                                     <div class="carousel-caption carousel-caption-center">
                                         <h2 class="mg-md text-lg-center h2-carousel-style">
                                             Tarifs jusqu&rsquo;à -50% pour un projet humanitaire ou écologique
@@ -161,7 +161,7 @@
 
     <!-- paradiv -->
     <div class="bloc b-parallax none full-width-bloc l-bloc" id="paradiv">
-        <div class="parallax bg-devices">
+        <div class="parallax" style="background-image: url('{% static "img/devices.jpg.jpg"%}')">
         </div>
         <div class="container bloc-sm bloc-sm-lg">
             <div class="row">
@@ -212,7 +212,7 @@
                                             <div class="cd-swiper-wrapper">
                                                 <div class="cd-swiper-slide" data-swiper-autoplay="6000">
                                                     <img class="custom-bric-img-item center cover preview"
-                                                         src="https://sioarypo.sirv.com/assets/you.jpg" width="100%"
+                                                         src="{% static 'img/you.jpg' %}" width="100%"
                                                          height="400"
                                                          data-kb-effect="None" data-filter="0" alt="you">
                                                 </div>
@@ -283,7 +283,7 @@
                                             <div class="cd-swiper-wrapper">
                                                 <div class="cd-swiper-slide" data-swiper-autoplay="6000">
                                                     <img class="custom-bric-img-item cover preview right"
-                                                         src="https://sioarypo.sirv.com/assets/e-commerce.jpg"
+                                                         src="{% static 'img/e-commerce.jpg' %}"
                                                          width="100%" height="400"
                                                          data-kb-effect="None" data-filter="0" alt="shop">
                                                 </div>
@@ -354,7 +354,7 @@
                                             <div class="cd-swiper-wrapper">
                                                 <div class="cd-swiper-slide" data-swiper-autoplay="6000">
                                                     <img class="custom-bric-img-item cover preview right"
-                                                         src="https://sioarypo.sirv.com/assets/pro.jpg" width="100%"
+                                                         src="{% static 'img/pro.jpg' %}" width="100%"
                                                          height="400"
                                                          data-kb-effect="None" data-filter="0" alt="apps">
                                                 </div>
@@ -401,7 +401,7 @@
         <div class="container bloc-lg-lg bloc-md">
             <div class="row row-margin-bottom">
                 <div class="col-md-4">
-                    <img src="https://sioarypo.sirv.com/assets/responsive.jpg"
+                    <img src="{% static 'img/responsive.jpg' %}"
                          class="img-fluid img-protected mx-auto d-block img-features-style none animated noneDown fadeInDown animSpeedLazy mg-md"
                          alt="responsive" data-appear-anim-style="fadeInDown"/>
                     <h3 class="tc-white animated none animDelay08 fadeInUp mg-sm" data-appear-anim-style="fadeInUp">
@@ -421,12 +421,12 @@
                     </h3>
                     <p class="animated fadeIn animDelay1 mg-clear" data-appear-anim-style="fadeIn">
                         Votre site pro hautement sécurisé sans partage de ressources. &nbsp;<a class="ltc-azure"
-                                                                                               href="./infos/">En savoir
+                                                                                               href="{% url 'infos' %}">En savoir
                         plus</a>
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <img src="https://sioarypo.sirv.com/assets/customizable.jpg"
+                    <img src="{% static 'img/customizable.jpg' %}"
                          class="img-fluid img-protected mx-auto d-block img-features-style none noneDown animated fadeInDown animSpeedLazy mg-md"
                          alt="customizable" data-appear-anim-style="fadeInDown"/>
                     <h3 class="tc-white animated none animDelay08 fadeInUp mg-sm" data-appear-anim-style="fadeInUp">
@@ -435,7 +435,7 @@
                     <p class="animDelay1 Up Down noneLeft none animated fadeIn mg-clear"
                        data-appear-anim-style="fadeIn">
                         Vous bénéficiez d&rsquo;une assistance après achat quelle que soit la formule.&nbsp;<a
-                            class="ltc-azure" href="./infos/">Voir modalités</a><br>
+                            class="ltc-azure" href="{% url 'infos' %}">Voir modalités</a><br>
                     </p>
                 </div>
             </div>
@@ -460,12 +460,12 @@
 
     <!-- bloc-9 -->
     <div class="bloc none b-parallax" id="bloc-9">
-        <div class="parallax bg-backhead2x bgc-oxford-blue-2">
+        <div class="parallax  bgc-oxford-blue-2" style="background-image: url('{% static "img/backhead2x.jpg"%}')">
         </div>
         <div class="container bloc-md bloc-sm-lg">
             <div class="row align-items-center">
                 <div class="offset-lg-0 col-lg-2 none">
-                    <img src="https://sioarypo.sirv.com/assets/logava2.jpg"
+                    <img src="{% static 'img/logava2.jpg' %}"
                          class="img-fluid img-protected rounded-circle img-style mx-auto d-block animated zoomIn"
                          alt="logava2" data-appear-anim-style="zoomIn"/>
                 </div>
@@ -485,12 +485,12 @@
 
     <!-- arg2 -->
     <div class="bloc b-parallax none" id="arg2">
-        <div class="parallax bg-backhead2x bgc-oxford-blue-2">
+        <div class="parallax bgc-oxford-blue-2" style="background-image: url('{% static "img/backhead2x.jpg"%}')">
         </div>
         <div class="container bloc-sm-lg bloc-md">
             <div class="row align-items-center">
                 <div class="offset-lg-0 col-lg-2">
-                    <img src="https://sioarypo.sirv.com/assets/logava3.jpg"
+                    <img src="{% static 'img/logava3.jpg' %}"
                          class="img-fluid img-protected rounded-circle img-style mx-auto d-block animated zoomIn animSpeedLazy"
                          alt="logava3" data-appear-anim-style="zoomIn"/>
                 </div>
@@ -509,12 +509,12 @@
 
     <!-- arg3 -->
     <div class="bloc b-parallax none" id="arg3">
-        <div class="parallax bg-backhead2x bgc-oxford-blue-2">
+        <div class="parallax bgc-oxford-blue-2" style="background-image: url('{% static "img/backhead2x.jpg"%}')">
         </div>
         <div class="container bloc-sm-lg bloc-md">
             <div class="row align-items-center">
                 <div class="offset-lg-0 col-lg-2">
-                    <img src="https://sioarypo.sirv.com/assets/logava.jpg"
+                    <img src="{% static 'img/logava.jpg' %}"
                          class="img-fluid img-protected rounded-circle img-style mx-auto d-block animated zoomIn animSpeedSlow"
                          alt="logava" data-appear-anim-style="zoomIn"/>
                 </div>
@@ -535,7 +535,7 @@
 
     <!-- bloc-projet -->
     <div class="bloc l-bloc none b-parallax" id="bloc-projet">
-        <div class="parallax bg-backhead2x bgc-white">
+        <div class="parallax bgc-white" style="background-image: url('{% static "img/backhead2x.jpg"%}')">
         </div>
         <div class="container bloc-md-lg bloc-sm">
             <div class="row">

@@ -20,7 +20,7 @@
 <div class="page-container">
 
     <!-- header -->
-    <div class="bloc bg-backhead none bgc-oxford-blue full-width-bloc " id="header">
+    <div class="bloc none bgc-oxford-blue full-width-bloc" style="background-image: url('{% static "img/backhead.jpg"%}')" id="header">
         <div class="container bloc-sm-lg bloc-sm">
             <div class="row">
                 <div class="col">
@@ -29,7 +29,7 @@
                     </h1>
                     <h2 class="mg-md text-lg-center h2-style text-center tc-silver">
                         Création de sites et applications web
-                    </h2><img src="https://sioarypo.sirv.com/assets/fewww.jpeg"
+                    </h2><img src="{% static 'img/fewww.jpeg' %}"
                               class="img-fluid img-protected rounded-circle mx-auto d-block logo-style" alt="logo"/>
                 </div>
             </div>
@@ -48,7 +48,7 @@
 
     <!-- footer -->
     <div class="bloc none d-bloc b-parallax" id="footer">
-        <div class="parallax bg-backhead2x">
+        <div class="parallax" style="background-image: url('{% static "img/backhead2x.jpg"%}')">
         </div>
         <div class="container bloc-sm bloc-md-lg">
             <div class="row">

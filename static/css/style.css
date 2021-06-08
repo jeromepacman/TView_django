@@ -108,7 +108,7 @@ a:hover {
 }
 
 .texture-fabric::before {
-    background: url("https://sioarypo.sirv.com/assets/texture-fabric.png");
+    background: url("/static/img/texture-fabric.png");
 }
 
 
@@ -864,13 +864,7 @@ label {
 
 /* Bloc image backgrounds */
 
-.bg-backhead {
-    background-image: url("https://sioarypo.sirv.com/assets/backhead.jpg");
-}
 
-.bg-devices {
-    background-image: url("https://sioarypo.sirv.com/assets/devices.jpg");
-}
 
 .bg-you {
     background-image: url("https://sioarypo.sirv.com/assets/you.jpg");
@@ -884,9 +878,6 @@ label {
     background-image: url("https://sioarypo.sirv.com/assets/pro.jpg");
 }
 
-.bg-backhead2x {
-    background-image: url("https://sioarypo.sirv.com/assets/backhead2x.jpg");
-}
 
 /* = Custom Bric Data
 -------------------------------------------------------------- */

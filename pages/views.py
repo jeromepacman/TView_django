@@ -21,7 +21,7 @@ class InfosView(TemplateView):
     template_name = "infos.html"
 
 
-class ContactView(FormView):
-    pass
+class ContactView(TemplateView):
+    template_name="contact.html"
 
 

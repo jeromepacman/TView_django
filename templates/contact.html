@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- contact -->
+    <div class="bloc none full-width-bloc bg-backhead2x l-bloc" id="contact">
+        <div class="container bloc-lg bloc-lg-lg">
+            <div class="row">
+                <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                    <form data-clean-url-used="true" id="form_1" data-form-type="blocs-form" novalidate
+                          data-success-msg="Message envoyé!"
+                          data-fail-msg="Désolé, une erreur serveur est survenue, le problème vient d'être signalé">
+                        <div class="form-group text-lg-left">
+                            <label>
+                                Nom
+                            </label>
+                            <input id="name" class="form-control" maxlength="100"/>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Email
+                            </label>
+                            <input id="email" class="form-control" type="email" required
+                                   data-error-validation-msg="email..." maxlength="100"
+                                   data-validation-required-message="Champ manquant"/>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Sujet
+                            </label>
+                        </div>
+                        <select class="form-control option-select-margin-bottom" id="select_2376">
+                            <option value="0">
+                                Choisissez...
+                            </option>
+                            <option value="1">
+                                Renseignements site perso
+                            </option>
+                            <option value="2">
+                                Renseignements site pro
+                            </option>
+                            <option value="3">
+                                Question technique
+                            </option>
+                            <option value="4">
+                                Message client
+                            </option>
+                            <option value="5">
+                                Autre
+                            </option>
+                        </select>
+                        <div class="form-group">
+                            <label>
+                                Message
+                            </label>
+                        </div>
+                        <textarea id="message" class="form-control" rows="8" cols="50" required
+                                  data-validation-required-message="Votre message est vide"></textarea>
+                        <div class="form-check checkbox-margin-top">
+                            <input class="form-check-input" type="checkbox" id="input_1999"
+                                   data-validation-minchecked-minchecked="1"
+                                   data-validation-minchecked-message="Veuillez confirmer que vos infos sont correctes, merci"
+                                   name="input_1999"/>
+                            <label class="form-check-label">
+                                Mes infos sont correctes
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <button class="bloc-button btn btn-block btn-lg btn-blue-ryb animated vanishIn animDelay04"
+                                    type="submit" data-appear-anim-style="vanishIn">
+                                Envoyer
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="">
+                <script>document.addEventListener("DOMContentLoaded", function () {
+                    window.cookieconsent.initialise({
+                        container: document.getElementById("content"),
+                        palette: {popup: {background: "#000"}, button: {background: "#008ef2", text: "#FFFFFF"},},
+                        theme: 'block',
+                        position: 'bottom',
+                        content: {
+                            message: 'Vos données restent confidentielles et ne sont utilisées que dans le cadre d\'échanges privés ',
+                            dismiss: 'Ok!',
+                            link: '',
+                            href: '',
+                        },
+                        revokable: true,
+                        onStatusChange: function (status) {
+                            console.log(this.hasConsented() ? 'enable cookies' : 'disable cookies');
+                        },
+                        law: {regionalLaw: false,},
+                        location: true,
+                    });
+                });</script>
+            </div>
+        </div>
+    </div>
+    <!-- contact END -->
+{% endblock %}

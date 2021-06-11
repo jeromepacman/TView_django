@@ -7,9 +7,10 @@
     <meta name="description" content="Création de sites et applications web">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="canonical" href="https://tview.fr/" />
+    <link rel="canonical" href="https://tview.fr/"/>
     <link rel="shortcut icon" type="image/png" href="{% static 'favicon.png' %}">
-    <link rel="preload" href="{% static 'fonts/lato-v17-latin-regular.woff2' %}" as='font' type='font/woff2' crossorigin='anonymous'>
+    <link rel="preload" href="{% static 'fonts/lato-v17-latin-regular.woff2' %}" as='font' type='font/woff2'
+          crossorigin='anonymous'>
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <link href="{% static 'css/animate.min.css' %}" rel="stylesheet" type="text/css">
@@ -20,7 +21,8 @@
 <div class="page-container">
 
     <!-- header -->
-    <div class="bloc none bgc-oxford-blue full-width-bloc" style="background-image: url('{% static "img/backhead.jpg"%}')" id="header">
+    <div class="bloc none bgc-oxford-blue full-width-bloc"
+         style="background-image: url('{% static "img/backhead.jpg" %}')" id="header">
         <div class="container bloc-sm-lg bloc-sm">
             <div class="row">
                 <div class="col">
@@ -35,6 +37,48 @@
             </div>
         </div>
     </div>
+
+
+    <!-- navigation -->
+    <div class="bloc none sticky-nav bgc-oxford-blue d-bloc" id="navigation">
+        <div class="container bloc-no-padding bloc-no-padding-lg">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar row navbar-expand-md navbar-dark nav-invert" role="navigation">
+                        <button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0"
+                                data-toggle="collapse" data-target=".navbar-17659" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse navbar-17659  sidebar-nav">
+                            <ul class="site-navigation nav navbar-nav navlinks">
+                                <li class="nav-item">
+                                    <a href="/" data-active-page="active" class="nav-link a-btn">Accueil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href={% url 'you' %}"" class="nav-link">You</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'shop' %}" class="nav-link a-btn">Shop</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'apps' %}" class="nav-link a-btn">Apps</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'infos' %}" class="nav-link a-btn">Infos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'contact' %}" class="nav-link a-btn">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="navbar-brand mr-0 ml-auto" href="https://trailingview.com">us/en</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navigation END -->
     {% block content %}
     {% endblock content %}
     <!-- ScrollToTop Button -->
@@ -48,7 +92,7 @@
 
     <!-- footer -->
     <div class="bloc none d-bloc b-parallax" id="footer">
-        <div class="parallax" style="background-image: url('{% static "img/backhead2x.jpg"%}')">
+        <div class="parallax" style="background-image: url('{% static "img/backhead2x.jpg" %}')">
         </div>
         <div class="container bloc-sm bloc-md-lg">
             <div class="row">
@@ -63,9 +107,11 @@
 </div>
 <!-- Additional JS -->
 <script src="{% static 'js/jquery.min.js' %}"></script>
-<script src="{% static 'js/blocs.min.js' %}"></script>
 <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/blocs.min.js' %}"></script>
+<script src="{% static 'js/cookieconsent.min.js' %}"></script>
+<script src="{% static 'js/flexyfoot.js' %}"></script>
 <script src="{% static 'js/universal-parallax.min.js' %}"></script>
-<script src="{% static 'js/scrollFX.js' %}"></script>
+
 </body>
 </html>

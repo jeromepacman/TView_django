@@ -16,7 +16,7 @@
     <link href="{% static 'css/animate.min.css' %}" rel="stylesheet" type="text/css">
 </head>
 
-<body class="mob-disable-anim ">
+<div class="mob-disable-anim ">
 <!-- Main container -->
 <div class="page-container">
 
@@ -92,12 +92,12 @@
 
     <!-- footer -->
     <div class="bloc none d-bloc b-parallax" id="footer">
-        <div class="parallax" style="background-image: url('{% static "img/backhead2x.jpg" %}')">
+        <div class="parallax bg-br-edge" style="background-image: url('{% static "img/backhead2x.jpg" %}')" >
         </div>
         <div class="container bloc-sm bloc-md-lg">
             <div class="row">
                 <div class="col">
-                    <div>
+                    <div id="flexy-foot" class="flexy-foot-control" data-footer="footer"></div>
                     </div>
                 </div>
             </div>

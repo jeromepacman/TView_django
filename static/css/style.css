@@ -611,14 +611,14 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	border-style:solid;
 	opacity:0.9;
 	padding:2% 2% 2% 2%;
-	border-radius:10px 10px 10px 10px;
+	border-radius:10px;
 }
 .img-features-style{
 	width:380px;
 	height:240px;
 	border-style:solid;
 	border-color:rgba(0,0,0,0.00)!important;
-	border-radius:10px 10px 10px 10px;
+	border-radius:10px;
 }
 
 .row-margin-bottom{

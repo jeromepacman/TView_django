@@ -22,6 +22,4 @@ class InfosView(TemplateView):
 
 
 class ContactView(TemplateView):
-    template_name="contact.html"
-
-
+    template_name = "contact.html"

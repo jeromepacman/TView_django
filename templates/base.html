@@ -22,7 +22,7 @@
 
     <!-- header -->
     <div class="bloc none bgc-oxford-blue full-width-bloc"
-         style="background-image: url('{% static "img/backhead.jpg" %}')" id="header">
+         style="background-image: url({% static 'img/backhead.jpg' %})" id="header">
         <div class="container bloc-sm-lg bloc-sm">
             <div class="row">
                 <div class="col">
@@ -81,15 +81,8 @@
     <!-- navigation END -->
     {% block content %}
     {% endblock content %}
-    <!-- ScrollToTop Button -->
-    <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1',this)">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32">
-            <path class="scroll-to-top-btn-icon" d="M30,22.656l-14-13-14,13"></path>
-        </svg>
-    </a>
-    <!-- ScrollToTop Button END-->
 
-
+    {% include 'button_nav.html' %}
     <!-- footer -->
     <div class="bloc none d-bloc b-parallax" id="footer">
         <div class="parallax bg-br-edge" style="background-image: url('{% static "img/backhead2x.jpg" %}')" >

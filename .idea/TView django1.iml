@@ -6,18 +6,20 @@
         <option name="rootFolder" value="$MODULE_DIR$" />
         <option name="settingsModule" value="tview/settings.py" />
         <option name="manageScript" value="manage.py" />
-        <option name="environment" value="&lt;map/&gt;" />
+        <option name="environment" value="&lt;map&gt;&#10;  &lt;entry&gt;&#10;    &lt;string&gt;SECRET_KEY&lt;/string&gt;&#10;    &lt;string&gt;@yuqdllm+%m2@%dig5clgeivo$+!jj$*a&amp;amp;1-fw9g^jkt^ld@em&lt;/string&gt;&#10;  &lt;/entry&gt;&#10;&lt;/map&gt;" />
         <option name="doNotUseTestRunner" value="false" />
         <option name="trackFilePattern" value="" />
       </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="Python 3.9 (venv)" jdkType="Python SDK" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.9 (TView django1)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">
-    <option name="TEMPLATE_CONFIGURATION" value="Django" />
+    <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
   </component>
 </module>

@@ -1,4 +1,5 @@
-import os, sys
+import os
+import sys
 
 virtenv = os.path.expanduser('~') + '/virtenv/'
 virtualenv = os.path.join(virtenv, 'bin/activate_this.py')

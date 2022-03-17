@@ -12,6 +12,9 @@
       </configuration>
     </facet>
   </component>
+  <component name="Flask">
+    <option name="enabled" value="false" />
+  </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="jdk" jdkName="Python 3.9 (TView django1)" jdkType="Python SDK" />

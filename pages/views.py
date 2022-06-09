@@ -1,25 +1,21 @@
-from django.views.generic import TemplateView, FormView
+from django.views.generic import TemplateView
 
 
 class IndexView(TemplateView):
     template_name = "index.html"
 
 
-class YouView(TemplateView):
-    template_name = "you.html"
+class PersoView(TemplateView):
+    template_name = "perso.html"
 
 
 class ShopView(TemplateView):
     template_name = "shop.html"
 
 
-class AppsView(TemplateView):
-    template_name = "apps.html"
+class ProView(TemplateView):
+    template_name = "pro.html"
 
 
 class InfosView(TemplateView):
     template_name = "infos.html"
-
-
-class ContactView(TemplateView):
-    template_name = "contact.html"

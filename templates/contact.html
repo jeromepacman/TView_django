@@ -3,11 +3,12 @@
 
 {% block content %}
     <!-- contact -->
-    <div class="bloc none full-width-bloc l-bloc" style="background-image: url({% static 'img/backhead.jpg' %})" id="contact">
+    <div class="bloc none full-width-bloc l-bloc" style="background-image: url({% static 'img/backhead.jpg' %});" id="contact">
         <div class="container bloc-lg bloc-lg-lg">
             <div class="row">
                 <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-                    <form data-clean-url-used="true" id="form_1" data-form-type="blocs-form" novalidate
+                    <form
+                          data-clean-url-used="true" id="form_1" data-form-type="blocs-form" novalidate
                           data-success-msg="Message envoyé!"
                           data-fail-msg="Désolé, une erreur serveur est survenue, le problème vient d'être signalé">
                         <div class="form-group text-lg-left">
@@ -54,7 +55,7 @@
                                 Message
                             </label>
                         </div>
-                        <textarea id="message" class="form-control" rows="8" cols="50" required
+                        <textarea id="message" class="form-control" rows="8" cols="40" required
                                   data-validation-required-message="Votre message est vide"></textarea>
                         <div class="form-check checkbox-margin-top">
                             <input class="form-check-input" type="checkbox" id="input_1999"
@@ -74,17 +75,15 @@
                     </form>
                 </div>
             </div>
-        </div>
-        <div>
             <div class="">
-                <script>document.addEventListener("DOMContentLoaded", function () {
+                <script type="text/javascript">document.addEventListener("DOMContentLoaded", function () {
                     window.cookieconsent.initialise({
                         container: document.getElementById("content"),
                         palette: {popup: {background: "#000"}, button: {background: "#008ef2", text: "#FFFFFF"},},
                         theme: 'block',
                         position: 'bottom',
                         content: {
-                            message: 'Vos données restent confidentielles et ne sont utilisées que dans le cadre d\'échanges privés ',
+                            message: 'Vos données restent confidentielles et ne sont utilisées que dans le cadre d\'échanges privés',
                             dismiss: 'Ok!',
                             link: '',
                             href: '',
@@ -95,10 +94,11 @@
                         },
                         law: {regionalLaw: false,},
                         location: true,
-                    });
-                });</script>
+                    });});
+                </script>
             </div>
         </div>
     </div>
+    <script src="{% static 'js/cookieconsent.min.js' %}"></script>
     <!-- contact END -->
 {% endblock %}

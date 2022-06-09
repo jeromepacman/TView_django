@@ -19,10 +19,8 @@
         <div class="container bloc-lg bloc-lg-lg">
             <div class="row">
                 <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-                    <form
-                          data-clean-url-used="true" id="form_1" data-form-type="blocs-form" novalidate
-                          data-success-msg="Message envoyé!"
-                          data-fail-msg="Désolé, une erreur serveur est survenue, le problème vient d'être signalé">
+                    <form method ="POST">
+                          {% csrf_token %}
                         <div class="form-group mb-3 text-lg-left">
                             <label>
                                 Nom
@@ -42,7 +40,7 @@
                                 Sujet
                             </label>
                         </div>
-                        <select class="form-control option-select-margin-bottom" id="select_2376">
+                        <select id="sujet" class="form-control option-select-margin-bottom">
                             <option value="0">
                                 Choisissez...
                             </option>

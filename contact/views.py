@@ -1,7 +1,7 @@
-from django.shortcuts import render
 from django.conf import settings
 from django.contrib import messages
 from django.core.mail import send_mail, BadHeaderError, EmailMessage
+from django.shortcuts import render
 from django.template.loader import render_to_string
 
 
@@ -11,9 +11,9 @@ def contactView(request):
     subject = request.POST.get('sujet')
     message = request.POST.get('message')
 
-    if message and from_email and subject != "sans_sujet" and name:
+    if message and from_email and subject != "0" and name:
         try:
-            send_mail(subject, message, from_email, ['contact@alloohorticulture.fr'])
+            send_mail(subject, message, from_email, ['contact@tview.fr'])
         except BadHeaderError:
             messages.error(request, 'une erreur exceptionnelle est survenue')
         template = render_to_string('confirmation.html', {'name': name})

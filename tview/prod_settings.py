@@ -2,6 +2,8 @@ from tview.settings import *
 
 DEBUG = False
 
+ALLOWED_HOSTS = ['.tview.fr']
+
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 

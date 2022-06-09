@@ -44,8 +44,8 @@ ipython_config.py
 /media/
 !/media/.gitkeep
 
-/static/
-!/static/.gitkeep
+#
+#!/static/.gitkeep
 
 # Secrets
 secrets.json/venv/

@@ -15,24 +15,24 @@
 										<ul
 											class="site-navigation nav navbar-nav mx-auto justify-content-center active">
 											<li class="nav-item">
-												<a href="../" class="nav-link ltc-pastel-gray">TView</a>
+												<a href="{% url 'home' %}" class="nav-link ltc-pastel-gray">TView</a>
 											</li>
 											<li class="nav-item">
-												<a href="." data-active-page="active"
+												<a href="{% url 'perso' %}" data-active-page="active"
 													class="nav-link ltc-pastel-gray">Perso</a>
 											</li>
 											<li class="nav-item">
-												<a href="../boutique/"
+												<a href="{% url 'boutique' %}"
 													class="nav-link a-btn ltc-pastel-gray">Boutique</a>
 											</li>
 											<li class="nav-item">
-												<a href="../pro/" class="a-btn nav-link ltc-pastel-gray">Pro</a>
+												<a href="{% url 'pro' %}" class="a-btn nav-link ltc-pastel-gray">Pro</a>
 											</li>
 											<li class="nav-item">
-												<a href="../infos/" class="nav-link ltc-pastel-gray">Infos</a>
+												<a href="{%url 'infos' %}"  class="nav-link ltc-pastel-gray">Infos</a>
 											</li>
 											<li class="nav-item">
-												<a href="../contact/" class="nav-link ltc-pastel-gray">Contact</a>
+												<a href="{% url 'contact' %}" class="nav-link ltc-pastel-gray">Contact</a>
 											</li>
 										</ul>
 									</div>

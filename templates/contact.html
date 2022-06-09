@@ -3,7 +3,19 @@
 
 {% block content %}
     <!-- contact -->
-    <div class="bloc none full-width-bloc l-bloc" style="background-image: url({% static 'img/backhead.jpg' %});" id="contact">
+    <div class="bloc l-bloc none full-width-bloc" id="bloc-15">
+				<div class="bloc-shape-divider bloc-divider-flip-y bloc-divider-top">
+					<svg class="svg-divider bloc-divider-t-bloc-15-fill" fill-rule="evenodd" preserveAspectRatio="none"
+						viewBox="0 0 1000 250">
+						<path d="M0,125H1000V250H0V125Z"></path>
+					</svg>
+				</div>
+				<div class="bloc-shape-divider bloc-divider-bottom bloc-divider-flip-x">
+					<svg class="svg-divider bloc-divider-b-bloc-15-style" fill-rule="evenodd" preserveAspectRatio="none"
+						viewBox="0 0 1000 250">
+						<path d="M0,125H1000V250H0V125Z"></path>
+					</svg>
+				</div>
         <div class="container bloc-lg bloc-lg-lg">
             <div class="row">
                 <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
@@ -11,19 +23,19 @@
                           data-clean-url-used="true" id="form_1" data-form-type="blocs-form" novalidate
                           data-success-msg="Message envoyé!"
                           data-fail-msg="Désolé, une erreur serveur est survenue, le problème vient d'être signalé">
-                        <div class="form-group text-lg-left">
+                        <div class="form-group mb-3 text-lg-left">
                             <label>
                                 Nom
                             </label>
                             <input id="name" class="form-control" maxlength="100"/>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group mb-3">
                             <label>
                                 Email
                             </label>
-                            <input id="email" class="form-control" type="email" required
-                                   data-error-validation-msg="email..." maxlength="100"
-                                   data-validation-required-message="Champ manquant"/>
+                            <input id="email" class="form-control" type="email"
+                                   data-error-validation-msg="email..." required maxlength="100"
+                                   data-validation-required-message="Email non valide"/>
                         </div>
                         <div class="form-group">
                             <label>
@@ -44,61 +56,36 @@
                                 Question technique
                             </option>
                             <option value="4">
-                                Message client
-                            </option>
-                            <option value="5">
                                 Autre
                             </option>
                         </select>
-                        <div class="form-group">
+                        <div class="form-group mt-3">
                             <label>
                                 Message
                             </label>
                         </div>
-                        <textarea id="message" class="form-control" rows="8" cols="40" required
+                        <textarea id="message" class="form-control" rows="6" cols="40" required
                                   data-validation-required-message="Votre message est vide"></textarea>
                         <div class="form-check checkbox-margin-top">
                             <input class="form-check-input" type="checkbox" id="input_1999"
                                    data-validation-minchecked-minchecked="1"
-                                   data-validation-minchecked-message="Veuillez confirmer que vos infos sont correctes, merci"
+                                   data-validation-minchecked-message="Veuillez confirmer avant d'envoyer, merci"
                                    name="input_1999"/>
                             <label class="form-check-label">
-                                Mes infos sont correctes
+                                En cochant cette case, vous acceptez que vos informations soient temporairement
+                                    conservées de manière privée, dans le but de donner suite à cet échange.
                             </label>
                         </div>
                         <div class="text-center">
-                            <button class="bloc-button btn btn-block btn-lg btn-blue-ryb animated vanishIn animDelay04"
-                                    type="submit" data-appear-anim-style="vanishIn">
+                            <button class="mt-2 bloc-button btn btn-block btn-blue-ryb animated zoomIn animDelay04"
+                                    type="submit" data-appear-anim-style="zoomIn">
                                 Envoyer
                             </button>
                         </div>
                     </form>
                 </div>
             </div>
-            <div class="">
-                <script type="text/javascript">document.addEventListener("DOMContentLoaded", function () {
-                    window.cookieconsent.initialise({
-                        container: document.getElementById("content"),
-                        palette: {popup: {background: "#000"}, button: {background: "#008ef2", text: "#FFFFFF"},},
-                        theme: 'block',
-                        position: 'bottom',
-                        content: {
-                            message: 'Vos données restent confidentielles et ne sont utilisées que dans le cadre d\'échanges privés',
-                            dismiss: 'Ok!',
-                            link: '',
-                            href: '',
-                        },
-                        revokable: true,
-                        onStatusChange: function (status) {
-                            console.log(this.hasConsented() ? 'enable cookies' : 'disable cookies');
-                        },
-                        law: {regionalLaw: false,},
-                        location: true,
-                    });});
-                </script>
-            </div>
         </div>
     </div>
-    <script src="{% static 'js/cookieconsent.min.js' %}"></script>
     <!-- contact END -->
 {% endblock %}

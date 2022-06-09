@@ -755,12 +755,14 @@ h1{
 
 /**************************************************** * Card D***********************************************//* Helpers */
 .clearfix{
-	clear:both}.clearfix:after{
+	clear:both;
+}  .clearfix:after{
 	content:".";
 	visibility:hidden;
 	display:block;
 	height:0;
-	clear:both}.static-pos{
+	clear:both;
+   }  .static-pos{
 	position:static !important;
 }
 .relative-pos{

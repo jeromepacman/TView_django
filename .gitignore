@@ -41,10 +41,10 @@ ipython_config.py
 .env
 /venv
 # Media and Static directories
-/media/
-!/media/.gitkeep
+#/media/
+#!/media/.gitkeep
 
-#
+#static
 #!/static/.gitkeep
 
 # Secrets

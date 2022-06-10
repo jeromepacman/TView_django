@@ -20,16 +20,16 @@ a:hover{text-decoration: none; cursor:pointer;}
 @font-face {
 	font-family:'Lato-Regular';
 	src: local('Lato-Regular'),
-	url('/static/fonts/lato-v17-latin-regular.woff2') format('woff2'),
-	url('/static/fonts/lato-v17-latin-regular.woff') format('woff');
+	url("/static/fonts/lato-v17-latin-regular.b4d2c4c39853.woff2") format('woff2'),
+	url("/static/fonts/lato-v17-latin-regular.b8ee546acd6c.woff") format('woff');
 	font-display: swap;
 }
 
 @font-face {
 	font-family:'Inter-Regular';
 	src: local('Inter-Regular'),
-	url('/static/fonts/inter-v3-latin-regular.woff2') format('woff2'),
-	url('/static/fonts/inter-v3-latin-regular.woff') format('woff');
+	url("/static/fonts/inter-v3-latin-regular.cf387a4738fe.woff2") format('woff2'),
+	url("/static/fonts/inter-v3-latin-regular.2108aaf52cf4.woff") format('woff');
 	font-display: swap;
 }
 
@@ -151,7 +151,7 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 
 .texture-fabric::before{
-	background: url("/static/img/texture-fabric.png");
+	background: url("/static/img/texture-fabric.7fc42227c0f7.png");
 }
 
 

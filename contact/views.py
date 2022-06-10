@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.core.mail import send_mail, BadHeaderError, EmailMessage
 from django.shortcuts import render
 from django.template.loader import render_to_string
+from .forms import ContactForm
 
 
 def contactView(request):
@@ -10,8 +11,7 @@ def contactView(request):
     from_email = request.POST.get('email')
     subject = request.POST.get('sujet')
     message = request.POST.get('message')
-
-    if message and from_email and subject != "0" and name:
+    if message and from_email and subject and name:
         try:
             send_mail(subject, message, from_email, ['contact@tview.fr'])
         except BadHeaderError:
@@ -21,7 +21,6 @@ def contactView(request):
         email_conf.fail_silently = False
         email_conf.send()
         messages.success(request, "Votre message à été envoyé! Vous allez recevoir un message de confirmation")
-
     elif message or from_email or name:
         messages.warning(request, "Veuillez remplir tous les champs, merci")
 

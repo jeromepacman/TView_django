@@ -28,18 +28,16 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
-    'debug_toolbar',
     'crispy_forms',
     'crispy_bootstrap5',
+    'debug_toolbar',
     'pages.apps.PagesConfig',
     'contact.apps.ContactConfig',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -108,7 +106,8 @@ STATIC_URL = 'static/'
 
 MEDIA_URL = 'media/'
 
-STATIC_ROOT = os.path.join('static')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 

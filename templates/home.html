@@ -47,16 +47,15 @@
         </div>
     </div>
     <!-- divid7 END -->
-
-
-    <!-- bloc-6 -->
-    <div class="bloc none bgc-oxford-blue d-bloc" id="bloc-6">
+<script defer src="{% static 'js/card-designer.js' %}"></script>
+  <!-- bloc-6 -->
+      <div class="bloc none bgc-oxford-blue d-bloc" id="bloc-6">
         <div class="bloc-shape-divider bloc-divider-top">
             <svg class="svg-divider bloc-divider-t-bloc-6-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250"><path style="opacity: 0.3;" d="M1000,250H0V60L500,165,1000,60V250Z"></path><path style="opacity: 0.3;" d="M1000,250H0V100l500,66,500-66V250Z"></path><path style="opacity: 0.3;" d="M1000,250H0V140l500,27,500-27V250Z"></path><path d="M1000,250H0V190l500-23,500,23v60Z"></path></svg>
-	    </div>
-	    <div class="bloc-shape-divider bloc-divider-bottom">
-			<svg class="svg-divider bloc-divider-b-bloc-6-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250"><path style="opacity: 0.3;" d="M1000,250H0V60L500,165,1000,60V250Z"></path><path style="opacity: 0.3;" d="M1000,250H0V100l500,66,500-66V250Z"></path><path style="opacity: 0.3;" d="M1000,250H0V140l500,27,500-27V250Z"></path><path d="M1000,250H0V190l500-23,500,23v60Z"></path></svg>
-		</div>
+        </div>
+        <div class="bloc-shape-divider bloc-divider-bottom">
+            <svg class="svg-divider bloc-divider-b-bloc-6-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250"><path style="opacity: 0.3;" d="M1000,250H0V60L500,165,1000,60V250Z"></path><path style="opacity: 0.3;" d="M1000,250H0V100l500,66,500-66V250Z"></path><path style="opacity: 0.3;" d="M1000,250H0V140l500,27,500-27V250Z"></path><path d="M1000,250H0V190l500-23,500,23v60Z"></path></svg>
+        </div>
         <div class="container bloc-lg bloc-md-lg">
             <div class="row none animSpeedFast">
                 <div
@@ -84,7 +83,7 @@
                             data-responsive-title="0" data-med-title="level 1" data-sml-title="level 1"
                             data-title-width="100%" data-disable-hover="None" data-remove-button="false"
                             data-card-click="1" data-caption-trim="true" data-target="_self"
-                            data-url="{% url 'perso' %}" data-scroll-speed="1000" data-visiblility="1">
+                            data-url="{%  url 'perso' %}" data-scroll-speed="1000" data-visiblility="1">
                             <div class="cd-shell">
                                 <div class="card-designer lg">
                                     <div class="cd-wrapper">
@@ -94,7 +93,7 @@
                                             <div class="cd-swiper-wrapper">
                                                 <div class="cd-swiper-slide" data-swiper-autoplay="6000">
                                                     <img class="custom-bric-img-item cover preview center"
-                                                        src="{% static 'img/persosite.jpg' %}" width="100%" height="400"
+                                                        src="{% static 'img/persosite.webp' %}" width="100%" height="400"
                                                         data-kb-effect="Pan Right" data-filter="0" alt="perso">
                                                 </div>
                                             </div>
@@ -108,7 +107,7 @@
                                                     style="font-size: 40px; margin-left: 0px; margin-bottom: 20px; font-family: Lato-Regular,serif;">
                                                     <a style="color: rgb(255, 255, 255); background-color: transparent; line-height: 40px; font-family: Lato-Regular,serif;"
                                                         target="_self" aria-disabled="true"
-                                                        href="{%  url 'perso' %}"><span
+                                                        href="{% url 'perso' %}"><span
                                                             style="color: rgb(254, 255, 255);">Perso</span></a>
                                                 </h2>
 
@@ -152,7 +151,7 @@
                                             <div class="cd-swiper-wrapper">
                                                 <div class="cd-swiper-slide" data-swiper-autoplay="6000">
                                                     <img class="custom-bric-img-item cover preview center"
-                                                        src="{% static 'img/e-commerce.jpg' %}" width="100%" height="400"
+                                                        src="{% static 'img/e-commerce.webp' %}" width="100%" height="400"
                                                         data-kb-effect="Pull" data-filter="0" alt="boutique">
                                                 </div>
                                             </div>
@@ -202,7 +201,7 @@
                             data-progress-fill="transparent" data-title-size="40" data-line-height="40"
                             data-responsive-title="0" data-med-title="level 1" data-sml-title="level 1"
                             data-title-width="100%" data-disable-hover="None" data-remove-button="false"
-                            data-card-click="1" data-caption-trim="true" data-target="_self" data-url="{% url 'pro'%}"
+                            data-card-click="1" data-caption-trim="true" data-target="_self" data-url="{% url 'pro' %}"
                             data-scroll-speed="1000" data-visiblility="1">
                             <div class="cd-shell">
                                 <div class="card-designer lg">
@@ -213,7 +212,7 @@
                                             <div class="cd-swiper-wrapper">
                                                 <div class="cd-swiper-slide" data-swiper-autoplay="6000">
                                                     <img class="custom-bric-img-item center cover preview"
-                                                        src="{% static 'img/pro.jpg' %}" width="100%" height="400"
+                                                        src="{% static 'img/pro.webp' %}" width="100%" height="400"
                                                         data-kb-effect="Pan Left" data-filter="0" alt="pro">
                                                 </div>
                                             </div>
@@ -221,6 +220,7 @@
                                         </div>
                                         <div class="cd-data" style="background-color: transparent;">
                                             <div class="cd-content" style="background-color: transparent;">
+
 
 
                                                 <h2 class="cd-title"
@@ -240,8 +240,9 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- bloc-6 END -->
+      </div>
+
+<!-- bloc-6 END -->
     <!-- bloc-media -->
     <div class="bloc none tc-white bgc-outer-space d-bloc bloc-bg-texture texture-fabric" id="bloc-media">
         <div class="bloc-shape-divider bloc-divider-top bloc-divider-flip-y">
@@ -273,7 +274,7 @@
                         Sécurité
                     </h3>
                     <p class="mg-lg float-lg-none">
-                        Les sites sont hébergés de façon sécurisée et sans partage de ressources.
+                        Les sites sont hébergés de façon sécurisée, sans partage de ressources.
                         <a class="ltc-azure float-lg-none" href="{% url 'infos' %}"
                             data-active-page="active">En savoir plus</a>
                     </p>
@@ -300,7 +301,7 @@
             <div class="row voffset-md align-items-center voffset-clear-sm">
                 <div
                     class="col-lg-2 offset-lg-2 text-lg-start align-self-center col-md-12 col-sm-12">
-                    <img src="{% static 'img/logava.jpg' %}"
+                    <img src="{% static 'img/logava.webp' %}"
                         class="img-fluid img-protected rounded-circle img-logav-style mx-auto d-block img-protected animated none zoomIn mg-md"
                         alt="logava1" id="sh1" data-appear-anim-style="zoomIn" />
                 </div>
@@ -327,7 +328,7 @@
         <div class="container bloc-md bloc-sm-lg">
             <div class="row">
                 <div class="offset-lg-2 col-lg-2 align-self-center col-md-12 col-sm-12">
-                    <img src="{% static 'img/logava3.jpg' %}"
+                    <img src="{% static 'img/logava3.webp' %}"
                         class="img-fluid img-protected rounded-circle img-logav-style mx-auto d-block img-protected animated rollIn animSpeedLazy mg-md"
                         alt="logava2" id="sh2" data-appear-anim-style="rollIn" />
                 </div>
@@ -362,7 +363,7 @@
         <div class="container bloc-md bloc-no-padding-lg">
             <div class="row voffset-md voffset-clear-sm">
                 <div class="col-lg-2 offset-lg-2 col-md-12 col-sm-12 align-self-center text-lg-start">
-                    <img src="{% static 'img/logava2.jpg' %}"
+                    <img src="{% static 'img/logava2.webp' %}"
                         class="img-fluid img-protected rounded-circle img-logav-style mx-auto d-block img-protected animated flip animDelay06 mg-lg"
                         alt="logava3" id="sh3" data-appear-anim-style="flip" />
                 </div>
@@ -389,5 +390,6 @@
             </div>
         </div>
     </div>
+
 <!-- sphere3 END -->
 {% endblock %}

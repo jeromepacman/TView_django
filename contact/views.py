@@ -24,6 +24,6 @@ def contactView(request):
             email_conf.send()
             messages.success(request, "  Votre message à été envoyé! Vous allez recevoir un message de confirmation")
         else:
-            messages.warning(request, "Veuillez bien remplir tous les champs, merci")
+            messages.error(request, 'Veuillez remplir correctement tous les champs. Merci')
     form = ContactForm()
     return render(request, 'contact.html', {'form': form})

@@ -98,7 +98,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 	right:0;
 	z-index: 0;
 	display: flex;
-	pointer-events: none;
 }
 .svg-divider{
 	width:100%;
@@ -458,7 +457,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	content:"";
 	width:50%;
 	height:25%;
-
+	text-indent:0;
 	border-radius:20px 20px 20px 20px;
 }
 .h2-style{
@@ -478,7 +477,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .caroutext{
 	color:#FFFFFF!important;
 	background-color:#666666;
-	background-size:length;
 	letter-spacing:-2px;
 	border-color:#666666!important;
 	text-shadow:0px 3px 1px #000000;
@@ -492,7 +490,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .fixbg{
 	background-attachment:fixed;
-	background-size:length;
 	font-family: "Inter-Regular", serif;
 	fill:rgba(152,125,132,0.89);
 	stroke-width:250;
@@ -506,7 +503,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	width:460px;
 }
 .img-10-style{
-
 	width:460px;
 	height:240px;
 }
@@ -532,7 +528,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .args1{
 	color:#FFFFFF!important;
-	background-size:length;
 	z-index:1;
 	flex-direction:row;
 	justify-content:flex-end;
@@ -624,7 +619,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .bloc-divider-b-0-fill{
 	fill:#942092;
-	height:80px;
+	height:540px;
 }
 .h3-style{
 	font-family: "Inter-Regular", serif;
@@ -639,6 +634,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .bloc-divider-b-bloc-6-fill{
 	fill:#942092;
+	height:40px;
 }
 h1{
 	font-family: "Helvetica", serif;
@@ -658,7 +654,14 @@ h1{
 .h3-bloc-2-style{
 	letter-spacing: -2px;
 }
-
+.bloc-divider-t-bloc-6-fill{
+	fill:#942092;
+	height:200px;
+	width:100%;
+}
+.h3-tarifs-style{
+	font-family:"Lato-Regular", serif;
+}
 /* = Colour
 -------------------------------------------------------------- */
 
@@ -958,7 +961,7 @@ h1{
 	z-index:999;
 }
 .cd-container[data-caption-position="top"] .cd-data {
-	align-items:top;
+	align-items:unset;
 }  .cd-container[data-caption-position="middle"] .cd-data {
 	align-items:center;
    }  .cd-container[data-caption-position="hover"] .cd-data, .cd-container[data-caption-position="end"] .cd-data {
@@ -1397,8 +1400,7 @@ h1{
 		height:100px;
 	}
 	.active{
-		display:flex;
-		background-size:length;
+		display:flex;;
 		background-position:center center;
 	}
 	.args1{
@@ -1468,7 +1470,7 @@ h1{
 	}
 	.h2-style{
 		width:40%;
-		letter-spacing:px;
+
 	}
 	.fixbg{
 		font-family: "Lato-Regular", serif;

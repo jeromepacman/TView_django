@@ -36,8 +36,8 @@
     <!-- args0 END -->
 
     <!-- divid7 -->
-    <div class="bloc none fixbg d-sm-flex d-none l-bloc" id="divid7" style="background-image: url({% static 'img/devices.jpg' %});">
-        <div class="container bloc-sm-lg bloc-sm">
+    <div class="bloc none fixbg d-sm-flex d-none l-bloc" style="(background-image: url({% static 'img/devices.jpg' %})" id="divid7">
+        <div class="container bloc-sm bloc-no-padding-lg">
             <div class="row">
                 <div class="col">
                     <div>
@@ -48,67 +48,17 @@
     </div>
     <!-- divid7 END -->
 
-    <!-- bloc-media -->
-    <div class="bloc none tc-white bgc-outer-space d-bloc bloc-bg-texture texture-fabric" id="bloc-media">
-        <div class="bloc-shape-divider bloc-divider-top bloc-divider-flip-y">
-            <svg class="svg-divider bloc-divider-t-fill" fill-rule="evenodd" preserveAspectRatio="none"
-                viewBox="0 0 1000 250">
-                <path d="M0,125H1000V250H0V125Z"></path>
-            </svg>
-        </div>
-        <div class="container bloc-md bloc-md-lg bloc-md-sm">
-            <div class="row voffset-md none animated fadeInDown animSpeedLazy animDelay06"
-                data-appear-anim-style="fadeInDown">
-                <div class="col-lg-4 none col-md-8 offset-md-2 offset-lg-0">
-                    <img src="{% static 'img/responsive.jpg' %}"
-                        class="img-fluid img-protected img-responsi-style mx-auto d-block mg-md none img-rd-md"
-                        alt="responsive" />
-                    <h3 class="mg-sm mx-auto d-block args1 text-lg-start">
-                        Performance
-                    </h3>
-                    <p class="mg-lg float-lg-none">
-                        Tous les sites sont construits de manière à obtenir un affichage optimal quel que soit
-                        le support.
-                    </p>
-                </div>
-                <div class="col-lg-4 animSpeedLazy none col-md-8 offset-md-2 offset-lg-0">
-                    <img src="{% static 'img/security.jpg' %}"
-                        class="img-fluid img-protected img-securi-style mx-auto d-block mg-md img-rd-md none"
-                        alt="security" />
-                    <h3 class="mg-sm mx-auto d-block args1 text-lg-start">
-                        Sécurité
-                    </h3>
-                    <p class="mg-lg float-lg-none">
-                        Les sites sont hébergés de façon sécurisée et sans partage de ressources.
-                        <a class="ltc-azure float-lg-none" href="{% url 'infos' %}"
-                            data-active-page="active">En savoir plus</a>
-                    </p>
-                </div>
-                <div class="none col-md-8 offset-md-2 offset-lg-0 col-lg-4">
-                    <img src="{% static 'img/customizable.jpg' %}"
-                        class="img-fluid img-protected img-10-style mx-auto d-block mg-md none img-rd img-rd-md"
-                        alt="responsive" />
-                    <h3 class="text-lg-start args1 float-lg-none mg-sm text-start">
-                        Assistance
-                    </h3>
-                    <p class="p-style text-lg-start float-lg-none mg-lg">
-                        Vous bénéficiez d&rsquo;une assistance après achat quelle que soit la formule. <a
-                            class="ltc-azure" href="{% url 'infos' %}" data-active-page="active">Voir les modalités</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- bloc-6 -->
-    <div class="bloc none bgc-oxford-blue" id="bloc-6">
-        <div class="bloc-shape-divider bloc-divider-bottom">
-            <svg class="svg-divider bloc-divider-b-bloc-6-fill" fill-rule="evenodd" preserveAspectRatio="none"
-                viewBox="0 0 1000 250">
-                <path d="M0,125H1000V250H0V125Z"></path>
-            </svg>
-        </div>
-        <div class="container bloc-lg bloc-lg-lg">
-            <div class="row animated fadeIn animDelay04 animSpeedLazy" data-appear-anim-style="fadeIn">
+    <div class="bloc none bgc-oxford-blue d-bloc" id="bloc-6">
+        <div class="bloc-shape-divider bloc-divider-top">
+            <svg class="svg-divider bloc-divider-t-bloc-6-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250"><path style="opacity: 0.3;" d="M1000,250H0V60L500,165,1000,60V250Z"></path><path style="opacity: 0.3;" d="M1000,250H0V100l500,66,500-66V250Z"></path><path style="opacity: 0.3;" d="M1000,250H0V140l500,27,500-27V250Z"></path><path d="M1000,250H0V190l500-23,500,23v60Z"></path></svg>
+	    </div>
+	    <div class="bloc-shape-divider bloc-divider-bottom">
+			<svg class="svg-divider bloc-divider-b-bloc-6-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250"><path style="opacity: 0.3;" d="M1000,250H0V60L500,165,1000,60V250Z"></path><path style="opacity: 0.3;" d="M1000,250H0V100l500,66,500-66V250Z"></path><path style="opacity: 0.3;" d="M1000,250H0V140l500,27,500-27V250Z"></path><path d="M1000,250H0V190l500-23,500,23v60Z"></path></svg>
+		</div>
+        <div class="container bloc-lg bloc-md-lg">
+            <div class="row none animSpeedFast">
                 <div
                     class="text-center offset-md-2 col-md-8 offset-sm-2 col-sm-8 offset-lg-0 col-lg-4 text-md-start">
                     <div>
@@ -198,8 +148,6 @@
                             <div class="cd-shell">
                                 <div class="card-designer lg">
                                     <div class="cd-wrapper">
-
-
                                         <div class="cd-swiper-container swiper1 static-pos">
                                             <div class="cd-swiper-wrapper">
                                                 <div class="cd-swiper-slide" data-swiper-autoplay="6000">
@@ -294,10 +242,61 @@
         </div>
     </div>
     <!-- bloc-6 END -->
+    <!-- bloc-media -->
+    <div class="bloc none tc-white bgc-outer-space d-bloc bloc-bg-texture texture-fabric" id="bloc-media">
+        <div class="bloc-shape-divider bloc-divider-top bloc-divider-flip-y">
+            <svg class="svg-divider bloc-divider-t-fill" fill-rule="evenodd" preserveAspectRatio="none"
+                viewBox="0 0 1000 250">
+                <path d="M0,125H1000V250H0V125Z"></path>
+            </svg>
+        </div>
+        <div class="container bloc-md bloc-md-lg bloc-md-sm">
+            <div class="row voffset-md none animated fadeInDown animSpeedLazy"
+                data-appear-anim-style="fadeInDown">
+                <div class="col-lg-4 none col-md-8 offset-md-2 offset-lg-0">
+                    <img src="{% static 'img/responsive.jpg' %}"
+                        class="img-fluid img-protected img-responsi-style mx-auto d-block mg-md none img-rd-md"
+                        alt="responsive" />
+                    <h3 class="mg-sm mx-auto d-block args1 text-lg-start">
+                        Performance
+                    </h3>
+                    <p class="mg-lg float-lg-none">
+                        Tous les sites sont construits de manière à obtenir un affichage optimal quel que soit
+                        le support.
+                    </p>
+                </div>
+                <div class="col-lg-4 animSpeedLazy none col-md-8 offset-md-2 offset-lg-0">
+                    <img src="{% static 'img/security.jpg' %}"
+                        class="img-fluid img-protected img-securi-style mx-auto d-block mg-md img-rd-md none"
+                        alt="security" />
+                    <h3 class="mg-sm mx-auto d-block args1 text-lg-start">
+                        Sécurité
+                    </h3>
+                    <p class="mg-lg float-lg-none">
+                        Les sites sont hébergés de façon sécurisée et sans partage de ressources.
+                        <a class="ltc-azure float-lg-none" href="{% url 'infos' %}"
+                            data-active-page="active">En savoir plus</a>
+                    </p>
+                </div>
+                <div class="none col-md-8 offset-md-2 offset-lg-0 col-lg-4">
+                    <img src="{% static 'img/customizable.jpg' %}"
+                        class="img-fluid img-protected img-10-style mx-auto d-block mg-md none img-rd img-rd-md"
+                        alt="responsive" />
+                    <h3 class="text-lg-start args1 float-lg-none mg-sm text-start">
+                        Assistance
+                    </h3>
+                    <p class="p-style text-lg-start float-lg-none mg-lg">
+                        Vous bénéficiez d&rsquo;une assistance après achat quelle que soit la formule. <a
+                            class="ltc-azure" href="{% url 'infos' %}" data-active-page="active">Voir les modalités</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- sphere1 -->
     <div class="bloc none bgc-outer-space full-width-bloc d-bloc bloc-bg-texture texture-fabric" id="sphere1">
-        <div class="container bloc-md bloc-sm-lg">
+        <div class="container">
             <div class="row voffset-md align-items-center voffset-clear-sm">
                 <div
                     class="col-lg-2 offset-lg-2 text-lg-start align-self-center col-md-12 col-sm-12">
@@ -306,7 +305,7 @@
                         alt="logava1" id="sh1" data-appear-anim-style="zoomIn" />
                 </div>
                 <div class="text-lg-start offset-lg-0 col-lg-5 col-md-12 col-sm-12">
-                    <h5 class="tc-pastel-gray text-start mg-clear h5-style text-lg-start none" id="-">
+                    <h5 class="tc-pastel-gray text-start mg-clear h5-style text-lg-start none">
                         Les sites sur mesure chez TView sont écrits avec le langage informatique "Python". Le design et le rendu
                         visuel sont réalisés avec des outils courants du web. Les sites ne sont pas
                         construits par un assemblage parmi différents modules et "plug-ins", ils sont développés

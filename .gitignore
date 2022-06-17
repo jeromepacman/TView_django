@@ -45,7 +45,7 @@ ipython_config.py
 #/media/
 #!/media/.gitkeep
 
-static/
+
 !/static/.gitkeep
 
 # Secrets

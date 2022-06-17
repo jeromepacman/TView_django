@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
+{% load crispy_forms_filters %}
 {% load static %}
 {% block title %}TView | Contact{% endblock %}
 {% block content %}
-    {% load crispy_forms_tags %}
     <!-- contact -->
     <div class="bloc l-bloc none full-width-bloc" id="bloc-15">
         <div class="bloc-shape-divider bloc-divider-flip-y bloc-divider-top">
@@ -17,7 +17,7 @@
                 <path d="M0,125H1000V250H0V125Z"></path>
             </svg>
         </div>
-        <div class="mt-5 col-6 offset-3">
+        <div class="mt-5 col-6 offset-3 form-borders">
             <form method="post">
                 {% csrf_token %}
                     {{ form.name|as_crispy_field }}
@@ -26,7 +26,7 @@
                     {{ form.message|as_crispy_field }}
                     {{ form.checkbox|as_crispy_field }}
 
-                <button type="submit" class="mt-2 btn btn-blue-ryb mb-5 animated zoomIn animDelay04"
+                <button type="submit" class="mt-2 btn btn-phthalo-blue mb-5 w-100 animated zoomIn"
                         data-appear-anim-style="zoomIn">
                     Envoyer
                 </button>

@@ -14,19 +14,16 @@
         <meta name="twitter:card" content="summary">
 		<meta name="twitter:title" content="Tview">
 		<meta name="twitter:description" content="Création de sites & applications web">
-		<meta name="twitter:image" content="url({% static 'img/card.jpg' %})">
+		<meta name="twitter:image" content="url({% static '/img/card.jpg' %})">
 		<meta property="og:type" content="website">
 		<meta property="og:site_name" content="TView">
 		<meta property="og:title" content="Tview">
 		<meta property="og:description" content="Création de sites & applications web">
 		<meta property="og:url" content="https://tview.fr/">
-		<meta property="og:image" content="{% static 'img/card.jpg' %}">
-        <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+		<meta property="og:image" content="{% static '/img/card.jpg' %}">
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="{% static 'img/apple-touch-icon.png' %}">
-        <link rel="preload" href="{% static 'fonts/lato-v17-latin-regular.woff2' %}" as='font' type='font/woff2'
-              crossorigin='anonymous'>
-        <link rel="preload" href="{% static 'fonts/inter-v3-latin-regular.woff2' %}" as='font' type='font/woff2'
-              crossorigin='anonymous'>
+        <link rel="preload" href="{% static 'fonts/lato-v17-latin-regular.woff2' %}" as='font' type='font/woff2' crossorigin='anonymous'>
         <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'css/animate.min.css' %}">
@@ -46,7 +43,7 @@
 								TView
 							</h1>
 							<h2 class="mg-md h2-style text-center text-lg-center mx-auto d-block">
-								<span>Création de sites &amp; applications web</span>
+								<span>Création de sites & applications web</span>
                             </h2><img src="{% static "img/tview_logo.jpg" %}"
 								class="img-fluid img-protected rounded-circle mx-auto d-block img-style"
                                                                   alt="tview_logo">
@@ -63,54 +60,40 @@
 
             {% include 'button_nav.html' %}
     <!-- footer -->
-			<div class="bloc none bg-b-edge bgc-outer-space d-bloc full-width-bloc" style="background-image: url({% static 'img/backhead.jpg' %});" id="footer">
-				<div class="container bloc-md bloc-sm-lg">
-					<div class="row voffset align-items-center">
-						<div class="col-4 col-md-3 col-lg-2 text-start col-md-3 align-self-start offset-md-2 offset-lg-4"
-							id="backend">
-							<h5 class="text-center text-sm-start mg-md footer-title text-lg-start">
-								Backend
-							</h5><a class="a-btn footer-link text-lg-left text-left a-block"
-								rel="nofollow noopener noreferrer" target="_blank">Python</a><a href="#"
-								data-active-page="active"
-								class="a-btn a-block footer-link text-lg-left">Django<br></a><a href="#"
-								data-active-page="active" class="a-btn footer-link a-block text-lg-left">SQL-No</a>
-						</div>
-						<div class="col-lg-2 align-self-end col-md-3 col-4" id="front">
-							<h5 class="mg-md text-center text-sm-start footer-title text-lg-start">
-								Frontend
-							</h5><a href="#" data-active-page="active"
-								class="a-btn footer-link a-block text-lg-left">HTML</a><a href="#"
-								data-active-page="active" class="a-btn a-block footer-link text-lg-left">JS</a><a
-								href="#" data-active-page="active"
-								class="a-btn a-block footer-link text-lg-left">CSS</a>
-						</div>
-						<div class="align-self-end col-lg-2 col-3" id="confs">
-							<h5 class="mg-md text-center text-sm-start footer-title text-lg-start">
-								Config
-							</h5><a href="#" data-active-page="active"
-								class="a-btn a-block footer-link text-lg-left">Docker</a><a href="#"
-								data-active-page="active" class="a-btn a-block footer-link text-lg-center">Apache</a><a
-								href="#" data-active-page="active"
-								class="a-btn a-block footer-link text-lg-center">Nginx</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- footer END -->
+	<
+        <div class="bloc none bg-b-edge bgc-outer-space full-width-bloc d-bloc" style="background-image: url({% static 'img/backhead.webp' %});" id="footer">
+            <div class="container bloc-md bloc-sm-lg">
+                <div class="row voffset align-items-center">
+                    <div class="col-sm-4 col-lg-2 text-start offset-0 col-md-3 col-4 offset-sm-1 offset-md-2 offset-lg-4 align-self-end" id="backend">
+                        <h5 class="text-center text-sm-start mg-md footer-title float-lg-none">
+                            Backend
+                        </h5><a class="a-btn footer-link text-lg-left text-left a-block" rel="nofollow noopener noreferrer" target="_blank">Python</a><span class="a-btn a-block footer-link text-lg-left">Django<br></span><span class="a-btn footer-link a-block text-center">SQL/No</span>
+                    </div>
+                    <div class="col-sm-4 col-lg-2 align-self-end offset-sm-0 col-md-3 col-4 offset--1" id="front">
+                        <h5 class="mg-md text-center text-sm-start footer-title">
+                            Frontend
+                        </h5><a href="" data-active-page="active" class="a-btn footer-link text-center a-block">HTML</a><span class="a-btn a-block footer-link text-center">CSS</span><span class="a-btn a-block footer-link text-center">JS</span>
+                    </div>
+                    <div class="align-self-end col-lg-2 col-md-3 col-sm-3 col-3" id="confs">
+                        <h5 class="mg-md text-center text-sm-start footer-title">
+                            Config
+                        </h5><a href="" data-active-page="active" class="a-btn a-block footer-link text-center">Docker</a><span class="a-btn a-block footer-link text-center">Apache</span><span class="a-btn a-block footer-link text-center">Nginx</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- footer END -->
 
-		</div>
+        <!-- footer END -->
+
 		<!-- Main container END -->
-
-
-
+        </div>
 		<!-- Additional JS -->
         <script src="{% static 'js/jquery.min.js' %}"></script>
 		<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-        <script src="{% static 'js/blocs.min.js' %}"></script>
+        <script defer src="{% static 'js/blocs.min.js' %}"></script>
 		<script src="{% static 'js/scrollFX.js' %}"></script>
         <script defer src="{% static 'js/card-designer.js' %}"></script>"
-
 		<!-- Additional JS END -->
 
 	</body>

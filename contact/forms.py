@@ -20,5 +20,5 @@ class ContactForm(forms.Form):
         widget=forms.Textarea()
     )
     checkbox = forms.BooleanField(
-        label="Mes informations seront temporairement conservées et resteront confidentielles"
-    )
+         label="Vos informations seront traitées en toute confidentialité et conservées sur un support crypté"
+     )

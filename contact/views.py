@@ -16,7 +16,7 @@ def contactView(request):
             message = form.cleaned_data['message']
             try:
                 send_mail(subject, message, from_email, ['contact@tview.fr'])
-            except BadHeaderError:
+            except BadHeaderError():
                 messages.error(request, 'une erreur exceptionnelle est survenue')
             template = render_to_string('confirmation.html', {'name': name})
             email_conf = EmailMessage('Votre message à bien été reçu', template, settings.EMAIL_HOST_USER, [from_email])

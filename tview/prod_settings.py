@@ -2,8 +2,10 @@ from tview.settings import *
 
 DEBUG = False
 
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+ALLOWED_HOSTS = ['.tview.fr']
+
+#SESSION_COOKIE_SECURE = True
+#CSRF_COOKIE_SECURE = True
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = os.getenv('EMAIL_HOST')

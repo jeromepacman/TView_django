@@ -9,12 +9,12 @@
 			content="blog, chat, portfolio, e-shop, e-commerce, boutique, ligne, vitrine, perso, bot, sur mesure">
         <meta name="viewport"
               content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-        <link rel="canonical" href="https://tview.fr/">
-        <meta name="theme-color" content="#110344">
+        <!--<link rel="canonical" href="https://tview.fr/">-->
+        <meta name="theme-color" content="#110344"/>
         <meta name="twitter:card" content="summary">
 		<meta name="twitter:title" content="Tview">
 		<meta name="twitter:description" content="Création de sites & applications web">
-		<meta name="twitter:image" content="url({% static '/img/card.jpg' %})">
+		<meta name="twitter:image" content="url({% static 'img/card.jpg' %})">
 		<meta property="og:type" content="website">
 		<meta property="og:site_name" content="TView">
 		<meta property="og:title" content="Tview">
@@ -89,8 +89,9 @@
 		<!-- Main container END -->
         </div>
 		<!-- Additional JS -->
+
         <script src="{% static 'js/jquery.min.js' %}"></script>
-		<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+		<script src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
         <script defer src="{% static 'js/blocs.min.js' %}"></script>
 		<script src="{% static 'js/scrollFX.js' %}"></script>
         <script defer src="{% static 'js/card-designer.js' %}"></script>"

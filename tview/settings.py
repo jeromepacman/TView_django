@@ -1,5 +1,4 @@
 import os
-import sys
 from dotenv import load_dotenv
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -13,7 +12,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.tview', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['*']
 
 INTERNAL_IPS = [
     "127.0.0.1",
@@ -115,6 +114,7 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 
-#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = "contact@tview.fr"
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"

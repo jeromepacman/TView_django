@@ -2,7 +2,7 @@ from tview.settings import *
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['.tview.fr']
+ALLOWED_HOSTS = ['.tview.fr', '127.0.0.1', 'localhost']
 
 #SESSION_COOKIE_SECURE = True
 #CSRF_COOKIE_SECURE = True

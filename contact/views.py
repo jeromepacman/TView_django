@@ -14,6 +14,7 @@ def contactView(request):
             subject = form.cleaned_data['subject']
             from_email = form.cleaned_data['email']
             message = form.cleaned_data['message']
+            checkbox = form.cleaned_data['checkbox']
             try:
                 send_mail(subject, message, from_email, ['contact@tview.fr'])
             except BadHeaderError:

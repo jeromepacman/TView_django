@@ -1,4 +1,4 @@
-from django.conf import settings
+from tview import prod_settings
 from django.contrib import messages
 from django.core.mail import send_mail, BadHeaderError, EmailMessage
 from django.shortcuts import render
@@ -12,19 +12,26 @@ def contactView(request):
         if form.is_valid():
             name = form.cleaned_data['name']
             subject = form.cleaned_data['subject']
-            from_email = form.cleaned_data['email']
+            email = form.cleaned_data['email']
             message = form.cleaned_data['message']
             checkbox = form.cleaned_data['checkbox']
             try:
-                send_mail(subject, message, from_email, ['contact@tview.fr'])
+                send_mail(
+                subject,
+                message,
+                    email ,
+                ["contact@tview.fr"],
+                )
             except BadHeaderError:
-                messages.error(request, 'une erreur exceptionnelle est survenue')
+                 messages.error(request, 'une erreur exceptionnelle est survenue')
             template = render_to_string('confirmation.html', {'name': name})
-            email_conf = EmailMessage('Votre message a bien été reçu', template, settings.EMAIL_HOST_USER, [from_email])
+            email_conf = EmailMessage('Votre message a bien été reçu', template, prod_settings.EMAIL_HOST_USER, [email])
             email_conf.fail_silently = False
             email_conf.send()
+
             messages.success(request, "  Votre message a été envoyé, merci")
         else:
             messages.error(request, 'Veuillez remplir correctement tous les champs. Merci')
+
     form = ContactForm()
     return render(request, 'contact.html', {'form': form})

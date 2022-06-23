@@ -1210,7 +1210,7 @@ a {
 	z-index:999;
 }
 .cd-container[data-caption-position="top"] .cd-data {
-	align-items:top}.cd-container[data-caption-position="middle"] .cd-data {
+	align-items:i}.cd-container[data-caption-position="middle"] .cd-data {
 	align-items:center}.cd-container[data-caption-position="hover"] .cd-data, .cd-container[data-caption-position="end"] .cd-data {
 	align-items:end}/* Caption */.cd-container .cd-caption span {
 	font-size:.9em;

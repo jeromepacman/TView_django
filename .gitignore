@@ -26,7 +26,7 @@ coverage.xml
 # Translations
 *.mo
 *.pot
-.idea/
+.idea
 # Django stuff:
 *.log
 #db.sqlite3
@@ -50,3 +50,4 @@ ipython_config.py
 
 # Secrets
 secrets.json/venv/
+static/css/.DS_Store

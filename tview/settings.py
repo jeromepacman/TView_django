@@ -1,16 +1,23 @@
 import os
-from dotenv import load_dotenv
+import environ
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-load_dotenv()
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+env = environ.Env(
+    DEBUG = (bool, False)
+)
+
+environ.Env.read_env()
+
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY')
+DEBUG = env('DEBUG')
+
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -28,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'crispy_forms',
     'crispy_bootstrap5',
     'debug_toolbar',
@@ -107,6 +115,7 @@ STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"

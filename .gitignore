@@ -46,7 +46,7 @@ tview/.env
 #!/media/.gitkeep
 
 
-!/static/.gitkeep
+
 
 # Secrets
 secrets.json/venv/

@@ -1,19 +1,15 @@
 import os
 import environ
 
+env = environ.Env()
 
+environ.Env.read_env()
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-env = environ.Env(
-    DEBUG = (bool, False)
-)
 
-environ.Env.read_env()
-
-# SECURITY WARNING: keep the secret key used in production secret!
-DEBUG = env('DEBUG')
+DEBUG = True
 
 SECRET_KEY = env('SECRET_KEY')
 
@@ -26,6 +22,7 @@ INTERNAL_IPS = [
 ]
 
 # Application definition
+
 
 INSTALLED_APPS = [
 
@@ -40,7 +37,7 @@ INSTALLED_APPS = [
     'crispy_bootstrap5',
     'debug_toolbar',
     'pages.apps.PagesConfig',
-    'contact.apps.ContactConfig',
+    'sendmail.apps.SendmailConfig',
 ]
 
 MIDDLEWARE = [
@@ -121,5 +118,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
 CRISPY_TEMPLATE_PACK = "bootstrap5"
+
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

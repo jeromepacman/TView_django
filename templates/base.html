@@ -3,7 +3,7 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}TView sites web{% endblock %}</title>
+        <title>{% block title %}TView sites web{% endblock title %}</title>
         <meta name="description" content="Création de sites internet et applications web sécurisés, fiables et performants">
         <meta name="keywords"
 			content="blog, chat, portfolio, e-shop, e-commerce, boutique, ligne, vitrine, perso, bot, sur mesure">
@@ -50,50 +50,96 @@
 					</div>
 				</div>
 			</div>
-             <!-- messages -->
-            {% include 'messages.html' %}
-            {% include 'navbar.html' %}
-        <!-- block -->
-             {% block content %}
-             {% endblock content %}
 
-            {% include 'button_nav.html' %}
+           <div class="bloc l-bloc" id="nav">
+			<div class="container bloc-sm bloc-no-padding-lg">
+				<div class="row">
+					<div class="text-center col-md-8 offset-md-2">
+						<nav class="navbar row flex-column navbar-expand-md row-style navbar-dark">
+							<div class="container-fluid flex-column">
+								<button id="nav-toggle" type="button"
+									class="ui-navbar-toggler navbar-toggler border-0 p-0" aria-expanded="false"
+									aria-label="Toggle navigation" data-bs-toggle="collapse"
+									data-bs-target=".navbar-25178">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+								<div class="collapse navbar-collapse navbar-25178 special-dropdown-nav">
+									<ul
+										class="site-navigation nav navbar-nav mx-auto justify-content-center active">
+										<li class="nav-item">
+											<a href="{%url 'pages:home'%}" class="nav-link active ltc-pastel-gray">TView</a>
+										</li>
+										<li class="nav-item">
+											<a href="{%url 'pages:perso'%}" class="nav-link ltc-pastel-gray">Perso</a>
+										</li>
+										<li class="nav-item">
+											<a href="{%url 'pages:boutique'%}" class="nav-link ltc-pastel-gray">Boutique</a>
+										</li>
+										<li class="nav-item">
+											<a href="{%url 'pages:pro'%}" class="nav-link ltc-pastel-gray">Pro</a>
+										</li>
+										<li class="nav-item">
+											<a href="{%url 'pages:infos'%}"  class="nav-link ltc-pastel-gray">Infos</a>
+										</li>
+										<li class="nav-item">
+											<a href="{%url 'sendmail:sendmail'%}" class="nav-link ltc-pastel-gray">Contact</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+        <!-- block -->
+
+
+            {% block content %}
+            {% endblock content %}
+
+    <!-- ScrollToTop Button -->
+    <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1',this)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32">
+            <path class="scroll-to-top-btn-icon" d="M30,22.656l-14-13-14,13"></path>
+        </svg>
+    </a>
+<!-- ScrollToTop Button END-->
     <!-- footer -->
-	<
-        <div class="bloc none bg-b-edge bgc-outer-space full-width-bloc d-bloc" style="background-image: url({% static 'img/backhead.webp' %});" id="footer">
-            <div class="container bloc-md bloc-sm-lg">
-                <div class="row voffset align-items-center">
-                    <div class="col-sm-4 col-lg-2 text-start offset-0 col-md-3 col-4 offset-sm-1 offset-md-2 offset-lg-4 align-self-end" id="backend">
-                        <h5 class="text-center text-sm-start mg-md footer-title float-lg-none">
-                            Backend
-                        </h5><a class="a-btn footer-link text-lg-left text-left a-block" rel="nofollow noopener noreferrer" target="_blank">Python</a><span class="a-btn a-block footer-link text-lg-left">Django<br></span><span class="a-btn footer-link a-block text-center">SQL/No</span>
-                    </div>
-                    <div class="col-sm-4 col-lg-2 align-self-end offset-sm-0 col-md-3 col-4 offset--1" id="front">
-                        <h5 class="mg-md text-center text-sm-start footer-title">
-                            Frontend
-                        </h5><a href="" data-active-page="active" class="a-btn footer-link text-center a-block">HTML</a><span class="a-btn a-block footer-link text-center">CSS</span><span class="a-btn a-block footer-link text-center">JS</span>
-                    </div>
-                    <div class="align-self-end col-lg-2 col-md-3 col-sm-3 col-3" id="confs">
-                        <h5 class="mg-md text-center text-sm-start footer-title">
-                            Config
-                        </h5><a href="" data-active-page="active" class="a-btn a-block footer-link text-center">Docker</a><span class="a-btn a-block footer-link text-center">Apache</span><span class="a-btn a-block footer-link text-center">Nginx</span>
-                    </div>
+
+    <div class="bloc none bg-b-edge bgc-outer-space full-width-bloc d-bloc" style="background-image: url({% static 'img/backhead.webp' %});" id="footer">
+        <div class="container bloc-md bloc-sm-lg">
+            <div class="row voffset align-items-center">
+                <div class="col-sm-4 col-lg-2 text-start offset-0 col-md-3 col-4 offset-sm-1 offset-md-2 offset-lg-4 align-self-end" id="backend">
+                    <h5 class="text-center text-sm-start mg-md footer-title float-lg-none">
+                        Backend
+                    </h5><a class="a-btn footer-link text-lg-left text-left a-block" rel="nofollow noopener noreferrer" target="_blank">Python</a><span class="a-btn a-block footer-link text-lg-left">Django<br></span><span class="a-btn footer-link a-block text-center">SQL/No</span>
+                </div>
+                <div class="col-sm-4 col-lg-2 align-self-end offset-sm-0 col-md-3 col-4 offset--1" id="front">
+                    <h5 class="mg-md text-center text-sm-start footer-title">
+                        Frontend
+                    </h5><a href="" data-active-page="active" class="a-btn footer-link text-center a-block">HTML</a><span class="a-btn a-block footer-link text-center">CSS</span><span class="a-btn a-block footer-link text-center">JS</span>
+                </div>
+                <div class="align-self-end col-lg-2 col-md-3 col-sm-3 col-3" id="confs">
+                    <h5 class="mg-md text-center text-sm-start footer-title">
+                        Config
+                    </h5><a href="" data-active-page="active" class="a-btn a-block footer-link text-center">Docker</a><span class="a-btn a-block footer-link text-center">Apache</span><span class="a-btn a-block footer-link text-center">Nginx</span>
                 </div>
             </div>
         </div>
+    </div>
 <!-- footer END -->
-
+        </div>
         <!-- footer END -->
 
 		<!-- Main container END -->
-        </div>
 		<!-- Additional JS -->
-        <script defer src="{% static 'js/jquery.min.js' %}"></script>
-        <script defer src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
-        <script defer src="{% static 'js/blocs.min.js' %}"></script>
-        <script defer src="{% static 'js/lazysizes.min.js' %}"></script>
-        <script defer src="{% static 'js/scrollFX.js' %}"></script>
-        <script defer src="{% static 'js/card-designer.js' %}"></script>
+    <script defer src="{% static 'js/jquery.min.js' %}"></script>
+    <script defer src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
+    <script defer src="{% static 'js/blocs.min.js' %}"></script>
+    <script defer src="{% static 'js/lazysizes.min.js' %}"></script>
+    <script defer src="{% static 'js/scrollFX.js' %}"></script>
+    <script defer src="{% static 'js/card-designer.js' %}"></script>
 
 		<!-- Additional JS END -->
 

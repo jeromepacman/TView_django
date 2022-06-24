@@ -3,7 +3,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
-DS_Store
+.DS_Store
 
 # Installer logs
 pip-log.txt
@@ -39,7 +39,7 @@ profile_default/
 ipython_config.py
 
 # Environments
-.env
+tview/.env
 /venv
 # Media and Static directories
 #/media/
@@ -50,4 +50,4 @@ ipython_config.py
 
 # Secrets
 secrets.json/venv/
-static/css/.DS_Store
+static/css/.DS_Store!/.gitignore

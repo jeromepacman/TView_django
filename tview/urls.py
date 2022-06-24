@@ -9,8 +9,8 @@ admin.site.site_header = 'TView'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('contact/', include('contact.urls', namespace='contact')),
+    path('sendmail/', include('sendmail.urls', namespace='sendmail')),
     path('', include('pages.urls', namespace='pages')),
     path('__debug__/', include('debug_toolbar.urls')),
 
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]

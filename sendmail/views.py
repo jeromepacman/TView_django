@@ -20,12 +20,13 @@ def sendmailView(request):
             try:
                 send_mail(subject, message, from_email, ['info@tview.fr'])
             except BadHeaderError:
-                messages.info(request, "Une erreur fatale est survenue")
+                messages.error(request, "Une erreur fatale est survenue")
             template = render_to_string('confirmation.html', {'name': name})
-            mailconf = EmailMessage('TView confirmation de réception', template, [settings.EMAIL_HOST_USER, from_email])
-            mailconf.send()
+            email_conf = EmailMessage('TView confirmation de réception', template, settings.EMAIL_HOST_USER, [from_email])
+            email_conf.fail_silently = False
+            email_conf.send()
             messages.success(request, "Votre message a été envoyé, merci")
         else:
-            messages.info(request, "Formulaire non valide")
+            messages.warning(request, "Formulaire non valide")
 
     return render(request, 'contact.html', {'form': form})

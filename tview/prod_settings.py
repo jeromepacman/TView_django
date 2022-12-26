@@ -1,17 +1,9 @@
 from tview.settings import *
 
-DEBUG = False
 
-ALLOWED_HOSTS = ['.tview.fr']
+#ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[1:1]', '']
 
-#SESSION_COOKIE_SECURE = True
+#CSRF_TRUSTED_ORIGINS = ['https://*.fly.dev']
+# SESSION_COOKIE_SECURE = True
+
 CSRF_COOKIE_SECURE = True
-
-
-EMAIL_HOST = env('EMAIL_HOST')
-EMAIL_HOST_USER = env('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-RECIPIENT_ADDRESS = env('RECIPIENT_ADDRESS')
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

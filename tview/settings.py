@@ -1,15 +1,18 @@
 import os
+from pathlib import Path
 import environ
 
-env = environ.Env()
-
-environ.Env.read_env()
+env = environ.Env(
+    # set casting, default value
+    DEBUG=(bool, False)
+)
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).resolve().parent.parent
 
+environ.Env.read_env(BASE_DIR / '.env')
 
-DEBUG = True
+DEBUG = env('DEBUG')
 
 SECRET_KEY = env('SECRET_KEY')
 
@@ -17,9 +20,7 @@ SECRET_KEY = env('SECRET_KEY')
 
 ALLOWED_HOSTS = ['*']
 
-INTERNAL_IPS = [
-    "127.0.0.1",
-]
+AUTH_USER_MODEL = 'account.User'
 
 # Application definition
 
@@ -35,21 +36,22 @@ INSTALLED_APPS = [
 
     'crispy_forms',
     'crispy_bootstrap5',
-    'debug_toolbar',
     'pages.apps.PagesConfig',
     'sendmail.apps.SendmailConfig',
+    'account.apps.AccountConfig',
 ]
 
 MIDDLEWARE = [
 
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+
 ]
 
 ROOT_URLCONF = 'tview.urls'
@@ -57,7 +59,7 @@ ROOT_URLCONF = 'tview.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [BASE_DIR, 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -75,7 +77,7 @@ WSGI_APPLICATION = 'tview.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -107,17 +109,20 @@ USE_L10N = True
 
 USE_TZ = True
 
+
 STATIC_URL = 'static/'
+
+STATIC_ROOT = (BASE_DIR / 'staticfiles')
 
 MEDIA_URL = 'media/'
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 
-
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = env('EMAIL_HOST')
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True

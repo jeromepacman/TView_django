@@ -11,6 +11,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('sendmail/', include('sendmail.urls', namespace='sendmail')),
     path('', include('pages.urls', namespace='pages')),
-    path('__debug__/', include('debug_toolbar.urls')),
-
 ]

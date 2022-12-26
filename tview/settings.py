@@ -18,7 +18,9 @@ SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['tview.fly.dev', 'localhost', '127.0.0.1', ['1:1'], ]
+
+CSRF_TRUSTED_ORIGINS = ['https://tview.fly.dev']
 
 AUTH_USER_MODEL = 'account.User'
 
@@ -112,10 +114,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATIC_ROOT = (BASE_DIR / 'staticfiles')
-
-MEDIA_URL = 'media/'
-
+STATIC_ROOT = (BASE_DIR / 'static')
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 

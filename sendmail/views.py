@@ -25,7 +25,7 @@ def sendmailView(request):
             messages.success(request, "Votre message a été envoyé, merci")
         else:
             messages.warning(request, "Formulaire non valide")
-        return redirect('/sendmail')
+        return redirect('sendmail:contact')
     else:
         form = ContactForm()
     return render(request, 'contact.html', {'form': form})

@@ -3,10 +3,7 @@ from crispy_forms.helper import FormHelper
 
 
 class ContactForm(forms.Form):
-    name = forms.CharField(
-        label="Nom",
-        max_length=100
-    )
+
     email = forms.EmailField(
         label="Email",
         max_length=100
@@ -22,7 +19,7 @@ class ContactForm(forms.Form):
         widget=forms.Textarea()
     )
     checkbox = forms.BooleanField(
-        label="Vos informations restent confidentielles et conservées en format crypté"
+        label="Vos informations restent confidentielles et conservées en format crypté, no spam"
     )
 
     def __init__(self, *args, **kwargs):

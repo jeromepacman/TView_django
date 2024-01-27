@@ -113,7 +113,7 @@ pip-selfcheck.json
 *.iml
 out
 gen
-.env
+tview/.env
 venv
 ### macOS template
 # General
@@ -189,8 +189,8 @@ venv/
 /media/
 !/media/.gitkeep
 
-/static/
-!/static/.gitkeep
+#/static/
+#!/static/.gitkeep
 
 # Secrets
 secrets.json
@@ -317,7 +317,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
+tview/.env
 .venv
 env/
 venv/

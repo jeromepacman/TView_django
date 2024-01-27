@@ -8,5 +8,6 @@ admin.site.site_title = 'Admin'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('sendmail/', include('sendmail.urls', namespace='sendmail')),
-    path('', include('pages.urls', namespace='pages')),
+    path('', include('pages.urls', namespace='pages'))
 ]
+

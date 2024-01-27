@@ -1,4 +1,5 @@
 import environ
+import os
 from pathlib import Path
 
 
@@ -10,15 +11,15 @@ env = environ.Env(
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-environ.Env.read_env('.env')
+environ.Env.read_env()
 
 SECRET_KEY = env('SECRET_KEY')
 
-DEBUG = env('DEBUG')
+DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'tview.fr']
 
-CSRF_TRUSTED_ORIGINS = ['https://tview.fr', 'http://localhost']
+CSRF_TRUSTED_ORIGINS = ['https://tview.fr']
 
 AUTH_USER_MODEL = 'account.User'
 
@@ -32,7 +33,9 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
+
 
     'crispy_forms',
     'crispy_bootstrap5',
@@ -44,7 +47,9 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
 
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -102,14 +107,27 @@ LANGUAGE_CODE = 'fr-fr'
 
 TIME_ZONE = 'UTC'
 
-USE_I18N = True
-
 USE_TZ = True
 
+USE_I18N = True
+
+LANGUAGES = [
+ ("en", "English"),
+ ("fr", "Français"),
+]
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
 
 STATIC_URL = 'static/'
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+WHITENOISE_KEEP_ONLY_HASHED_FILES = True
+
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
@@ -121,3 +139,6 @@ EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = env('DEFAULT_FROM_EMAIL')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True

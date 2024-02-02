@@ -1,4 +1,5 @@
 from django import forms
+from django_recaptcha.fields import ReCaptchaField
 from crispy_forms.helper import FormHelper
 
 
@@ -21,6 +22,7 @@ class ContactForm(forms.Form):
     checkbox = forms.BooleanField(
         label="Vos informations restent confidentielles et conservées en format crypté, no spam"
     )
+    captcha = ReCaptchaField()
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

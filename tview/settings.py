@@ -3,12 +3,10 @@ import os
 from pathlib import Path
 from django.utils.translation import gettext_lazy as _
 
-
 env = environ.Env(
     # set casting, default value
     DEBUG=(bool, False)
 )
-
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -41,6 +39,8 @@ INSTALLED_APPS = [
     'sendmail.apps.SendmailConfig',
     'account.apps.AccountConfig',
     'rosetta',
+    'django_recaptcha',
+
 ]
 
 MIDDLEWARE = [
@@ -113,8 +113,8 @@ USE_I18N = True
 USE_L10N = True
 
 LANGUAGES = [
- ("en", _("English")),
- ("fr", _("French")),
+    ("en", _("English")),
+    ("fr", _("French")),
 ]
 
 LOCALE_PATHS = [
@@ -138,10 +138,8 @@ STORAGES = {
 
 WHITENOISE_KEEP_ONLY_HASHED_FILES = True
 
-
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
-
 
 EMAIL_HOST = env('EMAIL_HOST')
 EMAIL_HOST_USER = env('EMAIL_HOST_USER')
@@ -152,3 +150,8 @@ EMAIL_USE_TLS = True
 
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
+
+RECAPTCHA_PUBLIC_KEY = env('RECAPTCHA_PUBLIC_KEY')
+RECAPTCHA_PRIVATE_KEY = env('RECAPTCHA_PRIVATE_KEY')
+# RECAPTCHA_USE_SSL = True
+

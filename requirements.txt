@@ -4,3 +4,4 @@ django-crispy-forms
 django-environ
 whitenoise
 django-rosetta
+django-recaptcha

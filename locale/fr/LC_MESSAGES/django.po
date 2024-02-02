@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-02 07:18+0100\n"
-"PO-Revision-Date: 2024-02-02 06:22+0000\n"
+"PO-Revision-Date: 2024-02-02 07:36+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -32,8 +32,6 @@ msgid "Customized, autonomous, efficient"
 msgstr "Sur mesure, autonome, performant"
 
 #: templates/carousel.html:40
-#, fuzzy, python-format
-#| msgid "Up to 50%% off for humanitarian or ecological projects"
 msgid "Up to 50%% off for humanitarian or ecological projects"
 msgstr "Tarifs jusqu'à -50% pour un projet humanitaire ou écologique"
 
@@ -967,16 +965,14 @@ msgid "Sunday"
 msgstr "Dimanche"
 
 #: venv/lib/python3.11/site-packages/django/utils/dates.py:16
-#, fuzzy
 #| msgid "Monday"
 msgid "Mon"
-msgstr "Lundi"
+msgstr "Lun"
 
 #: venv/lib/python3.11/site-packages/django/utils/dates.py:17
-#, fuzzy
 #| msgid "Tuesday"
 msgid "Tue"
-msgstr "Mardi"
+msgstr "Mar"
 
 #: venv/lib/python3.11/site-packages/django/utils/dates.py:18
 msgid "Wed"
@@ -987,22 +983,19 @@ msgid "Thu"
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/utils/dates.py:20
-#, fuzzy
 #| msgid "Friday"
 msgid "Fri"
-msgstr "Vendredi"
+msgstr "Ven"
 
 #: venv/lib/python3.11/site-packages/django/utils/dates.py:21
-#, fuzzy
 #| msgid "Safety"
 msgid "Sat"
-msgstr "Sécurité"
+msgstr "Sam"
 
 #: venv/lib/python3.11/site-packages/django/utils/dates.py:22
-#, fuzzy
 #| msgid "Sunday"
 msgid "Sun"
-msgstr "Dimanche"
+msgstr "Dim"
 
 #: venv/lib/python3.11/site-packages/django/utils/dates.py:25
 msgid "January"
@@ -1021,10 +1014,9 @@ msgid "April"
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/utils/dates.py:29
-#, fuzzy
 #| msgid "Monday"
 msgid "May"
-msgstr "Lundi"
+msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/utils/dates.py:30
 msgid "June"
@@ -1123,11 +1115,10 @@ msgid "April"
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/utils/dates.py:57
-#, fuzzy
 #| msgid "Monday"
 msgctxt "abbrev. month"
 msgid "May"
-msgstr "Lundi"
+msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/utils/dates.py:58
 msgctxt "abbrev. month"
@@ -1185,11 +1176,10 @@ msgid "April"
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/utils/dates.py:71
-#, fuzzy
 #| msgid "Monday"
 msgctxt "alt. month"
 msgid "May"
-msgstr "Lundi"
+msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/utils/dates.py:72
 msgctxt "alt. month"
@@ -1237,7 +1227,6 @@ msgid "%(truncated_text)s…"
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/utils/text.py:269
-#, fuzzy
 #| msgid " or "
 msgid "or"
 msgstr " ou"

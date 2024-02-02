@@ -13,10 +13,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 environ.Env.read_env()
 
 SECRET_KEY = env('SECRET_KEY')
-
+DEBUG = True
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'tview.fr']
 
-CSRF_TRUSTED_ORIGINS = ['https://tview.fr']
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
+CSRF_TRUSTED_ORIGINS = []
 
 AUTH_USER_MODEL = 'account.User'
 
@@ -25,7 +27,7 @@ AUTH_USER_MODEL = 'account.User'
 
 INSTALLED_APPS = [
 
-    'whitenoise.runserver_nostatic',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

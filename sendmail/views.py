@@ -11,6 +11,7 @@ def sendmail_view(request):
             subject = form.cleaned_data['subject']
             from_email = form.cleaned_data['email']
             message = form.cleaned_data['message']
+            checkbox = form.cleaned_data['checkbox']
             try:
                 send_mail(subject, message, from_email, ['contact@tview.fr'])
             except BadHeaderError:
@@ -18,7 +19,7 @@ def sendmail_view(request):
             messages.success(request, "Votre message a été envoyé")
         else:
             messages.warning(request, "Formulaire non valide")
-            return redirect('sendmail:sendmail')
+        return redirect('sendmail:sendmail')
     else:
         form = ContactForm()
     return render(request, 'contact.html', {'form': form})

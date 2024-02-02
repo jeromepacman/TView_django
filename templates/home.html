@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
 {% block content %}
     {% include 'carousel.html' %}
     <!-- args0 -->
@@ -8,26 +9,26 @@
             <div class="row nonein">
                 <div class="col-md-4 col-lg-4 col-12 nonein mt-sn-3 align-self-center">
                     <h4 class="text-lg-start args0 mg-sm mx-auto d-block h4-style">
-                        Gestion de contenu en toute simplicité
+                        {% trans 'Content management made easy' %}
                     </h4>
                     <p class="mg-md mx-auto d-block">
-                        Sur site via une interface administrateur
+                        {% trans 'On the fly via an administrator interface' %}
                     </p>
                 </div>
                 <div class="col-md-4 col-12 align-self-center">
                     <h4 class="text-md-start args0 mg-sm mx-auto d-block">
-                        Evolution en fonction de vos besoins
+                        {% trans 'Evolving to meet your needs' %}
                     </h4>
                     <p class="animDelay06 mg-md mx-auto d-block">
-                        D'une page vers un environnement complet
+                        {% trans "From single page to complete environment" %}
                     </p>
                 </div>
                 <div class="col-md-4 col-12 align-self-center">
                     <h4 class="args0 mx-auto d-block mg-sm">
-                        Formules 'pro' pour projets exigeants
+                        {% trans 'Professional pack for demanding project' %}
                     </h4>
                     <p class="mg-md mx-auto d-block">
-                        100% sur mesure, code natif en python, versatile
+                        {% trans '100% customized, native Python code, versatile' %}
                     </p>
                 </div>
             </div>
@@ -166,7 +167,7 @@
                                                     <a style="color: rgb(255, 255, 255); background-color: transparent; line-height: 40px; font-family: Lato-Regular,serif;"
                                                        target="_self" aria-disabled="true"
                                                        href="{% url 'pages:prod' %}"><span
-                                                            style="color: rgb(254, 255, 255);">Boutique</span></a>
+                                                            style="color: rgb(254, 255, 255);">Shop</span></a>
                                                 </h2>
 
                                             </div>
@@ -264,8 +265,7 @@
                             Optimisation
                         </h3>
                         <p class="mg-lg float-lg-none">
-                            Tous les sites sont construits de manière à obtenir un affichage optimal quel que soit le
-                            support.
+                            {% trans 'All sites are designed for optimal viewing on all media devices.' %}
                         </p>
                     </div>
                     <div class="col-lg-4 animSpeedLazy col-md-8 offset-md-2 offset-lg-0">
@@ -273,11 +273,11 @@
                              class="img-fluid img-protected img-responsi-style mx-auto d-block mg-md none rounded"
                              alt="security">
                         <h3 class="args1 text-lg-start mx-auto d-block">
-                            Sécurité
+                            {% trans 'Safety' %}
                         </h3>
                         <p class="mg-lg float-lg-none">
-                            Votre site sécurisé, sur son propre cloud, sans partage de ressources.&nbsp;<a
-                                class="ltc-1000 float-lg-none" href="{% url 'pages:infos' %}">En savoir plus</a>
+                            {% trans 'Secured site, on its own cloud, with no resource sharing.' %}&nbsp;<a
+                                class="ltc-1000 float-lg-none" href="{% url 'pages:infos' %}">{% trans 'Find out more' %}</a>
                         </p>
                     </div>
                     <div class="none col-md-8 offset-md-2 offset-lg-0 col-lg-4">
@@ -288,8 +288,8 @@
                             Assistance
                         </h3>
                         <p class="float-lg-none mg-lg">
-                            Vous bénéficiez d’une assistance après achat quelle que soit la formule. &nbsp;<a
-                                class="ltc-1000" href="{% url 'pages:infos' %}">Voir modalités</a>
+                            {% trans 'After-purchase assistance, whatever your package.' %} &nbsp;<a
+                                class="ltc-1000" href="{% url 'pages:infos' %}">{% trans ' terms and conditions' %}</a>
                         </p>
                     </div>
                 </div>
@@ -308,14 +308,11 @@
                 </div>
                 <div class="text-lg-start offset-lg-0 col-lg-5 col-md-12 col-sm-12">
                     <h5 class="tc-5322 text-start mg-clear float-lg-none text-lg-start none h5-style" id="-">
-                        Les sites chez TView sont écrits en language <br>”Python". Le design et le rendu visuel sont
-                        réalisés avec des outils courants du web. Les sites ne sont pas construits par un assemblage de
-                        modules et de plugins, mais développés en natif, ils reposent ainsi sur leur propre et unique
-                        code.<br>Un des avantages qui se remarque rapidement est l&rsquo;absence de mises à jour à faire
-                        pour combler les failles de sécurité tout au long de l&rsquo;année. Ca reste ponctuel. La
-                        sécurité d&rsquo;un environnement sous Python n&rsquo;a rien de comparable avec la vulnérabilité
-                        sous-jacente d'une grande partie des solutions proposées clé-en-main sur le marché, et parfois à
-                        des tarifs exorbitants, qui plus est.<br><br>
+                        {% trans "TView's websites are written in Python language. The design and visual rendering are produced using standard web tools." %} 
+                        {% trans "The sites are not built by assembling modules and plugins, but are developed natively, based on their own unique code." %}<br>
+                        {% trans "There are no security updates to be made throughout the year. It's a one-off thing." %}
+                        {% trans "The security of a Python environment is nothing like the underlying vulnerability" %}
+                        {% trans "of many of the turnkey solutions on the market, sometimes at exorbitant prices." %}<br><br>
                     </h5>
                 </div>
                 <div class="offset-lg-2 col-lg-2 col-md-12 col-sm-12 align-self-center text-lg-center">
@@ -325,16 +322,14 @@
                 </div>
                 <div class="align-self-center col-lg-5 col-md-12 col-sm-12">
                     <h5 class="text-start float-none mg-clear none tc-5322 h5-style">
-                        Python est un language à la fois simple, précis et fiable. Il est notamment apprécié pour sa
-                        robustesse. Django est une boîte à outils dédiée au développement web qui a la réputation d&rsquo;
-                        être efficace et versatile. <br>Partir d&rsquo;une architecture solide, c&rsquo;est construire
-                        un serveur disponible et performant avec un niveau de sécurité élévé en continu sur le réseau.
-                        Ce sont des "bonnes pratiques” essentielles au "référencement naturel”. En outre, cela vous
-                        confère une grande autonomie et un potentiel évolutif large.<br/>Des sites tels <a
-                            class="unstyled" href="https://www.instagram.com" rel="nofollow noopener noreferrer"
-                            target="_blank">Instagram</a> ou <a class="unstyled" href="https://eventbrite.com"
-                                                                rel="nofollow noopener noreferrer" target="_blank">Evenbrite</a>
-                        ont été construits avec ces outils.&nbsp;<br><br/>
+                        {% trans "Python is a simple, precise and reliable language. It is particularly appreciated for its robustness." %}
+                        {% trans "Django is a toolbox dedicated to web development with a reputation for being efficient and versatile." %}<br>
+                        {% trans "Starting with a solid architecture means building an available, high-performance server with a high level of security throughout the network." %}
+                        {% trans "These are essential 'best practices' for natural referencing. It also gives you a great deal of autonomy and the potential to develop it further." %}<br/>
+                        {% trans "Sites such as" %} <a class="unstyled" href="https://www.instagram.com" rel="nofollow noopener noreferrer" 
+                                          target="_blank">Instagram</a>{% trans " or " %} <a class="unstyled" href="https://eventbrite.com" 
+                                                                              rel="nofollow noopener noreferrer" target="_blank">Evenbrite</a>
+                        {% trans "have been built using these tools." %}<br><br/>
                     </h5>
                 </div>
             </div>
@@ -366,12 +361,7 @@
                 </div>
                 <div class="col-lg-5 offset-lg-0 col-md-12 col-sm-12">
                     <h5 class="text-start float-none none mg-md tc-5322 h5-style">
-                        Selon votre situation, vos besoins et votre implication, il est possible de mettre en place un
-                        serveur simple, aux fonctionnalités essentielles, facile à utiliser.<br><br>N&rsquo;hésitez pas
-                        à poser vos questions le cas échéant.<i><br></i>
-                        <div>
-                            <br>
-                        </div>
+                        {% trans "Depending on your situation, your needs and your involvement, it is possible to set up a simple, user-friendly server with essential functions." %}<br><br>
                     </h5>
                     <div class="text-center ">
                         <a href="#" class="btn btn-style btn-c-5984 btn-clean" data-scroll-speed="1000"

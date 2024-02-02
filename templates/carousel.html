@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <div class="bloc none fixbg d-md-flex d-none l-bloc" style="background-image: url({% static 'img/devices.webp' %})" id="bloc-carousel">
     <div class="container bloc-no-padding">
         <div class="row voffset-clear-xs voffset-md g-0">
@@ -20,7 +21,7 @@
                             <img class="d-inline-block w-100 img-carousel-style" alt="slide 1" src="{% static 'img/siteperso.webp' %}">
                             <div class="carousel-caption carousel-caption-center">
                                 <h3 class="mg-md float-none caroutext text-lg-start h3-style">
-                                    Un site dont vous êtes le propriétaire
+                                    {% trans 'A site you own' %}
                                 </h3>
                             </div>
                         </div>
@@ -28,7 +29,7 @@
                             <img class="d-inline-block w-100 img-carousel-style" alt="slide 2"  src="{% static 'img/site_pro1200.webp' %}">
                             <div class="carousel-caption carousel-caption-center">
                                 <h3 class="mg-md caroutext">
-                                    Sur mesure, autonome et sécurisé
+                                    {% trans 'Customized, autonomous, efficient' %}
                                 </h3>
                             </div>
                         </div>
@@ -36,7 +37,7 @@
                             <img class="d-inline-block w-100 img-carousel-style" alt="slide 3" src="{% static 'img/humanitarian.webp' %}">
                             <div class="carousel-caption carousel-caption-center">
                                 <h3 class="mg-md caroutext">
-                                    Tarifs jusqu&rsquo;à -50% pour un projet humanitaire ou écologique
+                                    {% trans 'Up to 50% off for humanitarian or ecological projects' %}
                                 </h3>
                             </div>
                         </div>

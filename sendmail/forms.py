@@ -11,7 +11,7 @@ class ContactForm(forms.Form):
     subject = forms.ChoiceField(
         label="Sujet",
         choices=(
-            ("No", "Choisissez..."), ("Perso", "Renseignements site perso"), ("Pro", "Renseignements site pro"),
+            ("No", "..."), ("Perso", "Renseignements site perso"), ("Pro", "Renseignements site pro"),
             ("Tech", "Question technique"), ("Autre", "Autre"))
     )
     message = forms.CharField(

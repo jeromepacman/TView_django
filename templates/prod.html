@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}TView | Prod et services{% endblock %}
+{% load i18n %}
+{% block title %}TView | Prod - services{% endblock %}
 {% block content %}
 <!-- bloc-perso-shop -->
 <div class="bloc l-bloc" id="bloc-perso-shop">
@@ -18,12 +19,12 @@
 						</div>
 						<div class="card-body">
 							<h5 class="text-lg-center tc-5984 text-center mx-auto d-block">
-								Portfolio<br><br>Formulaire de contact<br><br>Blog<br><br>Edition de contenu
+								Portfolio<br><br>{% trans 'Contact form' %}<br><br>Blog<br><br>CMS
 							</h5>
 						</div>
 						<div class="card-footer bgc-1000">
 							<h4 class="mg-clear text-center tc-4279">
-								A partir de 350€
+								{% trans 'From 350€' %}
 							</h4>
 						</div>
 					</div>
@@ -32,17 +33,17 @@
 					<div class="card">
 						<div class="card-header bgc-6402">
 							<h3 class="mg-clear mx-auto d-block tc-4279">
-								Shop en ligne<br>
+								{% trans 'Online store' %}<br>
 							</h3>
 						</div>
 						<div class="card-body">
 							<h5 class="tc-5984 mx-auto d-block text-lg-center">
-								Base de données<br><br>Administration<br><br>Paiements multiples<br><br>Sécurité et perf avancées
+								{% trans 'Database' %}<br><br>Administration<br><br>{% trans 'Payments gateway' %}<br><br>{% trans 'Safety and performance' %}
 							</h5>
 						</div>
 						<div class="card-footer bgc-6402">
 							<h4 class="mg-clear mx-auto d-block text-lg-center tc-4279">
-								A partir de 1600€
+								{% trans 'From 1600€' %}
 							</h4>
 						</div>
 					</div>
@@ -68,12 +69,12 @@
 						</div>
 						<div class="card-body">
 							<h5 class="tc-5984 text-lg-center text-center">
-								Site internet / intranet<br><br>Applications diverses<br><br>API, Web3<br><br>Perf et sécurité optimales
+								Internet / intranet<br><br>{% trans 'Various apps' %}<br><br>API<br><br>Web3
 							</h5>
 						</div>
 						<div class="card-footer bgc-2861">
 							<h4 class="mg-clear text-lg-center text-center tc-4279">
-								Sur devis
+								{% trans 'On quotation' %}
 							</h4>
 						</div>
 					</div>

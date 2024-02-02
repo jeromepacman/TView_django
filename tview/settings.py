@@ -1,21 +1,20 @@
 import environ
 import os
 from pathlib import Path
+from django.utils.translation import gettext_lazy as _
 
 
 env = environ.Env(
     # set casting, default value
     DEBUG=(bool, False)
 )
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 environ.Env.read_env()
 
 SECRET_KEY = env('SECRET_KEY')
-
-DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'tview.fr']
 
@@ -28,20 +27,20 @@ AUTH_USER_MODEL = 'account.User'
 
 INSTALLED_APPS = [
 
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
-
 
     'crispy_forms',
     'crispy_bootstrap5',
     'pages.apps.PagesConfig',
     'sendmail.apps.SendmailConfig',
     'account.apps.AccountConfig',
+    'rosetta',
 ]
 
 MIDDLEWARE = [
@@ -103,7 +102,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-LANGUAGE_CODE = 'fr-fr'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'UTC'
 
@@ -111,9 +110,15 @@ USE_TZ = True
 
 USE_I18N = True
 
+USE_L10N = True
+
 LANGUAGES = [
- ("en", "English"),
- ("fr", "Français"),
+ ("en", _("English")),
+ ("fr", _("French")),
+]
+
+LOCALE_PATHS = [
+    BASE_DIR / "locale",
 ]
 
 STATICFILES_DIRS = [
@@ -124,7 +129,12 @@ STATIC_URL = 'static/'
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STORAGES = {
+    # ...
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
 
 WHITENOISE_KEEP_ONLY_HASHED_FILES = True
 

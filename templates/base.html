@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <!doctype html>
 <html lang="fr" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -22,8 +23,8 @@
     <meta property="og:image" content="https://tview.fr/static/img/card.jpg"/>
     <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
     <link rel="apple-touch-icon" href="{% static 'img/apple-touch-icon.png' %}">
-    <link rel="preload" href="{% static 'fonts/lato-v17-latin-regular.woff2' %}" as="font" type="font/woff2">
-    <link rel="preload" href="{% static 'fonts/inter-v3-latin-regular.woff2' %}" as="font" type="font/woff2">
+    <link rel="preload" href="{% static 'fonts/lato-v17-latin-regular.woff2' %}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{% static 'fonts/inter-v3-latin-regular.woff2' %}" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/animate.min.css' %}">
@@ -47,7 +48,7 @@
                     </div>
                     <div class="col-12">
 				        <h2 class="h2-style text-lg-center text-center mx-auto mt-md-3 tc-5322 h2-xs mt-lg-3">
-							Création de sites et applications web
+							{% trans 'Sites and applications web creation' %}
 						</h2>
 					</div>
                     <div class="col text-center col-12 mt-3">

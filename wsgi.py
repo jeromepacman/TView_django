@@ -1,5 +1,4 @@
-import os
-import sys
+import os,sys
 
 venv = os.path.expanduser('~') + '/venv/'
 virtualenv = os.path.join(venv, 'bin/activate_this.py')
@@ -9,15 +8,15 @@ try:
         exec(compile(open(virtualenv, "rb").read(), virtualenv, 'exec'), dict(__file__=virtualenv))
     else:
         execfile(virtualenv, dict(__file__=virtualenv))
-    except IOError:
+except IOError:
     pass
 
-    sys.path.append(os.path.expanduser('~'))
-    sys.path.append(os.path.expanduser('~') + '/ROOT/')
+sys.path.append(os.path.expanduser('~'))
+sys.path.append(os.path.expanduser('~') + '/ROOT/')
 
-    os.environ['DJANGO_SETTINGS_MODULE'] = 'ROOT.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'ROOT.tview.settings'
 
+from django.core.wsgi import get_wsgi_application
+application = get_wsgi_application()
 
-    from django.core.wsgi import get_wsgi_application
-        application = get_wsgi_application()
 

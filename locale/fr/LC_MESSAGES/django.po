@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-02 07:18+0100\n"
-"PO-Revision-Date: 2024-02-02 07:36+0000\n"
+"PO-Revision-Date: 2024-02-07 02:02+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -167,11 +167,11 @@ msgstr "Des sites tels "
 
 #: templates/home.html:330
 msgid " or "
-msgstr "ou "
+msgstr " ou "
 
 #: templates/home.html:332
 msgid "have been built using these tools."
-msgstr " ont été construits avec outils."
+msgstr " ont été construits avec ces outils."
 
 #: templates/home.html:364
 msgid ""
@@ -779,7 +779,7 @@ msgid "(Hidden field %(name)s) %(error)s"
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/forms/formsets.py:63
-#, python-format
+#, python-format, fuzzy
 msgid ""
 "ManagementForm data is missing or has been tampered with. Missing fields: "
 "%(field_names)s. You may need to file a bug report if the issue persists."

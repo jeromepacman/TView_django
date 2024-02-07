@@ -1,5 +1,5 @@
-{% load static %}
 {% load i18n %}
+{% load static %}
 <!doctype html>
 <html lang="fr" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -90,8 +90,7 @@
                                     <a href="{% url 'sendmail:sendmail' %}" data-active-page="active"
                       					class="nav-link ltc-5322">Contact</a>
                                   </li>
-                                  <!--<li class="nav-item">
-                                    <a href= {% url 'pages:home' %}" class="btn btn-md">lang</a>
+                                  <!--<li class="nav-item"
                                     </li> -->
                             	</ul>
                          </div>
@@ -101,13 +100,12 @@
          </div>
      </div>
   </div>
-
+  <!-- bloc-nav -->}
     <!-- block -->
   <main>
     {% block content %}
     {% endblock content %}
   </main>
-
   <footer>
         <div class="bloc none bg-tr-edge full-width-bloc d-bloc"
              style="background-image: url({% static 'img/backhead.webp' %});" id="footer">

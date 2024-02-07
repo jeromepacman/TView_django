@@ -11,12 +11,10 @@ env = environ.Env(
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 environ.Env.read_env()
-
+DEBUG = True
 SECRET_KEY = env('SECRET_KEY')
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'tview.fr']
-
-SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+ALLOWED_HOSTS = ['tview.fr', '127.0.0.1', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = ["https://tview.fr"]
 

@@ -1,5 +1,5 @@
-import environ
 import os
+import environ
 from pathlib import Path
 from django.utils.translation import gettext_lazy as _
 
@@ -11,9 +11,9 @@ env = environ.Env(
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 environ.Env.read_env()
-DEBUG = True
-SECRET_KEY = env('SECRET_KEY')
 
+SECRET_KEY = env('SECRET_KEY')
+DEBUG = True
 ALLOWED_HOSTS = ['tview.fr', '127.0.0.1', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = ["https://tview.fr"]

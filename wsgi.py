@@ -1,7 +1,8 @@
-import os,sys
+import os
+import sys
 
-venv = os.path.expanduser('~') + '/venv/'
-virtualenv = os.path.join(venv, 'bin/activate_this.py')
+virtenv = os.path.expanduser('~') + '/virtenv/'
+virtualenv = os.path.join(virtenv, 'bin/activate_this.py')
 
 try:
     if sys.version.split(' ')[0].split('.')[0] == '3':

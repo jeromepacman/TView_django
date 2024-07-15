@@ -1,13 +1,15 @@
+from crispy_forms import helper
 from django import forms
 from django_recaptcha.fields import ReCaptchaField
 from crispy_forms.helper import FormHelper
+from django.utils.translation import gettext_lazy as _
 
 
 class ContactForm(forms.Form):
 
     email = forms.EmailField(
         label="Email",
-        max_length=100
+        max_length=50
     )
     subject = forms.ChoiceField(
         label="Sujet",
@@ -27,3 +29,5 @@ class ContactForm(forms.Form):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper()
+        helper.form_class = 'form-horizontal'
+        helper.label_class = ''

@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load i18n %}
 {% load static %}
 {% block title %} TView | Infos {% endblock %}
 {% block content %}
@@ -7,99 +8,120 @@
         <div class="bloc-shape-divider bloc-divider-bottom">
             <svg class="svg-divider bloc-divider-b-style" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250"><path style="opacity: 0.3;" d="M1000,250H0V60L500,165,1000,60V250Z"></path><path style="opacity: 0.3;" d="M1000,250H0V100l500,66,500-66V250Z"></path><path style="opacity: 0.3;" d="M1000,250H0V140l500,27,500-27V250Z"></path><path d="M1000,250H0V190l500-23,500,23v60Z"></path></svg>
         </div>
-        <div class="container bloc-lg bloc-md-lg">
+        <div class="container bloc-md bloc-sm-lg">
             <div class="row">
                 <div class="text-center col text-md-center">
-                        <h3 class="mg-md text-lg-center mx-auto d-block text-md-center">
-                            Tarifs
-                        </h3>
+                        <h2 class="mg-md text-lg-center mx-auto d-block text-md-center tc-4279">
+                            {% trans 'Prices' %}
+                        </h2>
                         <p class="text-lg-center mx-auto d-block text-md-center">
-                            Paiement unique ou mensualités. Vous êtes propriétaire de votre site.<br>Les tarifs comprennent le nom de domaine, la mise en place et le déploiement de votre serveur sur internet.<br>Des frais d&rsquo;hébergement sont applicables chaque année qui correspondent moyennement à 10% du prix d&rsquo;achat.<br>
-                            (Offerts la première année)<br>
+                            {% trans 'Single or monthly payments. You own your site. Prices include domain name, site construction and web deployment.' %}<br><br>
+                            {% trans 'Development coasts:' %}<br>
+                            {% trans 'With a standard CMS solution, you or your "developer" often need to purchase custom themes and plugins to achieve the desire functionality and design.' %}<br>
+                            {% trans 'This can quickly add up in terms of licensing fees.' %}<br>
+                            {% trans 'In contrast, our Python-coded websites are built from the ground up using Django as the main framework with few other tools. This allow us to create' %}<br>
+                            {% trans 'a tailored solution that is easy to maintain and easy to use, without the need for costly add-ons that you often have to subscribe to on a monthly basis.' %}<br>
+                            {% trans 'The development process is more about writing natively than relying on a patchwork of plugins.' %}
                         </p>
                     </div>
                 </div>
             <div class="row">
                     <div class="col text-center text-md-center">
-                        <h3 class="mg-md text-lg-center mx-auto d-block text-md-center">
-                            Assistance &amp; maintenance
-                        </h3>
+                        <h2 class="mg-md text-lg-center mx-auto d-block text-md-center tc-4279">
+                            {% trans 'Support and maintenance' %}
+                        </h2>
                         <p class="text-lg-center text-md-center mx-auto d-block">
-                            &nbsp;L&rsquo;assistance est gratuite les 3 premiers mois, selon l'urgence et votre formule.<br>Dans les autres cas, elle peut être facturée tout comme la maintenance.<br>
-                             Prenez contact pour plus de détails<br>
+                            {% trans 'Support is free for the first month and up to 2 additional months for complex or particular configurations.' %}<br>
+                            {% trans 'In all other cases, it is invoiced according to the intervention, needs, time and assistance provided.' %}<br>
+                            {% trans 'Contact us for more information.' %}<br><br>
+                            {% trans 'Websites are built with safety as a core focus. There is no need for constant security updates or plugin maintenance,' %}<br>
+                            {% trans 'allowing you to focus on growing your business instead of worrying about costs and technical aspects of your website.' %}<br>
+                            {% trans 'Being hosted on your own space with no shared ressources means performance and autonomy.' %}<br>
+                            {% trans 'We can (optionally) duplicate your environment up to 4 times for simultaneous and instantaneous distribution on different continents to serve file locally.' %}<br>
+                            {% trans 'A clone can also take over in the event of a server or network failure. You are truly online 24/24.'%}
                         </p>
                     </div>
             <div class="row">
                     <div class="col text-center text-md-center">
-                        <h3 class="mg-md text-lg-center">
-                            Gestion de contenu
-                        </h3>
+                        <h2 class="mg-md text-lg-center mx-auto d-block text-md-center tc-4279">
+                            {% trans 'Content management' %}
+                        </h2>
                         <p class="text-lg-center">
-                            La plupart des formules vous offrent la possibilité de faire vos propres modifications de manière simple.<br>Vous pouvez y accéder directement depuis votre site web et par l&rsquo;intermédiaire d'une interface administrateur. <br>Cette dernière permet aussi de gérer les droits accordés aux membres, utilisateurs, staff, etc<br>
+                            {% trans 'Most of our configurations allow you to make your own modifications and updates on site with ease.' %}<br>
+                            {% trans 'You can access them directly from your website, via a personalized administrator interface.' %}<br>
                         </p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col text-center text-md-center">
-                        <h3 class="mg-md text-lg-center">
-                            Options
-                        </h3>
+                        <h2 class="mg-md text-lg-center tc-4279">
+                            {% trans 'Options' %}
+                        </h2>
                         <p class="text-lg-center">
-                            Toute formule peut être enrichie par diverses applications et autres algorithmes, établis sur devis.<br>La liste des fonctionnalités mentionnées sur chaque formule est donnée à titre indicatif.<br>
-                            Les prix sont évalués en fonction des considérations techniques.<br>
-                            <b>Pas de calcul 'taux horaire' = pas de mauvaise surprise.</b><br><b>C'est la passion avant tout chez TView 🙂</b>
+                            {% trans 'The list of functions given in the formulas is indicative only. Any configuration can be enhanced with various options.' %}<br>
+                            {% trans 'Prices are set in advance, based on project evaluation and technical considerations.' %}<br>
+                            {% trans 'No calculation of "hourly rate" = no unpleasant surprises.' %}
                         </p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col text-center text-md-center">
-                        <h3 class="mg-md text-lg-center">
-                            Sur mesure
-                        </h3>
+                        <h2 class="mg-md text-lg-center tc-4279">
+                            {% trans 'Custom-made websites' %}
+                        </h2>
                         <p class="text-lg-center">
-                            Un site sur mesure est un site indépendant qui possède son propre code, il est écrit et construit sur mesure.<br>Cela vous confère une évolutivité large et la garantie de son originalité.<br>Le site n&rsquo;est pas fait à base de 'plug-ins&rsquo; et ne partage pas de ressources avec d&rsquo;autres sites web.<br>La sécurité en est d&rsquo;autant renforcée.<br>
+                            {% trans 'Custom-coded websites are websites that have their own code written and built independently.' %}<br>
+                            {% trans 'Security, manageability, scalability and, of course, originality are its main assets.' %}
                         </p>
                 </div>
                 <div class="row">
                     <div class="col text-center text-md-center">
-                        <h3 class="mg-md text-lg-center">
-                            Autres formules
-                        </h3>
+                        <h2 class="mg-md text-lg-center tc-4279">
+                            {% trans 'The SEO myth' %}
+                        </h2>
                         <p class="text-lg-center">
-                            A l&rsquo;exception de la catégorie 'pro', les sites peuvent être élaborés sur une base classique en PHP<br>avec Wordpress<br>
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col text-center text-md-center">
-                        <h3 class="mg-md text-lg-center">
-                            Le mythe ‘SEO'
-                        </h3>
-                        <p class="text-lg-center">
-                            Si vous êtes dans l&rsquo;objectif d'acquérir votre site web, vous avez probablement entendu parler de <a href="https://www.seo.fr/definition/seo-definition" rel="nofollow noopener noreferrer" target="_blank">SEO</a> et vous en êtes peut-être déjà soucieux.<br>Le référencement web est abordé comme un vaste sujet qui demande des compétences particulières souvent coûteuses pour le client.<br>Du moins, c&rsquo;est comme ça qu&rsquo;on &nbsp;le présente la plupart du temps.<br>Etre bien référencé est un point important pour la visibilité de votre site et vous auriez raison de vous en préoccuper.<br>Cependant, il y a beaucoup de mythes autour de ce sujet car ll n&rsquo;existe tout simplement aucune méthode ‘miracle&rsquo; pour être bien référencé.<br>Les algorithmes qui évaluent les contenus web sont aujourd&rsquo;hui très intelligents et en perpétuel développement.<br>Vous ne les bernerez pas en surchargeant vos contenus de scripts, de plugins ou de toutes sortes de combines, bien au contraire.<br>En revanche, un code bien écrit et concis qui respecte les bonnes pratiques couplé à un contenu pertinent au rendu optimisé ainsi qu&rsquo;un hébergement performant vous apporteront les qualités nécessaires à un bon référencement.<br><br>Notez que les robots indexeurs évaluent &nbsp;la façon dont le site se charge de l&rsquo;expérience utilisateur. C&rsquo;est le point fondamental.<br>Il est donc futile de dépenser des sommes conséquentes qui se justifieraient par des pratiques fondées sur des hypothèses.<br>
+                            {% trans "If you're in the process of acquiring your website, you've probably heard of" %} <a href="https://www.seo.fr/definition/seo-definition" rel="nofollow noopener noreferrer" target="_blank">SEO</a> {% trans "and are already concerned about it" %}.<br>
+                            {% trans "Being well referenced is essential for your site’s visibility, and you’re right to be concerned." %}<br>
+                            {% trans 'Search engine optimization (SEO) is seen as a vast subject that required special, often costly, skills,' %}<br>
+                            {% trans 'in order to achieve visibility on the web and natural ranking supported by Google.' %}<br>
+                            {% trans "At least, that's how it's usually presented." %}<br><br>
+                            {% trans "However, there are a lot of myths surrounding this subject, because there's simply no magic method for getting good." %}<br>
+                            {% trans "Today's algorithms for evaluating web content are very smart and in constant development," %}<br>
+                            {% trans "You won't fool them by overloading your content with scripts, plugins and other tricks designed to simulate traffic - quite the opposite." %}<br><br>
+                            {% trans "On the other hand, a well-written and concise code that respects best practices, coupled with relevant content and optimized rendering" %}<br>
+                            {% trans "will provide you with the essential qualities needed for good SEO." %}<br>
+                            {% trans "What's analyzed is how your site handles the user experience" %}<br>
+                            {% trans 'This is the fundamental point' %}<br>
+                            {% trans "It is therefore futile to spend large sums of money on practices based on assumptions.." %}<br><br>
+                            {% trans "Here, the site has an SEO success rate of over 90%. You can verify this with the performance test at the bottom of the page." %}
                         </p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col text-center">
-                        <h3 class="mg-md text-lg-center">
-                            Tarifs spéciaux pour sites non-commerciaux
-                        </h3>
+                        <h2 class="mg-md text-lg-center tc-4279">
+                            {% trans 'Special rates for non-commercial projects' %}
+                        </h2>
                         <p class="text-lg-center ">
-                            Nous sommes dans une époque où de gros sites internet sont devenus des aspirateurs de données qui analysent <br>tous vos faits et gestes afin s&rsquo;en servir pour mieux satisfaire leurs annonceurs. <a href="https://www.cnil.fr/fr/definition/big-data" rel="nofollow noopener noreferrer" target="_blank">‘Big data</a>&rsquo; , si la technologie est innovante, la dérive peut être dangereuse. <br>Nous nous devons de préserver la qualité du web en favorisant les initiatives humanitaires et écologiques, et par là même, celle de nos vies et de la planète.<br>
+                            {% trans "We're living in an age where big websites have become data vacuum cleaners, analyzing every move" %}<br>
+                            {% trans "to better satisfy their advertisers" %},<br><a href="https://www.cnil.fr/fr/definition/big-data" rel="nofollow noopener noreferrer" target="_blank">Big data</a> {% trans "may be an innovative technology, but it can also be a dangerous one." %}<br>
+                            {% trans "Tview is committed to spreading quality on the web by promoting humanitarian, innovative and public-interest initiatives" %}.<br>
                         </p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col text-center">
-                        <h3 class="mg-md text-lg-center">
-                            Informations complémentaires
-                        </h3>
+                        <h2 class="mg-md text-lg-center tc-4279">
+                            {% trans 'Additional information' %}
+                        </h2>
                         <p class="text-lg-center">
 
                             Siret 43315698100063<br>
-                            Titre professionnel web de niveau 5.<br>
-                            <a href="https://pagespeed.web.dev/report?url=https%3A%2F%2Ftview.fr%2F" rel="nofollow noopener noreferrer" target="_blank">Performances du site</a><br><a href="https://www.ssllabs.com/ssltest/analyze.html?viaform=on&d=tview.fr" rel="nofollow noopener noreferrer" target="_blank">Sécurité A+</a><br>
+                            Titre professionnel web de niveau 5<br>
+                            <style>
+                                
+                            </style>
+                            <a href="https://pagespeed.web.dev/report?url=https://tview.fr" rel="nofollow noopener noreferrer" target="_blank"><h5>{% trans 'website performance' %}</h5></a><a href="https://www.ssllabs.com/ssltest/analyze.html?viaform=on&d=tview.fr" rel="nofollow noopener noreferrer" target="_blank"><h5>{% trans 'Security' %} SSL A+</h5></a><br>
                         </p>
                     </div>
                 </div>

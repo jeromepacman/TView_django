@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
-{% load static %}
 {% load i18n %}
+{% load static %}
 {% block content %}
     {% include 'carousel.html' %}
     <!-- args0 -->
     <div class="bloc none bgc-2845 tc-5322 d-bloc" id="args0">
         <div class="container bloc-sm bloc-md-lg bloc-no-padding-sm">
-            <div class="row nonein">
-                <div class="col-md-4 col-lg-4 col-12 nonein mt-sn-3 align-self-center">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-12 mt-sn-3 align-self-center">
                     <h4 class="text-lg-start args0 mg-sm mx-auto d-block h4-style">
                         {% trans 'Content management made easy' %}
                     </h4>
@@ -25,10 +25,10 @@
                 </div>
                 <div class="col-md-4 col-12 align-self-center">
                     <h4 class="args0 mx-auto d-block mg-sm">
-                        {% trans 'Professional pack for demanding project' %}
+                        {% trans 'Seamless experience' %}
                     </h4>
                     <p class="mg-md mx-auto d-block">
-                        {% trans '100% customized, native Python code, versatile' %}
+                        {% trans 'responsive, native code, SEO-compliant' %}
                     </p>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                              data-title-margin="20" data-title-background="transparent" data-desc-color="#FEFFFF"
                              data-button-color="#FEFFFF" data-button-label="" data-label-dark="0"
                              data-height-short="1" data-hover-shadow="false" data-hover-zoom="None"
-                             data-shadow-size="Large" data-title-fx="Very Subtle" data-typeface="Helvetica"
+                             data-shadow-size="Large" data-title-fx="Very Subtle" data-typeface="Lato"
                              data-fpo-index="0" data-fpo-lock="0" data-rule="0" data-rule-width="50"
                              data-rule-spacing="10" data-rule-weight="1" data-rule-color="#FEFFFF"
                              data-border-width="0" data-border-color="#555555" data-progress-index="0"
@@ -94,7 +94,7 @@
                                                     <img class="custom-bric-img-item cover preview center"
                                                          src="{% static 'img/persosite.webp' %}" width="100%"
                                                          height="400"
-                                                         data-kb-effect="Pan Right" data-filter="0" alt="perso">
+                                                         data-kb-effect="Push" data-filter="0" alt="perso">
                                                 </div>
                                             </div>
                                             <div class="swiper-pagination swiper-pagination1"></div>
@@ -104,8 +104,8 @@
 
 
                                                 <h2 class="cd-title"
-                                                    style="font-size: 40px; margin-left: 0; margin-bottom: 20px; font-family: Lato-		@															Regular,serif;">
-                                                    <a style="color: rgb(255, 255, 255); background-color: transparent; line-height: 40px; 															font-family: Lato-Regular,serif;"
+                                                    style="font-size: 40px; margin-left: 0; margin-bottom: 20px; font-family: LatoRegular,serif;">
+                                                    <a style="color: rgb(255, 255, 255); background-color: transparent; line-height: 40px; font-family: Lato-Regular,serif;"
                                                        target="_self" aria-disabled="true"
                                                        href="{% url 'pages:prod' %}"><span
                                                             style="color: rgb(254, 255, 255);">Perso</span></a>
@@ -135,7 +135,7 @@
                              data-title-margin="20" data-title-background="transparent" data-desc-color="#FEFFFF"
                              data-button-color="#FEFFFF" data-button-label="" data-label-dark="0"
                              data-height-short="1" data-hover-shadow="false" data-hover-zoom="None"
-                             data-shadow-size="Large" data-title-fx="Very Subtle" data-typeface="Helvetica"
+                             data-shadow-size="Large" data-title-fx="Very Subtle" data-typeface="Lato"
                              data-fpo-index="0" data-fpo-lock="0" data-rule="0" data-rule-width="50"
                              data-rule-spacing="10" data-rule-weight="1" data-rule-color="#FEFFFF"
                              data-border-width="0" data-border-color="#555555" data-progress-index="0"
@@ -150,10 +150,10 @@
                                         <div class="cd-swiper-container swiper1 static-pos">
                                             <div class="cd-swiper-wrapper">
                                                 <div class="cd-swiper-slide" data-swiper-autoplay="6000">
-                                                    <img class="custom-bric-img-item cover preview center"
+                                                    <img class="custom-bric-img-item cover preview right"
                                                          src="{% static 'img/e-commerce.webp' %}" width="100%"
                                                          height="400"
-                                                         data-kb-effect="Pull" data-filter="0" alt="boutique">
+                                                         data-kb-effect="none" data-filter="0" alt="shop">
                                                 </div>
                                             </div>
                                             <div class="swiper-pagination swiper-pagination1"></div>
@@ -195,7 +195,7 @@
                              data-title-margin="20" data-title-background="transparent" data-desc-color="#FEFFFF"
                              data-button-color="#FEFFFF" data-button-label="" data-label-dark="0"
                              data-height-short="1" data-hover-shadow="false" data-hover-zoom="None"
-                             data-shadow-size="Large" data-title-fx="Very Subtle" data-typeface="Helvetica"
+                             data-shadow-size="Large" data-title-fx="Very Subtle" data-typeface="Lato"
                              data-fpo-index="0" data-fpo-lock="0" data-rule="0" data-rule-width="50"
                              data-rule-spacing="10" data-rule-weight="1" data-rule-color="#FEFFFF"
                              data-border-width="0" data-border-color="#555555" data-progress-index="0"
@@ -260,12 +260,12 @@
                     <div class="col-lg-4 col-md-8 offset-md-2 offset-lg-0">
                         <img src="{% static 'img/responsive.webp' %}"
                              class="img-fluid img-protected img-responsi-style mx-auto d-block none rounded mb-4"
-                             alt="responsive">
+                             alt="optimisation">
                         <h3 class="args1 text-lg-start mx-auto d-block">
-                            Optimisation
+                            {% trans 'Flexibility' %}
                         </h3>
                         <p class="mg-lg float-lg-none">
-                            {% trans 'All sites are designed for optimal viewing on all media devices.' %}
+                            {% trans 'Scalable and reliable, high performance website' %}
                         </p>
                     </div>
                     <div class="col-lg-4 animSpeedLazy col-md-8 offset-md-2 offset-lg-0">
@@ -276,8 +276,7 @@
                             {% trans 'Safety' %}
                         </h3>
                         <p class="mg-lg float-lg-none">
-                            {% trans 'Secured site, on its own cloud, with no resource sharing.' %}&nbsp;<a
-                                class="ltc-1000 float-lg-none" href="{% url 'pages:infos' %}">{% trans 'Find out more' %}</a>
+                            {% trans 'Site with inherent security, no worry' %}
                         </p>
                     </div>
                     <div class="none col-md-8 offset-md-2 offset-lg-0 col-lg-4">
@@ -285,12 +284,10 @@
                              class="img-fluid img-protected img-responsi-style mx-auto d-block mg-md none rounded"
                              alt="responsive">
                         <h3 class="text-lg-start args1 text-lg-start mx-auto d-block">
-                            Assistance
+                            {% trans 'Autonomy' %}
                         </h3>
                         <p class="float-lg-none mg-lg">
-                            {% trans 'After-purchase assistance, whatever your package.' %} &nbsp;<a
-                                class="ltc-1000" href="{% url 'pages:infos' %}">{% trans ' terms and conditions' %}</a>
-                        </p>
+                            {% trans 'Dedicated server, hosted on its own cloud.' %}
                     </div>
                 </div>
             </div>
@@ -308,11 +305,10 @@
                 </div>
                 <div class="text-lg-start offset-lg-0 col-lg-5 col-md-12 col-sm-12">
                     <h5 class="tc-5322 text-start mg-clear float-lg-none text-lg-start none h5-style" id="-">
-                        {% trans "TView's websites are written in Python language. The design and visual rendering are produced using standard web tools." %} 
-                        {% trans "The sites are not built by assembling modules and plugins, but are developed natively, based on their own unique code." %}<br>
-                        {% trans "There are no security updates to be made throughout the year. It's a one-off thing." %}
-                        {% trans "The security of a Python environment is nothing like the underlying vulnerability" %}
-                        {% trans "of many of the turnkey solutions on the market, sometimes at exorbitant prices." %}<br><br>
+                        {% trans "The robustness of a Python environment is nothing like the underlying vulnerability" %}
+                        {% trans "of many of the turnkey solutions that rely on a patchwork of modules and plugins." %} 
+                        {% trans "Without ongoing security updates, Tview sites give you peace of mind and long-term saving." %}
+                        <br><br>
                     </h5>
                 </div>
                 <div class="offset-lg-2 col-lg-2 col-md-12 col-sm-12 align-self-center text-lg-center">
@@ -323,12 +319,14 @@
                 <div class="align-self-center col-lg-5 col-md-12 col-sm-12">
                     <h5 class="text-start float-none mg-clear none tc-5322 h5-style">
                         {% trans "Python is a simple, precise and reliable language. It is particularly appreciated for its robustness." %}
-                        {% trans "Django is a toolbox dedicated to web development with a reputation for being efficient and versatile." %}<br>
-                        {% trans "Starting with a solid architecture means building an available, high-performance server with a high level of security throughout the network." %}
-                        {% trans "These are essential 'best practices' for natural referencing. It also gives you a great deal of autonomy and the potential to develop it further." %}<br/>
-                        {% trans "Sites such as" %} <a class="unstyled" href="https://www.instagram.com" rel="nofollow noopener noreferrer" 
-                                          target="_blank">Instagram</a>{% trans " or " %} <a class="unstyled" href="https://eventbrite.com" 
-                                                                              rel="nofollow noopener noreferrer" target="_blank">Evenbrite</a>
+                        {% trans "Django is a toolbox dedicated to web development renowned for its efficiency and versatility." %}<br>
+                        {% trans "Starting with a solid, Python-Django-based architecture with concise and organized code," %} 
+                        {% trans "coupled with 'best practices', is essential for natural referencing." %}<br/>
+                        {% trans "Sites such as" %} <a class="unstyled" href="https://www.instagram.com"
+                                                       rel="nofollow noopener noreferrer"
+                                                       target="_blank">Instagram </a>{% trans " or " %} <a
+                            class="unstyled" href="https://eventbrite.com"
+                            rel="nofollow noopener noreferrer" target="_blank">Evenbrite</a>
                         {% trans "have been built using these tools." %}<br><br/>
                     </h5>
                 </div>
@@ -361,11 +359,12 @@
                 </div>
                 <div class="col-lg-5 offset-lg-0 col-md-12 col-sm-12">
                     <h5 class="text-start float-none none mg-md tc-5322 h5-style">
-                        {% trans "Depending on your situation, your needs and your involvement, it is possible to set up a simple, user-friendly server with essential functions." %}<br><br>
+                        {% trans "So whether you're looking for a user-friendly website, an e-commerce solution or a feature-rich application, " %}
+                        {% trans "Tview is able to provide the ressources you need to succeed online." %}<br><br>
                     </h5>
                     <div class="text-center ">
-                        <a href="#" class="btn btn-style btn-c-5984 btn-clean" data-scroll-speed="1000"
-                           onclick="scrollToTarget('#anchor-end-button',this)">Ok</a>
+                        <a href="#bloc-services" class="btn btn-style btn-c-5984 btn-clean" data-scroll-speed="1000"
+                           onclick="scrollTo('bloc-services',this)">Ok</a>
                     </div>
                     <h1 class="mg-md">
                         <br>

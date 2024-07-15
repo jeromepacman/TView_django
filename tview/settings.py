@@ -13,8 +13,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 environ.Env.read_env()
 
 SECRET_KEY = env('SECRET_KEY')
-DEBUG = True
-ALLOWED_HOSTS = ['tview.fr', '127.0.0.1', 'localhost']
+
+ALLOWED_HOSTS = ['*']
 
 CSRF_TRUSTED_ORIGINS = ["https://tview.fr"]
 
@@ -25,7 +25,6 @@ AUTH_USER_MODEL = 'account.User'
 
 INSTALLED_APPS = [
 
-    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -129,14 +128,11 @@ STATIC_URL = 'static/'
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-STORAGES = {
-    # ...
-    "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-    },
-}
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 WHITENOISE_KEEP_ONLY_HASHED_FILES = True
+
+ROSETTA_SHOW_AT_ADMIN_PANEL = True
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"

@@ -11,8 +11,8 @@ a,button{transition: background .3s ease-in-out;outline: none!important;} /* Pre
 a:hover{text-decoration: none; cursor:pointer;}
 .scroll-fx-lock-init{position:fixed!important;top: 0;bottom: 0;left: :0;right: 0;z-index:99999;} /* ScrollFX Lock */
 .blocs-grid-container{display: grid!important;grid-template-columns: 1fr 1fr;grid-template-rows: auto auto;column-gap: 1.5rem;row-gap: 1.5rem;} /* CSS Grid */
-nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downdown Menu Link Color in Navigation */
-[data-bs-theme="dark"] nav .dropdown-menu .nav-link{color:var(--bs-dropdown-link-color)!important;} /* Maintain Downdown Menu Link Color in Navigation in Darkmode */
+nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Down down Menu Link Color in Navigation */
+[data-bs-theme="dark"] nav .dropdown-menu .nav-link{color:var(--bs-dropdown-link-color)!important;} /* Maintain Down down Menu Link Color in Navigation in Dark mode */
 
 /* = Web Fonts
 -------------------------------------------------------------- */
@@ -435,7 +435,8 @@ button{
 .card-rd .card-footer{
 	border-radius:0 0 29px 29px;
 }
-/* = Masonary
+
+/* = Card Columns
 -------------------------------------------------------------- */
 .card-columns .card {
 	margin-bottom: 0.75rem;
@@ -579,7 +580,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	height:15px;
 }
 .btn-style{
-	font-family:"Lato-Regular";
+	font-family:"Lato-Regular", sans-serif;
 	background-clip:padding-box!important;
 	-webkit-background-clip:padding-box!important;
 	width:50%;
@@ -640,7 +641,7 @@ h1{
 	background-size:auto auto;
 }
 .h1-style{
-	text-shadow:0.00px 10.00px 2px #000000,0.00px 2.00px 2px #0096FF;
+	text-shadow:0 10px 2px #000000,0 2px 2px #0096FF;
 	color:var(--swatch-var-4279)!important;
 	font-family:"Lato-Regular", sans-serif;
 	filter:grayscale(10%);
@@ -1237,9 +1238,8 @@ h1{
 }
 .fill-fx{
 	opacity:1;
-	background: linear-gradient(to left, transparent 50%, rgba(255,255,255,1) 50%);
 	background-size: 200% 100%;
-	background-position: right bottom;
+	background: linear-gradient(to left, transparent 50%, rgba(255, 255, 255, 1) 50%) right bottom;
 	transition: all ease .3s;
 }
 .fill-fx:hover{
@@ -1509,43 +1509,6 @@ h1{
     .container{width:100%;}
     .bloc{padding-left: constant(safe-area-inset-left);padding-right: constant(safe-area-inset-right);} /* iPhone X Notch Support*/
     .bloc-group, .bloc-group .bloc{display:block;width:100%;}
-}
-@media (max-width: 767px)
-{
-    .bloc-tile-2 .container, .bloc-tile-3 .container, .bloc-tile-4 .container{
-        padding-left:0;padding-right:0;
-    }
-    .btn-dwn{
-       display:none;
-    }
-    .voffset{
-        margin-top:5px;
-    }
-    .voffset-md{
-        margin-top:20px;
-    }
-    .voffset-lg{
-        margin-top:30px;
-    }
-    form{
-        padding:5px;
-    }
-    .close-lightbox{
-        display:inline-block;
-    }
-    .blocsapp-device-iphone5{
-	   background-size: 216px 425px;
-	   padding-top:60px;
-	   width:216px;
-	   height:425px;
-    }
-    .blocsapp-device-iphone5 img{
-	   width: 180px;
-	   height: 320px;
-    }
-}
-
-@media (max-width: 991px){
 
 	.bloc-divider-t-fill{
 		height:100px;
@@ -1585,7 +1548,60 @@ h1{
 
 }
 
-@media (max-width: 767px){
+
+@media (max-width: 767px)
+{
+    .bloc-tile-2 .container, .bloc-tile-3 .container, .bloc-tile-4 .container{
+        padding-left:0;padding-right:0;
+    }
+    .btn-dwn{
+       display:none;
+    }
+    .voffset{
+        margin-top:5px;
+    }
+    .voffset-md{
+        margin-top:20px;
+    }
+    .voffset-lg{
+        margin-top:30px;
+    }
+    form{
+        padding:5px;
+    }
+    .close-lightbox{
+        display:inline-block;
+    }
+    .blocsapp-device-iphone5{
+	   background-size: 216px 425px;
+	   padding-top:60px;
+	   width:216px;
+	   height:425px;
+    }
+    .blocsapp-device-iphone5 img{
+	   width: 180px;
+	   height: 320px;
+    }
+
+	.bloc-divider-t-fill{
+		height:100px;
+	}
+	.active{
+		display:flex;
+		background-size:length;
+		background-position:center center;
+		background-blend-mode:normal;
+	}
+	.args1{
+		font-family:"Lato-Regular",sans-serif;
+		font-weight:normal;
+		color:#FFFFFF!important;
+	}
+	.active:hover{
+		display:flex;
+		background-position:center center;
+	}
+
 	.caroutext{
 		font-size:25px;
 	}
@@ -1607,7 +1623,26 @@ h1{
 
 }
 
-@media (max-width: 575px){
+@media (max-width: 575px)
+{
+	.bloc-divider-t-fill{
+		height:100px;
+	}
+	.active{
+		display:flex;
+		background-size:length;
+		background-position:center center;
+		background-blend-mode:normal;
+	}
+	.args1{
+		font-family:"Lato-Regular",sans-serif;
+		font-weight:normal;
+		color:#FFFFFF!important;
+	}
+	.active:hover{
+		display:flex;
+		background-position:center center;
+	}
 	.img-logav-style{
 		width:140px;
 		height:140px;
@@ -1643,7 +1678,7 @@ h1{
 	}
 	.h2-xs{
 		background-size:cover;
-		font-size:18px;
+		font-size:16px;
 	}
 	.h1-xs{
 		font-size:2em;

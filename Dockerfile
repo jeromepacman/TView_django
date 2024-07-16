@@ -1,5 +1,4 @@
-FROM python:3.11-slim-bullseye
-
+FROM python:3.12-slim-bullseye
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
@@ -7,7 +6,7 @@ WORKDIR /app
 
 COPY requirements.txt /app/
 
-RUN apt update && apt install -y \
+RUN apt update \
     # Clean apt cache
     && apt clean && rm -rf /var/lib/apt/lists/* \
     && pip install --upgrade pip \
@@ -22,8 +21,8 @@ RUN apt update && apt install -y \
 
 COPY . /app/
 
-EXPOSE 8080
+EXPOSE 8000
 
-CMD ["gunicorn", "--bind", "0.0.0.0:8080", "tview.wsgi:application"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "tview.wsgi:application"]
 
 

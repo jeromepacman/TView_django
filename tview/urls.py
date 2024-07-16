@@ -12,4 +12,6 @@ urlpatterns = i18n_patterns(
     path('rosetta/', include('rosetta.urls')),
     path('sendmail/', include('sendmail.urls', namespace='sendmail')),
     path('', include('pages.urls', namespace='pages')),
+    path('i18n/', include('django.conf.urls.i18n')),
+    prefix_default_language=True
 )

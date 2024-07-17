@@ -1,11 +1,12 @@
+<!doctype html>
 {% load i18n %}
 {% load static %}
-<!doctype html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% trans 'TView websites' %}{% endblock %}</title>
-    <meta name="description" content="{% trans 'Creation of secure, reliable and high-performance websites and web applications' %}">
+    <meta name="description"
+          content="{% trans 'Creation of secure, reliable and high-performance websites and web applications' %}">
     <meta name="keywords"
           content="blog, chat, portfolio, shop, e-commerce, boutique, site, ligne, vitrine, perso, sur mesure, apps, web3, bot, telegram">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -20,14 +21,14 @@
     <meta property="og:title" content="TView">
     <meta property="og:description" content="{% trans 'Creation of websites and web applications' %}">
     <meta property="og:url" content="https://tview.fr/">
-    <meta property="og:image" content="https://viewcdn.sirv.com/TView_card.jpg"/>
+    <meta property="og:image" content="https://viewcdn.sirv.com/TView_card.jpg">
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
     <link rel="apple-touch-icon" href="{% static 'img/apple-touch-icon.png' %}">
     <link rel="preload" href="{% static 'fonts/lato-v17-latin-regular.woff2' %}" as="font" type="font/woff2"
           crossorigin>
     <link rel="preload" href="{% static 'fonts/inter-v3-latin-regular.woff2' %}" as="font" type="font/woff2"
           crossorigin>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" media="print" onload="this.media='all'">
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/animate.min.css' %}">
 </head>
@@ -110,6 +111,33 @@
     <!-- bloc-nav -->}
     <!-- block -->
     <main>
+    <style>
+.languages{
+text-align:right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15em 2em 0 0;
+}
+li{
+display:inline;
+text-decoration:none;
+padding:5px;
+}
+a{
+text-decoration:none;
+color:#DDAF94;
+}
+a:hover{
+color:#4F4846;
+}
+.active{
+background-color: #264561;
+padding:0;
+text-align:right;
+border-radius:5px;
+}
+</style>
         {% block content %}
         {% endblock content %}
     </main>

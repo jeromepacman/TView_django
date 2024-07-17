@@ -2,8 +2,77 @@
 {% load i18n %}
 {% load static %}
 {% block content %}
-    {% include 'lang.html' %}
-    {% include 'carousel.html' %}
+<!-- languages choice in the header -->
+{% get_current_language as CURRENT_LANGUAGE %}
+{% get_available_languages as AVAILABLE_LANGUAGES %}
+{% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
+    {% for language in languages %}
+        {% if language.code == CURRENT_LANGUAGE and language.code == 'fr' %} 
+            <a href="/en/" class="languages active">English</a>
+        {% endif %}
+        {% if language.code == CURRENT_LANGUAGE and language.code == 'en' %}
+            <a href="/fr/" class="languages active">French</a>
+        {% endif %}
+    {% endfor %}
+<!--carousel-->
+<div class="bloc none fixbg d-md-flex d-none l-bloc" style="background-image: url({% static 'img/devices.webp' %})" id="bloc-carousel">
+    <div class="container bloc-no-padding">
+        <div class="row voffset-clear-xs voffset-md g-0">
+            <div class="offset-lg-0 col-lg-12 col">
+               <div id="carousel-47952" class="carousel slide animated vanishIn mx-auto d-block carousel-fade" data-bs-ride="carousel" data-bs-interval="3000" data-appear-anim-style="vanishIn">
+                    <ul class="carousel-indicators hide-indicators">
+                        <li class="active" data-bs-target="#carousel-25764" data-bs-slide-to="0"
+                            data-target="#carousel-47952">
+                        </li>
+                        <li data-bs-target="#carousel-25764" data-bs-slide-to="1"
+                            data-target="#carousel-47952">
+                        </li>
+                        <li data-bs-target="#carousel-25764" data-bs-slide-to="2"
+                            data-target="#carousel-47952">
+                        </li>
+                    </ul>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item img-protected active">
+                            <img class="d-inline-block w-100 img-carousel-style" alt="slide 1" src="{% static 'img/siteperso.webp' %}">
+                            <div class="carousel-caption carousel-caption-center">
+                                <h3 class="mg-md caroutext">
+                                    {% trans 'A site you own' %}
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item img-protected">
+                            <img class="d-inline-block w-100 img-carousel-style" alt="slide 2"  src="{% static 'img/site_pro1200.webp' %}">
+                            <div class="carousel-caption carousel-caption-center">
+                                <h3 class="mg-md caroutext">
+                                    {% trans 'Customized and efficient' %}
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item img-protected">
+                            <img class="d-inline-block w-100 img-carousel-style" alt="slide 3" src="{% static 'img/humanitarian.webp' %}">
+                            <div class="carousel-caption carousel-caption-center">
+                                <h3 class="mg-md caroutext">
+                                    {% trans 'Up to 50% off  for humanitarian or ecological projects' %}
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bloc none fixbg d-sm-flex d-none l-bloc" style="background-image: url({% static 'img/devices.webp' %})" id="bg-carou">
+    <div class="container bloc-sm bloc-sm-sm bloc-sm-lg">
+        <div class="row">
+            <div class="col">
+                <div class="text-lg-center " id="anchor-end-button">
+				</div>
+            </div>
+        </div>
+    </div>
+</div>
+
     <!-- args0 -->
     <div class="bloc none bgc-2845 tc-5322 d-bloc" id="args0">
         <div class="container bloc-sm bloc-md-lg bloc-no-padding-sm">
@@ -37,7 +106,7 @@
     </div>
     <!-- args0 END -->
 
-    <!-- bloc-6 -->
+    <!-- bloc-services -->
     <div class="bloc none bgc-3319 d-bloc" id="bloc-services">
         <div class="bloc-shape-divider bloc-divider-top">
             <svg class="svg-divider bloc-divider-t-bloc-6-fill" fill-rule="evenodd" preserveAspectRatio="none"
@@ -57,6 +126,7 @@
                 <path d="M1000,250H0V190l500-23,500,23v60Z"></path>
             </svg>
         </div>
+        
         <div class="container bloc-md-lg bloc-sm">
             <div class=" row noce animSpeedFast">
                 <div class="text-center offset-md-2 col-md-8 offset-sm-2 col-sm-8 offset-lg-0 col-lg-4 text-md-start">
@@ -277,7 +347,7 @@
                             {% trans 'Safety' %}
                         </h3>
                         <p class="mg-lg float-lg-none">
-                            {% trans 'Site with inherent security, no worry' %}
+                            {% trans 'Site has inherent security, no worry' %}
                         </p>
                     </div>
                     <div class="none col-md-8 offset-md-2 offset-lg-0 col-lg-4">
@@ -288,7 +358,7 @@
                             {% trans 'Autonomy' %}
                         </h3>
                         <p class="float-lg-none mg-lg">
-                            {% trans 'Dedicated server, hosted on its own cloud.' %}
+                            {% trans 'Dedicated server, hosted on its cloud.' %}
                     </div>
                 </div>
             </div>
@@ -308,7 +378,7 @@
                     <h5 class="tc-5322 text-start mg-clear float-lg-none text-lg-start none h5-style" id="-">
                         {% trans "The robustness of a Python environment is nothing like the underlying vulnerability" %}
                         {% trans "of many of the turnkey solutions that rely on a patchwork of modules and plugins." %} 
-                        {% trans "Without ongoing security updates, Tview sites give you peace of mind and long-term saving." %}
+                        {% trans "No ongoing security updates means peace of mind and long-term savings." %}
                         <br><br>
                     </h5>
                 </div>
@@ -321,7 +391,7 @@
                     <h5 class="text-start float-none mg-clear none tc-5322 h5-style">
                         {% trans "Python is a simple, precise and reliable language. It is particularly appreciated for its robustness." %}
                         {% trans "Django is a toolbox dedicated to web development renowned for its efficiency and versatility." %}<br>
-                        {% trans "Starting with a solid, Python-Django-based architecture with concise and organized code," %} 
+                        {% trans "Starting with a solid architecture with concise and organized code," %} 
                         {% trans "coupled with 'best practices', is essential for natural referencing." %}<br/>
                         {% trans "Sites such as" %} <a class="unstyled" href="https://www.instagram.com"
                                                        rel="nofollow noopener noreferrer"

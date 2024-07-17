@@ -1,33 +1,36 @@
-from crispy_forms import helper
 from django import forms
 from django_recaptcha.fields import ReCaptchaField
-from crispy_forms.helper import FormHelper
 from django.utils.translation import gettext_lazy as _
+from crispy_forms.helper import FormHelper
 
 
 class ContactForm(forms.Form):
-
     email = forms.EmailField(
-        label="Email",
+        label=_("Email"),
         max_length=50
     )
     subject = forms.ChoiceField(
-        label="Sujet",
+        label=_("Subject"),
         choices=(
-            ("No", "..."), ("Perso", "Renseignements site perso"), ("Pro", "Renseignements site pro"),
-            ("Tech", "Question technique"), ("Autre", "Autre"))
+            ("No", _("...")),
+            ("Perso", _("About personal site")),
+            ("Pro", _("About pro site")),
+            ("Tech", _("Technical issue")),
+            ("Other", _("Other"))
+        )
     )
     message = forms.CharField(
-        label="Message",
-        widget=forms.Textarea()
+        label=_("Message"),
+        widget=forms.Textarea(attrs={'rows': '5', 'cols': '40'})
     )
     checkbox = forms.BooleanField(
-        label="Vos informations restent confidentielles et conservées en format crypté, no spam"
+        label=_("I agree to share my information on the contact form for Tview only"),
+        widget=forms.CheckboxInput()
     )
     captcha = ReCaptchaField()
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper()
-        helper.form_class = 'form-horizontal'
-        helper.label_class = ''
+        self.helper.form_class = 'form-horizontal'
+        self.helper.label_class = ''

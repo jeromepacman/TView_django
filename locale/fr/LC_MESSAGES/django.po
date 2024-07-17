@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-15 13:11+0000\n"
-"PO-Revision-Date: 2024-07-15 23:07+0000\n"
+"POT-Creation-Date: 2024-07-17 05:51+0200\n"
+"PO-Revision-Date: 2024-07-17 04:01+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,88 +19,141 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
+#: sendmail/forms.py:9
+msgid "Email"
+msgstr "Email"
+
+#: sendmail/forms.py:13
+msgid "Subject"
+msgstr "Sujet"
+
+#: sendmail/forms.py:15
+msgid "..."
+msgstr ""
+
+#: sendmail/forms.py:16
+msgid "About personal site"
+msgstr "Renseignements site perso"
+
+#: sendmail/forms.py:17
+msgid "About pro site"
+msgstr "Renseignements site pro"
+
+#: sendmail/forms.py:18
+msgid "Technical issue"
+msgstr "Problème technique"
+
+#: sendmail/forms.py:19
+msgid "Other"
+msgstr "Autre"
+
+#: sendmail/forms.py:23
+msgid "Message"
+msgstr ""
+
+#: sendmail/forms.py:27
+msgid "I agree to share my information on the contact form for Tview only"
+msgstr ""
+"J'accepte de partager mes informations sur le formulaire pour Tview "
+"uniquement"
+
+#: sendmail/views.py:18
+msgid "Your message has been sent. Thank you for your interest"
+msgstr "Votre message a été envoyé. Merci pour votre intérêt"
+
+#: sendmail/views.py:20
+msgid "Invalid header found !"
+msgstr "Problème de sécurité !"
+
+#: sendmail/views.py:22
+msgid "You haven't resolved the captcha. Please try again"
+msgstr "Vous n'avez pas résolu le captcha, veuillez essayer à nouveau, merci"
+
 #: templates/base.html:7
 msgid "TView websites"
 msgstr "TView sites web"
 
-#: templates/base.html:8
+#: templates/base.html:9
 msgid ""
 "Creation of secure, reliable and high-performance websites and web "
 "applications"
 msgstr ""
 "Création de sites et applications web sécurisés, fiables et performants"
 
-#: templates/base.html:16 templates/base.html:21
+#: templates/base.html:17 templates/base.html:22
 msgid "Creation of websites and web applications"
 msgstr "Création de sites et applications Web"
 
-#: templates/base.html:55
+#: templates/base.html:56
 msgid "Sites and applications web creation"
 msgstr "Création de sites et applications Web"
 
-#: templates/carousel.html:24
+#: templates/contact.html:36
+msgid "Submit"
+msgstr "Envoyer"
+
+#: templates/home.html:39
 msgid "A site you own"
 msgstr "Vous êtes propriétaire de votre site"
 
-#: templates/carousel.html:32
+#: templates/home.html:47
 msgid "Customized and efficient"
 msgstr "Sur mesure et performant"
 
-#: templates/carousel.html:40
+#: templates/home.html:55
 #, python-format
-msgid "Up to 50% off  for humanitarian or ecological project"
+msgid "Up to 50%% off  for humanitarian or ecological projects"
 msgstr "Jusqu'à -50% pour un projet humanitaire ou écologique"
 
-#: templates/home.html:12
+#: templates/home.html:82
 msgid "Content management made easy"
 msgstr "Gestion facile de vos contenus"
 
-#: templates/home.html:15
+#: templates/home.html:85
 msgid "On the fly via an administrator interface"
 msgstr "Sur site, depuis l'interface administrateur"
 
-#: templates/home.html:20
+#: templates/home.html:90
 msgid "Evolving to meet your needs"
 msgstr "Evolution selon vos besoins"
 
-#: templates/home.html:23
+#: templates/home.html:93
 msgid "From single page to complete environment"
 msgstr "D'une simple page à un environnement complet"
 
-#: templates/home.html:28
-#| msgid "Optimized for seamless experience"
+#: templates/home.html:98
 msgid "Seamless experience"
 msgstr "Naviguer en toute fluidité"
 
-#: templates/home.html:31
+#: templates/home.html:101
 msgid "responsive, native code, SEO-compliant"
 msgstr "Réactif, code natif, conforme pour le SEO"
 
-#: templates/home.html:265
+#: templates/home.html:336
 msgid "Flexibility"
 msgstr "Flexibilité"
 
-#: templates/home.html:268
+#: templates/home.html:339
 msgid "Scalable and reliable, high performance website"
 msgstr "Evolutif, modulable, haute performance "
 
-#: templates/home.html:276
+#: templates/home.html:347
 msgid "Safety"
 msgstr "Sécurité"
 
-#: templates/home.html:279
-msgid "Site comes with inherent security, no worry"
-msgstr "Le site est doté d'une sécurité inhérente, pas d'inquiétude "
+#: templates/home.html:350
+msgid "Site has inherent security, no worry"
+msgstr "Pas de ressources partagées, tranquillité"
 
-#: templates/home.html:287
+#: templates/home.html:358
 msgid "Autonomy"
 msgstr "Autonomie"
 
-#: templates/home.html:290
-msgid "Dedicated server, hosted on its own cloud."
-msgstr "Serveur dédié, hébergé sur son propre cloud, (non mutualisé)"
+#: templates/home.html:361
+msgid "Dedicated server, hosted on its cloud."
+msgstr "Serveur dédié, hébergé sur son propre cloud."
 
-#: templates/home.html:308
+#: templates/home.html:379
 msgid ""
 "The robustness of a Python environment is nothing like the underlying "
 "vulnerability"
@@ -108,23 +161,21 @@ msgstr ""
 "Une application au sein d'un environnement Python n'a rien de comparable "
 "avec la vulnérabilité sous-jacente"
 
-#: templates/home.html:309
+#: templates/home.html:380
 msgid ""
 "of many of the turnkey solutions that rely on a patchwork of modules and "
 "plugins."
 msgstr ""
-"d'une grande partie des solutions clé en main qui reposent sur un assemblage"
-" de modules et plugins."
+"des solutions clé en main qui reposent sur un assemblage de modules et "
+"plugins."
 
-#: templates/home.html:310
-msgid ""
-"Without ongoing security updates, Tview sites give you peace of mind and "
-"long-term saving."
+#: templates/home.html:381
+msgid "No ongoing security updates means peace of mind and long-term savings."
 msgstr ""
-"Dépourvus de mises à jour de sécurité récurrentes, \n"
-"Les sites Tview vous offrent une tranquillité d'esprit et des économies à long terme."
+"Pas de mises à jour récurrentes, c'est de la sérénité, des économies, et "
+"plus de productivité."
 
-#: templates/home.html:321
+#: templates/home.html:392
 msgid ""
 "Python is a simple, precise and reliable language. It is particularly "
 "appreciated for its robustness."
@@ -132,7 +183,7 @@ msgstr ""
 "Python est un langage simple et précis. Il est particulièrement apprécié "
 "pour sa robustesse."
 
-#: templates/home.html:322
+#: templates/home.html:393
 msgid ""
 "Django is a toolbox dedicated to web development renowned for its efficiency"
 " and versatility."
@@ -140,32 +191,29 @@ msgstr ""
 "Django est une boîte à outils dédiée au développement web reconnue pour sa "
 "maniabilité et son efficacité."
 
-#: templates/home.html:323
-msgid ""
-"Starting with a solid, Python-Django-based architecture with concise and "
-"organized code,"
-msgstr ""
-"Partir d'une architecture Python/Django, avec un code concis et organisé,"
+#: templates/home.html:394
+msgid "Starting with a solid architecture with concise and organized code,"
+msgstr "Partir d'une architecture avec un code concis et organisé,"
 
-#: templates/home.html:324
+#: templates/home.html:395
 msgid "coupled with 'best practices', is essential for natural referencing."
 msgstr ""
 "qui respecte les bonnes pratiques sont des critères essentiels pour le "
 "référencement naturel."
 
-#: templates/home.html:325
+#: templates/home.html:396
 msgid "Sites such as"
 msgstr "Des sites tels que"
 
-#: templates/home.html:327
+#: templates/home.html:398
 msgid " or "
 msgstr " ou "
 
-#: templates/home.html:330
+#: templates/home.html:401
 msgid "have been built using these tools."
 msgstr "ont été construits avec ces mêmes outils."
 
-#: templates/home.html:362
+#: templates/home.html:433
 msgid ""
 "So whether you're looking for a user-friendly website, an e-commerce "
 "solution or a feature-rich application, "
@@ -173,17 +221,17 @@ msgstr ""
 "Que vous cherchiez à établir un site web convivial, une solution e-commerce "
 "ou une application pourvue de multiples fonctionnalités,"
 
-#: templates/home.html:363
+#: templates/home.html:434
 msgid "Tview is able to provide the ressources you need to succeed online."
 msgstr ""
-"Tview est en mesure de vous apporter des ressources dont vous aurez besoin "
+"Tview est en mesure de vous apporter les ressources dont vous aurez besoin "
 "pour réussir en ligne."
 
-#: templates/infos.html:15
+#: templates/infos.html:16
 msgid "Prices"
 msgstr "Tarifs"
 
-#: templates/infos.html:18
+#: templates/infos.html:19
 msgid ""
 "Single or monthly payments. You own your site. Prices include domain name, "
 "site construction and web deployment."
@@ -192,56 +240,40 @@ msgstr ""
 "tarifs comprennent le nom de domaine, la mise en place et le déploiement de "
 "votre serveur sur internet."
 
-#: templates/infos.html:19
+#: templates/infos.html:20
 msgid "Development coasts:"
 msgstr "Frais de développement:"
 
-#: templates/infos.html:20
-msgid ""
-"With a standard CMS solution, you or your \"developer\" often need to "
-"purchase custom themes and plugins to achieve the desire functionality and "
-"design."
-msgstr ""
-"Avec une solution CMS standard, vous ou votre \"développeur\" êtes souvent "
-"enclin à acheter des thèmes personnalisés et des plugins pour réaliser les "
-"fonctionnalités désirées."
-
 #: templates/infos.html:21
-msgid "This can quickly add up in terms of licensing fees."
-msgstr "ça peut vite revenir cher en frais de licenses."
+msgid ""
+"Our Python-coded websites are built from the ground up using Django as the "
+"main framework with few other tools. This allow us to create"
+msgstr ""
+"Nos sites web Python sont construits en natif avec l'aide du framework "
+"Django et de quelques autres outils. Celà nous permet de vous fournir"
 
 #: templates/infos.html:22
 msgid ""
-"In contrast, our Python-coded websites are built from the ground up using "
-"Django as the main framework with few other tools. This allow us to create"
-msgstr ""
-"En revanche, nos sites web Python sont construits en natif avec l'aide du "
-"framework Django et de quelques autres outils. Celà nous permet de vous "
-"fournir"
-
-#: templates/infos.html:23
-msgid ""
 "a tailored solution that is easy to maintain and easy to use, without the "
-"need for costly add-ons that you often have to subscribe to on a monthly "
-"basis."
+"need for costly add-ons that you have to subscribe to on a monthly basis."
 msgstr ""
 "une solution personnalisée qui est facile à maintenir et à utiliser, sans "
-"recourir à des plugins supplémentaires auxquels on doit soucrire sur une "
-"base mensuelle."
+"recourir à des plugins supplémentaires auxquels vous devez souscrire en "
+"location mensualisée."
 
-#: templates/infos.html:24
+#: templates/infos.html:23
 msgid ""
 "The development process is more about writing natively than relying on a "
 "patchwork of plugins."
 msgstr ""
-"Le processus de développement est basé sur du code source natif, pas sur un "
-"assemblage composé de différents modules."
+"Le processus de développement s'élabore sur du code source, pas sur un "
+"assemblage de modules."
 
-#: templates/infos.html:31
+#: templates/infos.html:30
 msgid "Support and maintenance"
 msgstr "Support et maintenance"
 
-#: templates/infos.html:34
+#: templates/infos.html:33
 msgid ""
 "Support is free for the first month and up to 2 additional months for "
 "complex or particular configurations."
@@ -249,7 +281,7 @@ msgstr ""
 "L'assistance est gratuite le premier mois et jusqu'à 3 mois selon la "
 "complexité de votre application."
 
-#: templates/infos.html:35
+#: templates/infos.html:34
 msgid ""
 "In all other cases, it is invoiced according to the intervention, needs, "
 "time and assistance provided."
@@ -257,28 +289,11 @@ msgstr ""
 "Dans les autres cas, elle est facturée en fonction de l'intervention, des "
 "besoins, et du temps accordé à la résolution de votre problème."
 
-#: templates/infos.html:36
+#: templates/infos.html:35
 msgid "Contact us for more information."
 msgstr "Prenez contact pour plus d'information."
 
-#: templates/infos.html:37
-msgid ""
-"Websites are built with safety as a core focus. There is no need for "
-"constant security updates or plugin maintenance,"
-msgstr ""
-"Les sites sont élaborés avec une importance primordiale pour la sécurité. Il"
-" n'y a pas de mise-à-jour récurrente à faire ni constantes failles de "
-"sécurité,"
-
-#: templates/infos.html:38
-msgid ""
-"allowing you to focus on growing your business instead of worrying about "
-"costs and technical aspects of your website."
-msgstr ""
-"celà vous permet de vous concentrer sur votre travail plutôt que d'être "
-"constament embêté par les aspects techniques et les coûts de votre site web."
-
-#: templates/infos.html:39
+#: templates/infos.html:36
 msgid ""
 "Being hosted on your own space with no shared ressources means performance "
 "and autonomy."
@@ -286,7 +301,7 @@ msgstr ""
 "Etre hébergé sur son propre espace sans avoir à partager des ressources est "
 "synonyme de performance et d'autonomie."
 
-#: templates/infos.html:40
+#: templates/infos.html:37
 msgid ""
 "We can (optionally) duplicate your environment up to 4 times for "
 "simultaneous and instantaneous distribution on different continents to serve"
@@ -295,7 +310,7 @@ msgstr ""
 "Nous pouvons (sur option) dupliquer jusqu'à 4 fois votre site web pour une "
 "distribution optimale en simultané sur plusieurs continents"
 
-#: templates/infos.html:41
+#: templates/infos.html:38
 msgid ""
 "A clone can also take over in the event of a server or network failure. You "
 "are truly online 24/24."
@@ -304,12 +319,11 @@ msgstr ""
 "serveur ou sur le réseau. Vous êtes réellement en ligne 24/24h dans cette "
 "configuration."
 
-#: templates/infos.html:47
-#| msgid "Content management made easy"
+#: templates/infos.html:44
 msgid "Content management"
-msgstr "Gestion facile de vos contenus"
+msgstr "Gestion de contenu"
 
-#: templates/infos.html:50
+#: templates/infos.html:47
 msgid ""
 "Most of our configurations allow you to make your own modifications and "
 "updates on site with ease."
@@ -317,18 +331,18 @@ msgstr ""
 "La plupart de nos configurations vous permettent de faire vos propres mises-"
 "à-jour de contenus de façon simple directement sur votre site en ligne."
 
-#: templates/infos.html:51
+#: templates/infos.html:48
 msgid ""
 "You can access them directly from your website, via a personalized "
 "administrator interface."
 msgstr ""
 "Vous pouvez y accéder par l'intermédiaire d'une interface d'administration."
 
-#: templates/infos.html:58
+#: templates/infos.html:55
 msgid "Options"
 msgstr "Options"
 
-#: templates/infos.html:61
+#: templates/infos.html:58
 msgid ""
 "The list of functions given in the formulas is indicative only. Any "
 "configuration can be enhanced with various options."
@@ -336,31 +350,31 @@ msgstr ""
 "Les différentes fonctions présentées dans les formules sont purement à titre"
 " indicatif. Toute configuration peut-être enrichie d'options."
 
-#: templates/infos.html:62
+#: templates/infos.html:59
 msgid ""
 "Prices are set in advance, based on project evaluation and technical "
 "considerations."
 msgstr ""
-"Les prix sont fixés à l'avance, en fonction de l'évaluation du projet et des"
-" considérations techniques."
+"Les prix sont fixés à l'avance, en fonction du projet et des considérations "
+"techniques."
 
-#: templates/infos.html:63
+#: templates/infos.html:60
 msgid "No calculation of \"hourly rate\" = no unpleasant surprises."
 msgstr "Pas de calcul \"taux/horaire\" = Pas de mauvaise surprise."
 
-#: templates/infos.html:70
+#: templates/infos.html:67
 msgid "Custom-made websites"
-msgstr "Site sur-mesure"
+msgstr "Sur-mesure"
 
-#: templates/infos.html:73
+#: templates/infos.html:70
 msgid ""
 "Custom-coded websites are websites that have their own code written and "
 "built independently."
 msgstr ""
-"Un site sur mesure est un site qui a son propre  code et construit de façon "
+"Un site sur mesure est un site qui a son propre code et construit de façon "
 "indépendante."
 
-#: templates/infos.html:74
+#: templates/infos.html:71
 msgid ""
 "Security, manageability, scalability and, of course, originality are its "
 "main assets."
@@ -368,161 +382,143 @@ msgstr ""
 "Sécurité, flexibilité, évolutivité et bien sûr originalité en sont ses "
 "principaux atouts."
 
-#: templates/infos.html:80
+#: templates/infos.html:77
 msgid "The SEO myth"
 msgstr "Le mythe autour du SEO"
 
-#: templates/infos.html:83
-msgid ""
-"If you're in the process of acquiring your website, you've probably heard of"
-msgstr ""
-"Si vous êtes dans l'optique d'acquérir un site web, vous avez probablement "
-"entendu parler"
-
-#: templates/infos.html:83
-msgid "and are already concerned about it"
-msgstr "du SEO et en êtes déjà préoccupé."
-
-#: templates/infos.html:84
-msgid ""
-"Being well referenced is essential for your site’s visibility, and you’re "
-"right to be concerned."
-msgstr ""
-"Etre bien référencé est essentiel pour une bonne visibilité et vous avez "
-"raison de vous en soucier."
-
-#: templates/infos.html:85
+#: templates/infos.html:80
+#| msgid ""
+#| "Search engine optimization (SEO) is seen as a vast subject that required "
+#| "special, often costly, skills,"
 msgid ""
 "Search engine optimization (SEO) is seen as a vast subject that required "
-"special, often costly, skills,"
+"special, often costly, skills."
 msgstr ""
+"Le SEO est souvent perçu comme un vaste sujet qui demande des compétences "
+"particulières et souvent coûteuses."
 
-#: templates/infos.html:86
-msgid ""
-"in order to achieve visibility on the web and natural ranking supported by "
-"Google."
-msgstr ""
-
-#: templates/infos.html:87
+#: templates/infos.html:81
 msgid "At least, that's how it's usually presented."
-msgstr ""
+msgstr "Du moins, c'est souvent présenté de cette façon là."
 
-#: templates/infos.html:88
+#: templates/infos.html:82
 msgid ""
 "However, there are a lot of myths surrounding this subject, because there's "
 "simply no magic method for getting good."
 msgstr ""
+"Toutefois, il existe certains mythes autour de ce sujet, parce qu'en réalité"
+" il n'y a pas de méthode magique pour propulser un référencement."
 
-#: templates/infos.html:89
+#: templates/infos.html:83
 msgid ""
 "Today's algorithms for evaluating web content are very smart and in constant"
 " development,"
 msgstr ""
+"Les algorithmes sont aujourd'hui assez intelligents et précis dans "
+"l'évaluation des sites web."
 
-#: templates/infos.html:90
+#: templates/infos.html:84
 msgid ""
 "You won't fool them by overloading your content with scripts, plugins and "
 "other tricks designed to simulate traffic - quite the opposite."
 msgstr ""
+"Vous ne les bernerez pas en surchargeant vos contenus de scripts et autres "
+"astuces pour simuler du trafic ou gonfller vos statistiques d'activités . "
 
-#: templates/infos.html:91
-msgid ""
-"On the other hand, a well-written and concise code that respects best "
-"practices, coupled with relevant content and optimized rendering"
-msgstr ""
-
-#: templates/infos.html:92
-msgid "will provide you with the essential qualities needed for good SEO."
-msgstr ""
-
-#: templates/infos.html:93
+#: templates/infos.html:85
 msgid "What's analyzed is how your site handles the user experience"
 msgstr ""
+"Ce qui est analysé est la manière dont votre site se charge de l'expérience "
+"utilisateur."
 
-#: templates/infos.html:94
+#: templates/infos.html:86
 msgid "This is the fundamental point"
-msgstr ""
+msgstr "C'est le point fondamental"
 
-#: templates/infos.html:95
-msgid ""
-"It is therefore futile to spend large sums of money on practices based on "
-"assumptions.."
-msgstr ""
-
-#: templates/infos.html:96
+#: templates/infos.html:87
 #, python-format
 msgid ""
 "Here, the site has an SEO success rate of over 90%%. You can verify this "
 "with the performance test at the bottom of the page."
 msgstr ""
+"Ici, le site à un résultat en  bonnes pratiques SEO qui approche la note "
+"maximale. Vous pouvez le vérifier avec le test de performances situé en bas "
+"de page."
 
-#: templates/infos.html:103
+#: templates/infos.html:94
 msgid "Special rates for non-commercial projects"
-msgstr ""
+msgstr "Tarifs préférentiels pour sites non-commerciaux"
 
-#: templates/infos.html:106
+#: templates/infos.html:97
+#| msgid ""
+#| "We're living in an age where big websites have become data vacuum cleaners, "
+#| "analyzing every move"
 msgid ""
-"We're living in an age where big websites have become data vacuum cleaners, "
+"We're living in an age where big websites become data vacuum cleaners, "
 "analyzing every move"
 msgstr ""
+"Npus vivons à une époque où de gros sites web deviennent  de grands "
+"aspirateurs de données, analysant chaque action "
 
-#: templates/infos.html:107
+#: templates/infos.html:98
 msgid "to better satisfy their advertisers"
-msgstr ""
+msgstr "afin de satisfaire leurs annonceurs."
 
-#: templates/infos.html:107
+#: templates/infos.html:98
 msgid "may be an innovative technology, but it can also be a dangerous one."
 msgstr ""
+"est une innovation technologique, mais qui peut tout autant devenir "
+"dangereuse. "
 
-#: templates/infos.html:108
+#: templates/infos.html:99
 msgid ""
 "Tview is committed to spreading quality on the web by promoting "
 "humanitarian, innovative and public-interest initiatives"
 msgstr ""
+"Tview s'engage à privilégier l'information utile et de qualité sur le net, "
+"en favorisant les initiatives d'intérêt public."
 
-#: templates/infos.html:115
+#: templates/infos.html:106
 msgid "Additional information"
-msgstr ""
+msgstr "Informations complémentaires"
 
-#: templates/infos.html:124
-#, fuzzy
-#| msgid "Safety and performance"
+#: templates/infos.html:111
 msgid "website performance"
-msgstr "Sécurité et performance"
+msgstr "performance du site"
 
-#: templates/infos.html:124
+#: templates/infos.html:111
 msgid "Security"
-msgstr ""
+msgstr "Sécurité"
 
-#: templates/prod.html:22
+#: templates/prod.html:28
 msgid "Contact form"
 msgstr "Formulaire de contact"
 
-#: templates/prod.html:36
+#: templates/prod.html:42
 msgid "Online store"
 msgstr "Boutique en ligne"
 
-#: templates/prod.html:41
+#: templates/prod.html:47
 msgid "Database"
 msgstr "Base de données"
 
-#: templates/prod.html:41
+#: templates/prod.html:47
 msgid "Payments gateway"
 msgstr "Solution de paiements"
 
-#: templates/prod.html:41
+#: templates/prod.html:47
 msgid "Safety and performance"
 msgstr "Sécurité et performance"
 
-#: templates/prod.html:72
+#: templates/prod.html:78
 msgid "Various apps"
-msgstr "Diverses applications"
+msgstr "Applications diverses"
 
-#: tview/settings.py:117
+#: tview/settings.py:115
 msgid "English"
 msgstr "Anglais"
 
-#: tview/settings.py:118
+#: tview/settings.py:116
 msgid "French"
 msgstr "Français"
 
@@ -987,7 +983,7 @@ msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/forms/fields.py:95
 msgid "This field is required."
-msgstr ""
+msgstr "Ce champ est requis"
 
 #: venv/lib/python3.11/site-packages/django/forms/fields.py:304
 msgid "Enter a whole number."
@@ -1176,7 +1172,7 @@ msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/forms/widgets.py:802
 msgid "No"
-msgstr ""
+msgstr "No"
 
 #. Translators: Please do not add spaces around commas.
 #: venv/lib/python3.11/site-packages/django/template/defaultfilters.py:876
@@ -1746,7 +1742,70 @@ msgstr ""
 #: venv/lib/python3.11/site-packages/django_recaptcha/fields.py:20
 #: venv/lib/python3.11/site-packages/django_recaptcha/fields.py:21
 msgid "Error verifying reCAPTCHA, please try again."
-msgstr ""
+msgstr "Erreur de vérification reCAPTCHA, essayez à nouveau, merci."
+
+#, fuzzy
+#~ msgid "in order to achieve visibility on the web and natural ranking"
+#~ msgstr ""
+#~ "afin d'être bien référencé et visible par les moteurs de recherche tel "
+#~ "Google."
+
+#~ msgid ""
+#~ "With a standard CMS solution, you or your \"developer\" often need to "
+#~ "purchase custom themes and plugins to achieve the desire functionality and "
+#~ "design."
+#~ msgstr ""
+#~ "Avec une solution CMS standard, vous ou votre \"développeur\" êtes souvent "
+#~ "enclin à acheter des thèmes personnalisés et des plugins pour réaliser les "
+#~ "fonctionnalités désirées."
+
+#~ msgid "This can quickly add up in terms of licensing fees."
+#~ msgstr "ce qui peut vite augmenter votre budget en frais de licenses."
+
+#~ msgid ""
+#~ "Websites are built with safety as a core focus. There is no need for "
+#~ "constant security updates or plugin maintenance,"
+#~ msgstr ""
+#~ "Les sites sont élaborés avec une importance primordiale pour la sécurité, "
+
+#~ msgid ""
+#~ "allowing you to focus on growing your business instead of worrying about "
+#~ "costs and technical aspects of your website."
+#~ msgstr ""
+#~ "ce qui vous permet de vous concentrer sur votre travail plutôt que d'être "
+#~ "constament embêté par les aspects techniques et les coûts de votre site web."
+
+#~ msgid ""
+#~ "If you're in the process of acquiring your website, you've probably heard of"
+#~ msgstr ""
+#~ "Si vous êtes dans l'optique d'acquérir un site web, vous avez probablement "
+#~ "entendu parler"
+
+#~ msgid "and are already concerned about it"
+#~ msgstr "du SEO et en êtes déjà préoccupé."
+
+#~ msgid ""
+#~ "Being well referenced is essential for your site’s visibility, and you’re "
+#~ "right to be concerned."
+#~ msgstr ""
+#~ "Etre bien référencé est essentiel pour une bonne visibilité et vous avez "
+#~ "raison de vous en soucier."
+
+#~ msgid ""
+#~ "It is therefore futile to spend large sums of money on practices based on "
+#~ "assumptions.."
+#~ msgstr ""
+#~ "Il est donc futile de dépenser des sommes déraisonables pour des pratiques "
+#~ "basées sur des suppositions."
+
+#~ msgid "Perso"
+#~ msgstr "Perso"
+
+#~ msgid "Pro"
+#~ msgstr "Pro"
+
+#~ msgid "Tech"
+#~ msgstr "Tech"
 
 #~ msgid ""
 #~ "Customized websites, coded in Python, offer first-rate security, versatility"

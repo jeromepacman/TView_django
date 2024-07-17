@@ -2,6 +2,7 @@ from django.shortcuts import redirect, render
 from django.contrib import messages
 from django.core.mail import send_mail, BadHeaderError
 from .forms import ContactForm
+from django.utils.translation import gettext_lazy as _
 
 
 def sendmail_view(request):
@@ -14,11 +15,11 @@ def sendmail_view(request):
             checkbox = form.cleaned_data['checkbox']
             try:
                 send_mail(subject, message, from_email, ['contact@tview.fr'])
+                messages.success(request, _("Your message has been sent. Thank you for your interest"))
             except BadHeaderError:
-                messages.error(request, "Une erreur fatale est survenue")
-            messages.success(request, "Votre message a été envoyé")
+                messages.error(request, _("Invalid header found !"))
         else:
-            messages.warning(request, "Formulaire non valide")
+            messages.warning(request, _("You haven't resolved the captcha. Please try again"))
         return redirect('sendmail:sendmail')
     else:
         form = ContactForm()

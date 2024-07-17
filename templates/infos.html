@@ -4,6 +4,7 @@
 {% block title %} TView | Infos {% endblock %}
 {% block content %}
 <!-- bloc-14 -->
+    {% include 'bl_div_svg.html' %}
     <div class="bloc none tc-4279 bgc-2845 bloc-bg-texture texture-fabric d-bloc" id="bloc-14">
         <div class="bloc-shape-divider bloc-divider-bottom">
             <svg class="svg-divider bloc-divider-b-style" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250"><path style="opacity: 0.3;" d="M1000,250H0V60L500,165,1000,60V250Z"></path><path style="opacity: 0.3;" d="M1000,250H0V100l500,66,500-66V250Z"></path><path style="opacity: 0.3;" d="M1000,250H0V140l500,27,500-27V250Z"></path><path d="M1000,250H0V190l500-23,500,23v60Z"></path></svg>
@@ -17,10 +18,8 @@
                         <p class="text-lg-center mx-auto d-block text-md-center">
                             {% trans 'Single or monthly payments. You own your site. Prices include domain name, site construction and web deployment.' %}<br><br>
                             {% trans 'Development coasts:' %}<br>
-                            {% trans 'With a standard CMS solution, you or your "developer" often need to purchase custom themes and plugins to achieve the desire functionality and design.' %}<br>
-                            {% trans 'This can quickly add up in terms of licensing fees.' %}<br>
-                            {% trans 'In contrast, our Python-coded websites are built from the ground up using Django as the main framework with few other tools. This allow us to create' %}<br>
-                            {% trans 'a tailored solution that is easy to maintain and easy to use, without the need for costly add-ons that you often have to subscribe to on a monthly basis.' %}<br>
+                            {% trans 'Our Python-coded websites are built from the ground up using Django as the main framework with few other tools. This allow us to create' %}<br>
+                            {% trans 'a tailored solution that is easy to maintain and easy to use, without the need for costly add-ons that you have to subscribe to on a monthly basis.' %}<br>
                             {% trans 'The development process is more about writing natively than relying on a patchwork of plugins.' %}
                         </p>
                     </div>
@@ -33,9 +32,7 @@
                         <p class="text-lg-center text-md-center mx-auto d-block">
                             {% trans 'Support is free for the first month and up to 2 additional months for complex or particular configurations.' %}<br>
                             {% trans 'In all other cases, it is invoiced according to the intervention, needs, time and assistance provided.' %}<br>
-                            {% trans 'Contact us for more information.' %}<br><br>
-                            {% trans 'Websites are built with safety as a core focus. There is no need for constant security updates or plugin maintenance,' %}<br>
-                            {% trans 'allowing you to focus on growing your business instead of worrying about costs and technical aspects of your website.' %}<br>
+                            {% trans 'Contact us for more information.' %}<br>
                             {% trans 'Being hosted on your own space with no shared ressources means performance and autonomy.' %}<br>
                             {% trans 'We can (optionally) duplicate your environment up to 4 times for simultaneous and instantaneous distribution on different continents to serve file locally.' %}<br>
                             {% trans 'A clone can also take over in the event of a server or network failure. You are truly online 24/24.'%}
@@ -80,19 +77,13 @@
                             {% trans 'The SEO myth' %}
                         </h2>
                         <p class="text-lg-center">
-                            {% trans "If you're in the process of acquiring your website, you've probably heard of" %} <a href="https://www.seo.fr/definition/seo-definition" rel="nofollow noopener noreferrer" target="_blank">SEO</a> {% trans "and are already concerned about it" %}.<br>
-                            {% trans "Being well referenced is essential for your site’s visibility, and you’re right to be concerned." %}<br>
-                            {% trans 'Search engine optimization (SEO) is seen as a vast subject that required special, often costly, skills,' %}<br>
-                            {% trans 'in order to achieve visibility on the web and natural ranking supported by Google.' %}<br>
+                            {% trans 'Search engine optimization (SEO) is seen as a vast subject that required special, often costly, skills.' %}<br>
                             {% trans "At least, that's how it's usually presented." %}<br><br>
                             {% trans "However, there are a lot of myths surrounding this subject, because there's simply no magic method for getting good." %}<br>
                             {% trans "Today's algorithms for evaluating web content are very smart and in constant development," %}<br>
                             {% trans "You won't fool them by overloading your content with scripts, plugins and other tricks designed to simulate traffic - quite the opposite." %}<br><br>
-                            {% trans "On the other hand, a well-written and concise code that respects best practices, coupled with relevant content and optimized rendering" %}<br>
-                            {% trans "will provide you with the essential qualities needed for good SEO." %}<br>
                             {% trans "What's analyzed is how your site handles the user experience" %}<br>
                             {% trans 'This is the fundamental point' %}<br>
-                            {% trans "It is therefore futile to spend large sums of money on practices based on assumptions.." %}<br><br>
                             {% trans "Here, the site has an SEO success rate of over 90%. You can verify this with the performance test at the bottom of the page." %}
                         </p>
                     </div>
@@ -103,7 +94,7 @@
                             {% trans 'Special rates for non-commercial projects' %}
                         </h2>
                         <p class="text-lg-center ">
-                            {% trans "We're living in an age where big websites have become data vacuum cleaners, analyzing every move" %}<br>
+                            {% trans "We're living in an age where big websites become data vacuum cleaners, analyzing every move" %}<br>
                             {% trans "to better satisfy their advertisers" %},<br><a href="https://www.cnil.fr/fr/definition/big-data" rel="nofollow noopener noreferrer" target="_blank">Big data</a> {% trans "may be an innovative technology, but it can also be a dangerous one." %}<br>
                             {% trans "Tview is committed to spreading quality on the web by promoting humanitarian, innovative and public-interest initiatives" %}.<br>
                         </p>
@@ -115,12 +106,8 @@
                             {% trans 'Additional information' %}
                         </h2>
                         <p class="text-lg-center">
-
                             Siret 43315698100063<br>
                             Titre professionnel web de niveau 5<br>
-                            <style>
-                                
-                            </style>
                             <a href="https://pagespeed.web.dev/report?url=https://tview.fr" rel="nofollow noopener noreferrer" target="_blank"><h5>{% trans 'website performance' %}</h5></a><a href="https://www.ssllabs.com/ssltest/analyze.html?viaform=on&d=tview.fr" rel="nofollow noopener noreferrer" target="_blank"><h5>{% trans 'Security' %} SSL A+</h5></a><br>
                         </p>
                     </div>

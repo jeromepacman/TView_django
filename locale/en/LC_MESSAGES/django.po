@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#: templates/prod.html:33 templates/prod.html:52 templates/prod.html:83
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-15 13:11+0000\n"
+"POT-Creation-Date: 2024-07-17 05:51+0200\n"
 "PO-Revision-Date: 2024-07-15 21:05+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,443 +20,430 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
+#: sendmail/forms.py:9
+msgid "Email"
+msgstr ""
+
+#: sendmail/forms.py:13
+msgid "Subject"
+msgstr ""
+
+#: sendmail/forms.py:15
+msgid "..."
+msgstr ""
+
+#: sendmail/forms.py:16
+msgid "About personal site"
+msgstr ""
+
+#: sendmail/forms.py:17
+msgid "About pro site"
+msgstr ""
+
+#: sendmail/forms.py:18
+msgid "Technical issue"
+msgstr ""
+
+#: sendmail/forms.py:19
+msgid "Other"
+msgstr ""
+
+#: sendmail/forms.py:23
+msgid "Message"
+msgstr ""
+
+#: sendmail/forms.py:27
+msgid "I agree to share my information on the contact form for Tview only"
+msgstr ""
+
+#: sendmail/views.py:18
+msgid "Your message has been sent. Thank you for your interest"
+msgstr ""
+
+#: sendmail/views.py:20
+msgid "Invalid header found !"
+msgstr ""
+
+#: sendmail/views.py:22
+msgid "You haven't resolved the captcha. Please try again"
+msgstr ""
+
 #: templates/base.html:7
 msgid "TView websites"
 msgstr ""
 
-#: templates/base.html:8
+#: templates/base.html:9
 msgid ""
 "Creation of secure, reliable and high-performance websites and web "
 "applications"
 msgstr ""
 
-#: templates/base.html:16 templates/base.html:21
+#: templates/base.html:17 templates/base.html:22
 msgid "Creation of websites and web applications"
 msgstr ""
 
-#: templates/base.html:55
+#: templates/base.html:56
 msgid "Sites and applications web creation"
 msgstr ""
 
-#: templates/carousel.html:24
+#: templates/contact.html:36
+msgid "Submit"
+msgstr ""
+
+#: templates/home.html:39
 msgid "A site you own"
 msgstr ""
 
-#: templates/carousel.html:32
+#: templates/home.html:47
 msgid "Customized and efficient"
 msgstr ""
 
-#: templates/carousel.html:40
+#: templates/home.html:55
 #, python-format
-msgid "Up to 50% off  for humanitarian or ecological project"
+msgid "Up to 50%% off  for humanitarian or ecological projects"
 msgstr ""
 
-#: templates/home.html:12
+#: templates/home.html:82
 msgid "Content management made easy"
 msgstr ""
 
-#: templates/home.html:15
+#: templates/home.html:85
 msgid "On the fly via an administrator interface"
 msgstr ""
 
-#: templates/home.html:20
+#: templates/home.html:90
 msgid "Evolving to meet your needs"
 msgstr ""
 
-#: templates/home.html:23
+#: templates/home.html:93
 msgid "From single page to complete environment"
 msgstr ""
 
-#: templates/home.html:28
+#: templates/home.html:98
 msgid "Seamless experience"
 msgstr ""
 
-#: templates/home.html:31
+#: templates/home.html:101
 msgid "responsive, native code, SEO-compliant"
 msgstr ""
 
-#: templates/home.html:265
+#: templates/home.html:336
 msgid "Flexibility"
 msgstr ""
 
-#: templates/home.html:268
+#: templates/home.html:339
 msgid "Scalable and reliable, high performance website"
 msgstr ""
 
-#: templates/home.html:276
+#: templates/home.html:347
 msgid "Safety"
 msgstr ""
 
-#: templates/home.html:279
-msgid "Site comes with inherent security, no worry"
+#: templates/home.html:350
+msgid "Site has inherent security, no worry"
 msgstr ""
 
-#: templates/home.html:287
+#: templates/home.html:358
 msgid "Autonomy"
 msgstr ""
 
-#: templates/home.html:290
-msgid "Dedicated server, hosted on its own cloud."
+#: templates/home.html:361
+msgid "Dedicated server, hosted on its cloud."
 msgstr ""
 
-#: templates/home.html:308
+#: templates/home.html:379
 msgid ""
 "The robustness of a Python environment is nothing like the underlying "
 "vulnerability"
 msgstr ""
 
-#: templates/home.html:309
+#: templates/home.html:380
 msgid ""
 "of many of the turnkey solutions that rely on a patchwork of modules and "
 "plugins."
 msgstr ""
 
-#: templates/home.html:310
-msgid ""
-"Without ongoing security updates, Tview sites give you peace of mind and "
-"long-term saving."
+#: templates/home.html:381
+msgid "No ongoing security updates means peace of mind and long-term savings."
 msgstr ""
 
-#: templates/home.html:321
+#: templates/home.html:392
 msgid ""
 "Python is a simple, precise and reliable language. It is particularly "
 "appreciated for its robustness."
 msgstr ""
 
-#: templates/home.html:322
+#: templates/home.html:393
 msgid ""
-"Django is a toolbox dedicated to web development renowned for its efficiency"
-" and versatility."
+"Django is a toolbox dedicated to web development renowned for its efficiency "
+"and versatility."
 msgstr ""
 
-#: templates/home.html:323
-msgid ""
-"Starting with a solid, Python-Django-based architecture with concise and "
-"organized code,"
+#: templates/home.html:394
+msgid "Starting with a solid architecture with concise and organized code,"
 msgstr ""
 
-#: templates/home.html:324
+#: templates/home.html:395
 msgid "coupled with 'best practices', is essential for natural referencing."
 msgstr ""
 
-#: templates/home.html:325
+#: templates/home.html:396
 msgid "Sites such as"
 msgstr ""
 
-#: templates/home.html:327
+#: templates/home.html:398
 msgid " or "
 msgstr ""
 
-#: templates/home.html:330
+#: templates/home.html:401
 msgid "have been built using these tools."
 msgstr ""
 
-#: templates/home.html:362
+#: templates/home.html:433
 msgid ""
 "So whether you're looking for a user-friendly website, an e-commerce "
 "solution or a feature-rich application, "
 msgstr ""
 
-#: templates/home.html:363
+#: templates/home.html:434
 msgid "Tview is able to provide the ressources you need to succeed online."
 msgstr ""
 
-#: templates/infos.html:15
+#: templates/infos.html:16
 msgid "Prices"
 msgstr ""
 
-#: templates/infos.html:18
+#: templates/infos.html:19
 msgid ""
 "Single or monthly payments. You own your site. Prices include domain name, "
 "site construction and web deployment."
 msgstr ""
 
-#: templates/infos.html:19
+#: templates/infos.html:20
 msgid "Development coasts:"
 msgstr ""
 
-#: templates/infos.html:20
-msgid ""
-"With a standard CMS solution, you or your \"developer\" often need to "
-"purchase custom themes and plugins to achieve the desire functionality and "
-"design."
-msgstr ""
-
 #: templates/infos.html:21
-msgid "This can quickly add up in terms of licensing fees."
+msgid ""
+"Our Python-coded websites are built from the ground up using Django as the "
+"main framework with few other tools. This allow us to create"
 msgstr ""
 
 #: templates/infos.html:22
 msgid ""
-"In contrast, our Python-coded websites are built from the ground up using "
-"Django as the main framework with few other tools. This allow us to create"
+"a tailored solution that is easy to maintain and easy to use, without the "
+"need for costly add-ons that you have to subscribe to on a monthly basis."
 msgstr ""
 
 #: templates/infos.html:23
-msgid ""
-"a tailored solution that is easy to maintain and easy to use, without the "
-"need for costly add-ons that you often have to subscribe to on a monthly "
-"basis."
-msgstr ""
-
-#: templates/infos.html:24
 msgid ""
 "The development process is more about writing natively than relying on a "
 "patchwork of plugins."
 msgstr ""
 
-#: templates/infos.html:31
+#: templates/infos.html:30
 msgid "Support and maintenance"
 msgstr ""
 
-#: templates/infos.html:34
+#: templates/infos.html:33
 msgid ""
 "Support is free for the first month and up to 2 additional months for "
 "complex or particular configurations."
 msgstr ""
 
-#: templates/infos.html:35
+#: templates/infos.html:34
 msgid ""
 "In all other cases, it is invoiced according to the intervention, needs, "
 "time and assistance provided."
 msgstr ""
 
-#: templates/infos.html:36
+#: templates/infos.html:35
 msgid "Contact us for more information."
 msgstr ""
 
-#: templates/infos.html:37
-msgid ""
-"Websites are built with safety as a core focus. There is no need for "
-"constant security updates or plugin maintenance,"
-msgstr ""
-
-#: templates/infos.html:38
-msgid ""
-"allowing you to focus on growing your business instead of worrying about "
-"costs and technical aspects of your website."
-msgstr ""
-
-#: templates/infos.html:39
+#: templates/infos.html:36
 msgid ""
 "Being hosted on your own space with no shared ressources means performance "
 "and autonomy."
 msgstr ""
 
-#: templates/infos.html:40
+#: templates/infos.html:37
 msgid ""
 "We can (optionally) duplicate your environment up to 4 times for "
-"simultaneous and instantaneous distribution on different continents to serve"
-" file locally."
+"simultaneous and instantaneous distribution on different continents to serve "
+"file locally."
 msgstr ""
 
-#: templates/infos.html:41
+#: templates/infos.html:38
 msgid ""
 "A clone can also take over in the event of a server or network failure. You "
 "are truly online 24/24."
 msgstr ""
 
-#: templates/infos.html:47
+#: templates/infos.html:44
 msgid "Content management"
 msgstr ""
 
-#: templates/infos.html:50
+#: templates/infos.html:47
 msgid ""
 "Most of our configurations allow you to make your own modifications and "
 "updates on site with ease."
 msgstr ""
 
-#: templates/infos.html:51
+#: templates/infos.html:48
 msgid ""
 "You can access them directly from your website, via a personalized "
 "administrator interface."
 msgstr ""
 
-#: templates/infos.html:58
+#: templates/infos.html:55
 msgid "Options"
 msgstr ""
 
-#: templates/infos.html:61
+#: templates/infos.html:58
 msgid ""
 "The list of functions given in the formulas is indicative only. Any "
 "configuration can be enhanced with various options."
 msgstr ""
 
-#: templates/infos.html:62
+#: templates/infos.html:59
 msgid ""
 "Prices are set in advance, based on project evaluation and technical "
 "considerations."
 msgstr ""
 
-#: templates/infos.html:63
+#: templates/infos.html:60
 msgid "No calculation of \"hourly rate\" = no unpleasant surprises."
 msgstr ""
 
-#: templates/infos.html:70
+#: templates/infos.html:67
 msgid "Custom-made websites"
 msgstr ""
 
-#: templates/infos.html:73
+#: templates/infos.html:70
 msgid ""
 "Custom-coded websites are websites that have their own code written and "
 "built independently."
 msgstr ""
 
-#: templates/infos.html:74
+#: templates/infos.html:71
 msgid ""
 "Security, manageability, scalability and, of course, originality are its "
 "main assets."
 msgstr ""
 
-#: templates/infos.html:80
+#: templates/infos.html:77
 msgid "The SEO myth"
 msgstr ""
 
-#: templates/infos.html:83
-msgid ""
-"If you're in the process of acquiring your website, you've probably heard of"
-msgstr ""
-
-#: templates/infos.html:83
-msgid "and are already concerned about it"
-msgstr ""
-
-#: templates/infos.html:84
-msgid ""
-"Being well referenced is essential for your site’s visibility, and you’re "
-"right to be concerned."
-msgstr ""
-
-#: templates/infos.html:85
+#: templates/infos.html:80
 msgid ""
 "Search engine optimization (SEO) is seen as a vast subject that required "
-"special, often costly, skills,"
+"special, often costly, skills."
 msgstr ""
 
-#: templates/infos.html:86
-msgid ""
-"in order to achieve visibility on the web and natural ranking supported by "
-"Google."
-msgstr ""
-
-#: templates/infos.html:87
+#: templates/infos.html:81
 msgid "At least, that's how it's usually presented."
 msgstr ""
 
-#: templates/infos.html:88
+#: templates/infos.html:82
 msgid ""
 "However, there are a lot of myths surrounding this subject, because there's "
 "simply no magic method for getting good."
 msgstr ""
 
-#: templates/infos.html:89
+#: templates/infos.html:83
 msgid ""
-"Today's algorithms for evaluating web content are very smart and in constant"
-" development,"
+"Today's algorithms for evaluating web content are very smart and in constant "
+"development,"
 msgstr ""
 
-#: templates/infos.html:90
+#: templates/infos.html:84
 msgid ""
 "You won't fool them by overloading your content with scripts, plugins and "
 "other tricks designed to simulate traffic - quite the opposite."
 msgstr ""
 
-#: templates/infos.html:91
-msgid ""
-"On the other hand, a well-written and concise code that respects best "
-"practices, coupled with relevant content and optimized rendering"
-msgstr ""
-
-#: templates/infos.html:92
-msgid "will provide you with the essential qualities needed for good SEO."
-msgstr ""
-
-#: templates/infos.html:93
+#: templates/infos.html:85
 msgid "What's analyzed is how your site handles the user experience"
 msgstr ""
 
-#: templates/infos.html:94
+#: templates/infos.html:86
 msgid "This is the fundamental point"
 msgstr ""
 
-#: templates/infos.html:95
-msgid ""
-"It is therefore futile to spend large sums of money on practices based on "
-"assumptions.."
-msgstr ""
-
-#: templates/infos.html:96
+#: templates/infos.html:87
 #, python-format
 msgid ""
 "Here, the site has an SEO success rate of over 90%%. You can verify this "
 "with the performance test at the bottom of the page."
 msgstr ""
 
-#: templates/infos.html:103
+#: templates/infos.html:94
 msgid "Special rates for non-commercial projects"
 msgstr ""
 
-#: templates/infos.html:106
+#: templates/infos.html:97
 msgid ""
-"We're living in an age where big websites have become data vacuum cleaners, "
+"We're living in an age where big websites become data vacuum cleaners, "
 "analyzing every move"
 msgstr ""
 
-#: templates/infos.html:107
+#: templates/infos.html:98
 msgid "to better satisfy their advertisers"
 msgstr ""
 
-#: templates/infos.html:107
+#: templates/infos.html:98
 msgid "may be an innovative technology, but it can also be a dangerous one."
 msgstr ""
 
-#: templates/infos.html:108
+#: templates/infos.html:99
 msgid ""
 "Tview is committed to spreading quality on the web by promoting "
 "humanitarian, innovative and public-interest initiatives"
 msgstr ""
 
-#: templates/infos.html:115
+#: templates/infos.html:106
 msgid "Additional information"
 msgstr ""
 
-#: templates/infos.html:124
+#: templates/infos.html:111
 msgid "website performance"
 msgstr ""
 
-#: templates/infos.html:124
+#: templates/infos.html:111
 msgid "Security"
 msgstr ""
 
-#: templates/prod.html:22
+#: templates/prod.html:28
 msgid "Contact form"
 msgstr ""
 
-#: templates/prod.html:36
+#: templates/prod.html:42
 msgid "Online store"
 msgstr ""
 
-#: templates/prod.html:41
+#: templates/prod.html:47
 msgid "Database"
 msgstr ""
 
-#: templates/prod.html:41
+#: templates/prod.html:47
 msgid "Payments gateway"
 msgstr ""
 
-#: templates/prod.html:41
+#: templates/prod.html:47
 msgid "Safety and performance"
 msgstr ""
 
-#: templates/prod.html:72
+#: templates/prod.html:78
 msgid "Various apps"
 msgstr ""
 
-#: tview/settings.py:117
+#: tview/settings.py:115
 msgid "English"
 msgstr ""
 
-#: tview/settings.py:118
+#: tview/settings.py:116
 msgid "French"
 msgstr ""
 
@@ -518,8 +506,8 @@ msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/core/validators.py:267
 msgid ""
-"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or"
-" hyphens."
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/core/validators.py:279
@@ -725,15 +713,15 @@ msgstr ""
 #: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1550
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
-"HH:MM[:ss[.uuuuuu]][TZ] format."
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1558
 #, python-format
 msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD "
-"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1563
@@ -752,8 +740,8 @@ msgstr ""
 #: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1853
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in [DD] "
-"[[HH:]MM:]ss[.uuuuuu] format."
+"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
+"uuuuuu] format."
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1857
@@ -912,8 +900,7 @@ msgid "Many-to-many relationship"
 msgstr ""
 
 #. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the
-#. label
+#. characters will prevent the default label_suffix to be appended to the label
 #: venv/lib/python3.11/site-packages/django/forms/boundfield.py:185
 msgid ":?.!"
 msgstr ""
@@ -963,8 +950,7 @@ msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/forms/fields.py:633
 #, python-format
-msgid ""
-"Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
@@ -1071,8 +1057,7 @@ msgid "The inline value did not match the parent instance."
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/forms/models.py:1448
-msgid ""
-"Select a valid choice. That choice is not one of the available choices."
+msgid "Select a valid choice. That choice is not one of the available choices."
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/forms/models.py:1587
@@ -1532,10 +1517,10 @@ msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/views/csrf.py:45
 msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or"
-" including the “Referrer-Policy: no-referrer” header, please remove them. "
-"The CSRF protection requires the “Referer” header to do strict referer "
-"checking. If you’re concerned about privacy, use alternatives like <a "
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a "
 "rel=\"noreferrer\" …> for links to third-party sites."
 msgstr ""
 
@@ -1587,8 +1572,8 @@ msgstr ""
 #: venv/lib/python3.11/site-packages/django/views/generic/dates.py:652
 #, python-format
 msgid ""
-"Future %(verbose_name_plural)s not available because "
-"%(class_name)s.allow_future is False."
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/views/generic/dates.py:692
@@ -1646,10 +1631,10 @@ msgstr ""
 #: venv/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:221
 #, python-format
 msgid ""
-"You are seeing this page because <a "
-"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
-"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
-"and you have not configured any URLs."
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:229

@@ -1,25 +1,17 @@
-FROM python:3.12-slim-bullseye
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
+FROM python:3.11-slim-buster
+
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
 WORKDIR /app
 
 COPY requirements.txt /app/
 
-RUN apt update \
-    # Clean apt cache
-    && apt clean && rm -rf /var/lib/apt/lists/* \
-    && pip install --upgrade pip \
-    && pip install --no-cache-dir -r requirements.txt \
-    && pip install gunicorn \
-    && rm -rf /var/lib/apt/lists/* \
-    && rm -rf /root/.cache \
-    && rm -rf /tmp/* \
-    && rm -rf /var/tmp/* \
-    && rm -rf /var/cache/apt/*
-
+RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
 COPY . /app/
+
+RUN pip install gunicorn
 
 EXPOSE 8000
 

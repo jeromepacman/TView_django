@@ -2,10 +2,9 @@ asgiref==3.8.1
 certifi==2024.7.4
 charset-normalizer==3.3.2
 crispy-bootstrap5==2023.10
-Django==5.0.7
+Django==4.2.14
 django-crispy-forms==2.1
 django-environ==0.11.2
-django-minify-html==1.8.0
 django-recaptcha==4.0.0
 django-rosetta==0.10.0
 idna==3.7

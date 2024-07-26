@@ -1,7 +1,8 @@
 from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
 from django.urls import path, include
-from django.utils.translation import gettext_lazy as _
+
+admin.autodiscover()
 
 admin.site.site_header = 'TView'
 admin.site.site_title = 'Admin'

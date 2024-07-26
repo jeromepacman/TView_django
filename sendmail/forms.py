@@ -21,7 +21,7 @@ class ContactForm(forms.Form):
     )
     message = forms.CharField(
         label=_("Message"),
-        widget=forms.Textarea(attrs={'rows': '5', 'cols': '40'})
+        widget=forms.Textarea(attrs={'rows': '6', 'cols': '40'})
     )
     checkbox = forms.BooleanField(
         label=_("I agree to share my information on the contact form for Tview only"),
@@ -33,4 +33,3 @@ class ContactForm(forms.Form):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper()
         self.helper.form_class = 'form-horizontal'
-        self.helper.label_class = ''

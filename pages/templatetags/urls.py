@@ -1,6 +1,6 @@
 from typing import Optional, Any, Dict
-from django import template, urls
 
+from django import template, urls
 
 register = template.Library()
 

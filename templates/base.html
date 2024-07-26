@@ -28,14 +28,14 @@
           crossorigin>
     <link rel="preload" href="{% static 'fonts/inter-v3-latin-regular.woff2' %}" as="font" type="font/woff2"
           crossorigin>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/animate.min.css' %}">
 {% get_available_languages as LANGUAGES %}
 {% for language_code, language_name in LANGUAGES %}
-    <link rel="alternate" hreflang="{{ language_code }}" href="{% translate_url language_code %}" />
+    <link rel="alternate" hreflang="{{ language_code }}" href="{% translate_url language_code %}">
 {% endfor %}
-    <link rel="alternate" hreflang="x-default" href="{% translate_url LANGUAGE_CODE %}" />
+    <link rel="alternate" hreflang="x-default" href="{% translate_url LANGUAGE_CODE %}">
 </head>
 
 <body class="mob-disable-anim">
@@ -46,7 +46,7 @@
             <div class="video-bg-container">
                 <video class="bloc-video" preload="auto" loop="loop" muted="muted" playsinline="playsinline"
                        autoplay="autoplay">
-                    <source src="{% static 'vid/tview_waves.mp4' %}" type="video/mp4"/>
+                    <source src="{% static 'vid/tview_waves.mp4' %}" type="video/mp4">
                 </video>
             </div>
             <div class="container bloc-sm bloc-sm-md bloc-sm-lg">
@@ -65,7 +65,7 @@
                     <div class="col text-center col-12 mt-3">
                         <img src="{% static 'img/tview_logo.jpg' %}"
                              class="img-fluid img-protected rounded-circle img-style mx-auto d block"
-                             width="90" height="90" alt="logo" id="logo"/>
+                             width="90" height="90" alt="logo" id="logo">
                     </div>
                 </div>
             </div>
@@ -118,13 +118,6 @@
     <!-- block -->
     
     <style>
-.languages{
-text-align:right;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 15em 2em 0 0;
-}
 li{
 display:inline;
 text-decoration:none;

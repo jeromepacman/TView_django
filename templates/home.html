@@ -4,17 +4,6 @@
 {% block title %} TView | {% trans 'Home' %} {% endblock %}
 {% block content %}
 <!-- languages choice in the header -->
-{#{% get_current_language as CURRENT_LANGUAGE %}#}
-{#{% get_available_languages as AVAILABLE_LANGUAGES %}#}
-{#{% get_language_info_list for AVAILABLE_LANGUAGES as languages %}#}
-{#    {% for language in languages %}#}
-{#        {% if language.code == CURRENT_LANGUAGE= and language.code == 'fr' %}#}
-{#            <a href="/en/" class="languages active">English</a>#}
-{#        {% endif %}#}
-{#        {% if language.code == CURRENT_LANGUAGE and language.code == 'en' %}#}
-{#            <a href="/fr/" class="languages active">French</a>#}
-{#        {% endif %}#}
-{#    {% endfor %}#}
 <!--carousel-->
 <div class="bloc none fixbg d-md-flex d-none l-bloc" style="background-image: url({% static 'img/devices.webp' %})" id="bloc-carousel">
     <div class="container bloc-no-padding">
@@ -127,70 +116,69 @@
                 <path d="M1000,250H0V190l500-23,500,23v60Z"></path>
             </svg>
         </div>
-        
-        <div class="container bloc-md-lg bloc-sm">
-            <div class=" row noce animSpeedFast">
-                <div class="text-center offset-md-2 col-md-8 offset-sm-2 col-sm-8 offset-lg-0 col-lg-4 text-md-start">
-                    <div>
-                        <div class="cd-container clearfix" data-ui="0" data-center-card="true"
-                             data-align-caption="center" data-content-height="540" data-min-height="400"
-                             data-max-width="400" data-nav-position="hide" data-nav-style="fade-bullets"
-                             data-button-shape="capsule-outline" data-caption-position="middle"
-                             data-caption-anchor="white" data-pad-value="true" data-gradient-color="None"
-                             data-background-color="transparent" data-visibility="1" data-gradient-opacity=""
-                             data-radius-value="2" data-hover-mode="inactive" data-hover-style="apple-snow"
-                             data-transition-status="default" data-has-title="true" data-has-button="false"
-                             data-has-caption="false" data-caption-height="60"
-                             data-caption-background="transparent" data-tagline-margin="20"
-                             data-tagline-color="#FEFFFF" data-title-spacing="10" data-title-color="#FEFFFF"
-                             data-title-margin="20" data-title-background="transparent" data-desc-color="#FEFFFF"
-                             data-button-color="#FEFFFF" data-button-label="" data-label-dark="0"
-                             data-height-short="1" data-hover-shadow="false" data-hover-zoom="None"
-                             data-shadow-size="Large" data-title-fx="Very Subtle" data-typeface="Lato"
-                             data-fpo-index="0" data-fpo-lock="0" data-rule="0" data-rule-width="50"
-                             data-rule-spacing="10" data-rule-weight="1" data-rule-color="#FEFFFF"
-                             data-border-width="0" data-border-color="#555555" data-progress-index="0"
-                             data-progress-fill="transparent" data-title-size="40" data-line-height="40"
-                             data-responsive-title="0" data-med-title="level 1" data-sml-title="level 1"
-                             data-title-width="100%" data-disable-hover="None" data-remove-button="false"
-                             data-card-click="1" data-caption-trim="true" data-target="_self"
-                             data-url="{% url 'pages:prod' %}" data-scroll-speed="1000" data-visiblility="1">
-                            <div class="cd-shell">
-                                <div class="card-designer lg">
-                                    <div class="cd-wrapper">
+	</div>  
+    <div class="container bloc-md-lg bloc-sm">
+      <div class=" row noce animSpeedFast">
+        <div class="text-center offset-md-2 col-md-8 offset-sm-2 col-sm-8 offset-lg-0 col-lg-4 text-md-start">
+          <div>
+            <div class="cd-container clearfix" data-ui="0" data-center-card="true"
+                 data-align-caption="center" data-content-height="540" data-min-height="400"
+                 data-max-width="400" data-nav-position="hide" data-nav-style="fade-bullets"
+                 data-button-shape="capsule-outline" data-caption-position="middle"
+                 data-caption-anchor="white" data-pad-value="true" data-gradient-color="None"
+                 data-background-color="transparent" data-visibility="1" data-gradient-opacity=""
+                 data-radius-value="2" data-hover-mode="inactive" data-hover-style="apple-snow"
+                 data-transition-status="default" data-has-title="true" data-has-button="false"
+                 data-has-caption="false" data-caption-height="60"
+                 data-caption-background="transparent" data-tagline-margin="20"
+                 data-tagline-color="#FEFFFF" data-title-spacing="10" data-title-color="#FEFFFF"
+                 data-title-margin="20" data-title-background="transparent" data-desc-color="#FEFFFF"
+                 data-button-color="#FEFFFF" data-button-label="" data-label-dark="0"
+                 data-height-short="1" data-hover-shadow="false" data-hover-zoom="None"
+                 data-shadow-size="Large" data-title-fx="Very Subtle" data-typeface="Lato"
+                 data-fpo-index="0" data-fpo-lock="0" data-rule="0" data-rule-width="50"
+                 data-rule-spacing="10" data-rule-weight="1" data-rule-color="#FEFFFF"
+                 data-border-width="0" data-border-color="#555555" data-progress-index="0"
+                 data-progress-fill="transparent" data-title-size="40" data-line-height="40"
+                 data-responsive-title="0" data-med-title="level 1" data-sml-title="level 1"
+                 data-title-width="100%" data-disable-hover="None" data-remove-button="false"
+                 data-card-click="1" data-caption-trim="true" data-target="_self"
+                 data-url="{% url 'pages:prod' %}" data-scroll-speed="1000" data-visiblility="1">
+              <div class="cd-shell">
+                <div class="card-designer lg">
+                  <div class="cd-wrapper">
 
 
-                                        <div class="cd-swiper-container swiper1 static-pos">
-                                            <div class="cd-swiper-wrapper">
-                                                <div class="cd-swiper-slide" data-swiper-autoplay="6000">
-                                                    <img class="custom-bric-img-item cover preview center"
-                                                         src="{% static 'img/persosite.webp' %}" width="100%"
-                                                         height="400"
-                                                         data-kb-effect="Push" data-filter="0" alt="perso">
-                                                </div>
-                                            </div>
-                                            <div class="swiper-pagination swiper-pagination1"></div>
-                                        </div>
-                                        <div class="cd-data" style="background-color: transparent;">
-                                            <div class="cd-content" style="background-color: transparent;">
-
-
-                                                <h2 class="cd-title"
-                                                    style="font-size: 40px; margin-left: 0; margin-bottom: 20px; font-family: LatoRegular,serif;">
-                                                    <a style="color: rgb(255, 255, 255); background-color: transparent; line-height: 40px; font-family: Lato-Regular,serif;"
-                                                       target="_self" aria-disabled="true"
-                                                       href="{% url 'pages:prod' %}"><span
-                                                            style="color: rgb(254, 255, 255);">Perso</span></a>
-                                                </h2>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="cd-swiper-container swiper1 static-pos">
+                      <div class="cd-swiper-wrapper">
+                        <div class="cd-swiper-slide" data-swiper-autoplay="6000">
+                          <img class="custom-bric-img-item cover preview center"
+                               src="{% static 'img/persosite.webp' %}" width="100%" height="400"
+                               data-kb-effect="Push" data-filter="0" alt="perso">
                         </div>
+                      </div>
+                      <div class="swiper-pagination swiper-pagination1"></div>
                     </div>
+                    <div class="cd-data" style="background-color: transparent;">
+                      <div class="cd-content" style="background-color: transparent;">
+
+
+                        <h2 class="cd-title"
+                            style="font-size: 40px; margin-left: 0; margin-bottom: 20px; font-family: LatoRegular,serif;">
+                          <a style="color: rgb(255, 255, 255); background-color: transparent; line-height: 40px; font-family: Lato-Regular,serif;"
+                             target="_self" aria-disabled="true"
+                             href="{% url 'pages:prod' %}"><span
+                                                                 style="color: rgb(254, 255, 255);">Perso</span></a>
+                        </h2>
+
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
                 <div class="text-center col-md-8 col-sm-8 offset-sm-2 offset-lg-0 col-lg-4 text-md-start">
                     <div>
                         <div class="cd-container clearfix" data-ui="0" data-center-card="true"
@@ -223,8 +211,7 @@
                                             <div class="cd-swiper-wrapper">
                                                 <div class="cd-swiper-slide" data-swiper-autoplay="6000">
                                                     <img class="custom-bric-img-item cover preview right"
-                                                         src="{% static 'img/e-commerce.webp' %}" width="100%"
-                                                         height="400"
+                                                         src="{% static 'img/e-commerce.webp' %}" width="100%" height="400"
                                                          data-kb-effect="none" data-filter="0" alt="shop">
                                                 </div>
                                             </div>
@@ -313,11 +300,8 @@
                 </div>
             </div>
         </div>
-    </div>
-
 
     <section>
-
         <!-- bloc-media -->
         <div class="bloc none tc-4279 bgc-2845 bloc-bg-texture texture-fabric d-bloc" id="bloc-media">
             <div class="bloc-shape-divider bloc-divider-top bloc-divider-flip-y">
@@ -355,7 +339,7 @@
                         <img src="{% static 'img/customizable.webp' %}"
                              class="img-fluid img-protected img-responsi-style mx-auto d-block mg-md none rounded"
                              alt="responsive">
-                        <h3 class="text-lg-start args1 text-lg-start mx-auto d-block">
+                        <h3 class="args1 text-lg-start mx-auto d-block">
                             {% trans 'Autonomy' %}
                         </h3>
                         <p class="float-lg-none mg-lg">
@@ -447,6 +431,8 @@
     </div>
     <!-- sphere3 END -->
 {% endblock content %}
+
+
 
 
 

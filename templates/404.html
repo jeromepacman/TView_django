@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block title %}TView | 404{% endblock title %}
+{% block content %}
+<div class="page-container">
+    
+<!-- bloc-15 -->
+<div class="bloc bloc-fill-screen bgc-3319 d-bloc none bg-l-edge full-width-bloc " id="bloc-15">
+	<div class="video-bg-container">
+		<video class="bloc-video" preload="auto" loop="loop" muted="muted" playsinline="playsinline" autoplay="autoplay">
+			 <source src="{% static 'vid/tview_waves.mp4' %}" type="video/mp4">
+		</video>
+	</div>
+	<div class="bloc-bg-mask">
+		<svg class="svg-mask" viewBox="0 0 500 500" preserveAspectRatio="xMidYMid slice"><path d="m254.7 333.255a50 50 0 0 0 65.165 27.45l180.135-73.357v212.652h-500v-500h118.988z"></path></svg>
+	</div>
+	<div class="container fill-bloc-top-edge">
+			<div class="row">
+				<div class="col-12">
+				</div>
+			</div>
+		</div>
+	<div class="container">
+			<div class="row row-margin-top">
+				<div class="col">
+					<h1 class="float-lg-none text-lg-center">
+						Oops … &nbsp;404
+					</h1>
+					<h3 class="mg-md float-none text-center">
+						<br>
+					</h3>
+					<div class="text-center">
+						<br><a href="{% url 'home' %}" class="btn btn-lg btn-wire">Click !</a>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+{% endblock %}

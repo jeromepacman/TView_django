@@ -15,7 +15,9 @@ class ContactForm(forms.Form):
             ("No", _("...")),
             ("Perso", _("About personal site")),
             ("Pro", _("About pro site")),
-            ("Tech", _("Technical issue")),
+            ("Web3", _("About Web3 app")),
+            ("Bot", _(" About Telegram bot")),
+            ("Tech", _("Technical issue/offline service")),
             ("Other", _("Other"))
         )
     )
@@ -24,7 +26,7 @@ class ContactForm(forms.Form):
         widget=forms.Textarea(attrs={'rows': '6', 'cols': '40'})
     )
     checkbox = forms.BooleanField(
-        label=_("I agree to share my information on the contact form for Tview only"),
+        label=_("I agree to share my info on the contact form for Tview only"),
         widget=forms.CheckboxInput()
     )
     captcha = ReCaptchaField()
@@ -33,3 +35,4 @@ class ContactForm(forms.Form):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper()
         self.helper.form_class = 'form-horizontal'
+

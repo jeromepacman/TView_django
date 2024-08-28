@@ -1310,7 +1310,7 @@ h1{
 	margin-bottom:0px !important;
 }
 .cd-container[data-hover-mode="inactive"][data-has-button="false"][data-has-caption="false"] .cd-title {
-	margin-bottom:0px !important;
+	margin-bottom:0 !important;
 }
 /* Active Hover */.cd-container[data-hover-mode="active"] .cd-gradient {
 	-webkit-transform: translateY(calc(0px + 4.7em));

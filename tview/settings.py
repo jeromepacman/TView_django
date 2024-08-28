@@ -13,11 +13,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 environ.Env.read_env()
 
 SECRET_KEY = env('SECRET_KEY')
-DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["*"]
 
-CSRF_TRUSTED_ORIGINS = ["https://tview.fr"]
+# CSRF_TRUSTED_ORIGINS = ["https://tview.fr"]
 
 AUTH_USER_MODEL = 'account.User'
 
@@ -130,7 +129,7 @@ STATIC_URL = 'static/'
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 WHITENOISE_KEEP_ONLY_HASHED_FILES = True
 

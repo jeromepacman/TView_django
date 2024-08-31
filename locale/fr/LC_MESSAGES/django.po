@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-28 13:30+0200\n"
-"PO-Revision-Date: 2024-08-28 13:29+0000\n"
+"PO-Revision-Date: 2024-08-28 15:42+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -29,7 +29,7 @@ msgstr "Sujet"
 
 #: sendmail/forms.py:15
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: sendmail/forms.py:16
 msgid "About personal site"
@@ -58,7 +58,7 @@ msgstr "Autre"
 
 #: sendmail/forms.py:25
 msgid "Message"
-msgstr ""
+msgstr "Message"
 
 #: sendmail/forms.py:29
 #| msgid ""

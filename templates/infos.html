@@ -3,43 +3,49 @@
 {% load static %}
 {% block title %} TView | Infos {% endblock %}
 {% block content %}
-<!-- bloc-14 -->
-    
+    <!-- bloc-14 -->
+
     <div class="bloc none tc-4279 bgc-2845 bloc-bg-texture texture-fabric d-bloc" id="bloc-14">
         <div class="bloc-shape-divider bloc-divider-bottom">
-            <svg class="svg-divider bloc-divider-b-style" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250"><path style="opacity: 0.3;" d="M1000,250H0V60L500,165,1000,60V250Z"></path><path style="opacity: 0.3;" d="M1000,250H0V100l500,66,500-66V250Z"></path><path style="opacity: 0.3;" d="M1000,250H0V140l500,27,500-27V250Z"></path><path d="M1000,250H0V190l500-23,500,23v60Z"></path></svg>
+            <svg class="svg-divider bloc-divider-b-style" fill-rule="evenodd" preserveAspectRatio="none"
+                 viewBox="0 0 1000 250">
+                <path style="opacity: 0.3;" d="M1000,250H0V60L500,165,1000,60V250Z"></path>
+                <path style="opacity: 0.3;" d="M1000,250H0V100l500,66,500-66V250Z"></path>
+                <path style="opacity: 0.3;" d="M1000,250H0V140l500,27,500-27V250Z"></path>
+                <path d="M1000,250H0V190l500-23,500,23v60Z"></path>
+            </svg>
         </div>
-       
+
         <div class="container bloc-md bloc-sm-lg">
             <div class="row">
                 <div class="text-center col text-md-center">
-                        <h2 class="mg-md text-lg-center mx-auto d-block text-md-center tc-4279">
-                            {% trans 'Prices' %}
-                        </h2>
-                        <p class="text-lg-center mx-auto d-block text-md-center">
-                            {% trans 'Single or monthly payments. You own your site. Prices include domain name, site construction and web deployment.' %}<br><br>
-                            {% trans 'Development coasts:' %}<br>
-                            {% trans 'Our Python-coded websites are built from the ground up using Django as the main framework with few other tools. This allow us to create' %}<br>
-                            {% trans 'a tailored solution that is easy to maintain and easy to use, without the need for costly add-ons that you have to subscribe to on a monthly basis.' %}<br>
-                            {% trans 'The development process is more about writing natively than relying on a patchwork of plugins.' %}
-                        </p>
-                    </div>
+                    <h2 class="mg-md text-lg-center mx-auto d-block text-md-center tc-4279">
+                        {% trans 'Prices' %}
+                    </h2>
+                    <p class="text-lg-center mx-auto d-block text-md-center">
+                        {% trans 'Single or monthly payments. You own your site. Prices include domain name, site construction and web deployment.' %}<br><br>
+                        {% trans 'Development coasts:' %}<br>
+                        {% trans 'Our Python-coded websites are built from the ground up using Django as the main framework with few other tools. This allow us to create' %}<br>
+                        {% trans 'a tailored solution that is easy to maintain and easy to use, without the need for costly add-ons that you have to subscribe to on a monthly basis.' %}<br>
+                        {% trans 'The development process is more about writing natively than relying on a patchwork of plugins.' %}
+                    </p>
                 </div>
+            </div>
             <div class="row">
-                    <div class="col text-center text-md-center">
-                        <h2 class="mg-md text-lg-center mx-auto d-block text-md-center tc-4279">
-                            {% trans 'Support and maintenance' %}
-                        </h2>
-                        <p class="text-lg-center text-md-center mx-auto d-block">
-                            {% trans 'Support is free for the first month and up to 2 additional months for complex or particular configurations.' %}<br>
-                            {% trans 'In all other cases, it is invoiced according to the intervention, needs, time and assistance provided.' %}<br>
-                            {% trans 'Contact us for more information.' %}<br>
-                            {% trans 'Being hosted on your own space with no shared ressources means performance and autonomy.' %}<br>
-                            {% trans 'We can (optionally) duplicate your environment up to 4 times for simultaneous and instantaneous distribution on different continents to serve file locally.' %}<br>
-                            {% trans 'A clone can also take over in the event of a server or network failure. You are truly online 24/24.'%}
-                        </p>
-                    </div>
-            <div class="row">
+                <div class="col text-center text-md-center">
+                    <h2 class="mg-md text-lg-center mx-auto d-block text-md-center tc-4279">
+                        {% trans 'Support and maintenance' %}
+                    </h2>
+                    <p class="text-lg-center text-md-center mx-auto d-block">
+                        {% trans 'Support is free for the first month and up to 2 additional months for complex or particular configurations.' %}<br>
+                        {% trans 'In all other cases, it is invoiced according to the intervention, needs, time and assistance provided.' %}<br>
+                        {% trans 'Contact us for more information.' %}<br>
+                        {% trans 'Being hosted on your own space with no shared ressources means performance and autonomy.' %}<br>
+                        {% trans 'We can (optionally) duplicate your environment up to 4 times for simultaneous and instantaneous distribution on different continents to serve file locally.' %}<br>
+                        {% trans 'A clone can also take over in the event of a server or network failure. You are truly online 24/24.' %}
+                    </p>
+                </div>
+                <div class="row">
                     <div class="col text-center text-md-center">
                         <h2 class="mg-md text-lg-center mx-auto d-block text-md-center tc-4279">
                             {% trans 'Content management' %}
@@ -71,6 +77,7 @@
                             {% trans 'Custom-coded websites are websites that have their own code written and built independently.' %}<br>
                             {% trans 'Security, manageability, scalability and, of course, originality are its main assets.' %}
                         </p>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col text-center text-md-center">
@@ -96,7 +103,10 @@
                         </h2>
                         <p class="text-lg-center ">
                             {% trans "We're living in an age where big websites become data vacuum cleaners, analyzing every move" %}<br>
-                            {% trans "to better satisfy their advertisers" %},<br><a href="https://www.cnil.fr/fr/definition/big-data" rel="nofollow noopener noreferrer" target="_blank">Big data</a> {% trans "may be an innovative technology, but it can also be a dangerous one." %}<br>
+                            {% trans "to better satisfy their advertisers" %},<br><a
+                                href="https://www.cnil.fr/fr/definition/big-data" rel="nofollow noopener noreferrer"
+                                target="_blank">Big
+                            data</a> {% trans "may be an innovative technology, but it can also be a dangerous one." %}<br>
                             {% trans "Tview is committed to spreading quality on the web by promoting humanitarian, innovative and public-interest initiatives" %}.<br>
                         </p>
                     </div>
@@ -109,10 +119,14 @@
                         <p class="text-lg-center">
                             Siret 43315698100063<br>
                             Titre professionnel web de niveau 5<br>
-                            <a href="https://pagespeed.web.dev/report?url=https://tview.fr" rel="nofollow noopener noreferrer" target="_blank"><h5>{% trans 'website performance' %}</h5></a><a href="https://www.ssllabs.com/ssltest/analyze.html?viaform=on&d=tview.fr" rel="nofollow noopener noreferrer" target="_blank"><h5>{% trans 'Security' %} SSL A+</h5></a><br>
+                            <a href="https://pagespeed.web.dev/report?url=https://tview.fr"
+                               rel="nofollow noopener noreferrer" target="_blank">
+                                <h5>{% trans 'website performance' %}</h5></a><a
+                                href="https://www.ssllabs.com/ssltest/analyze.html?viaform=on&d=tview.fr"
+                                rel="nofollow noopener noreferrer" target="_blank"><h5>{% trans 'Security' %} SSL
+                            A+</h5></a><br>
                         </p>
                     </div>
-                </div>
                 </div>
             </div>
         </div>

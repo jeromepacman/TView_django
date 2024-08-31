@@ -1,22 +1,19 @@
 import os
-import environ
 from pathlib import Path
 from django.utils.translation import gettext_lazy as _
-
-env = environ.Env(
-    # set casting, default value
-    DEBUG=(bool, False)
-)
+from dotenv import load_dotenv
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-environ.Env.read_env()
+load_dotenv()
 
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = os.getenv("SECRET_KEY")
 
-ALLOWED_HOSTS = ["*"]
+DEBUG = bool(os.getenv('DEBUG', False))
 
-# CSRF_TRUSTED_ORIGINS = ["https://tview.fr"]
+ALLOWED_HOSTS = ['*']
+
+# CSRF_TRUSTED_ORIGINS = ['https://tview.fr/']
 
 AUTH_USER_MODEL = 'account.User'
 
@@ -24,7 +21,6 @@ AUTH_USER_MODEL = 'account.User'
 
 
 INSTALLED_APPS = [
-
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -32,8 +28,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'crispy_forms',
-    'crispy_bootstrap5',
     'pages.apps.PagesConfig',
     'sendmail.apps.SendmailConfig',
     'account.apps.AccountConfig',
@@ -103,13 +97,9 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 LANGUAGE_CODE = 'en'
-
 TIME_ZONE = 'UTC'
-
 USE_TZ = True
-
 USE_I18N = True
-
 USE_L10N = True
 
 LANGUAGES = [
@@ -117,38 +107,60 @@ LANGUAGES = [
     ("fr", _("French")),
 ]
 
-LOCALE_PATHS = [
-    BASE_DIR / "locale",
-]
+LOCALE_PATHS = [BASE_DIR / "locale"]
 
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-]
-
+STATICFILES_DIRS = [BASE_DIR / "static"]
 STATIC_URL = 'static/'
-
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
 WHITENOISE_KEEP_ONLY_HASHED_FILES = True
 
 ROSETTA_SHOW_AT_ADMIN_PANEL = True
 
-CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
-CRISPY_TEMPLATE_PACK = "bootstrap5"
-
-EMAIL_HOST = env('EMAIL_HOST')
-EMAIL_HOST_USER = env('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
-DEFAULT_FROM_EMAIL = env('DEFAULT_FROM_EMAIL')
+EMAIL_HOST = os.getenv('EMAIL_HOST')
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
-RECAPTCHA_PUBLIC_KEY = env('RECAPTCHA_PUBLIC_KEY')
-RECAPTCHA_PRIVATE_KEY = env('RECAPTCHA_PRIVATE_KEY')
+RECAPTCHA_PUBLIC_KEY = os.getenv('RECAPTCHA_PUBLIC_KEY')
+RECAPTCHA_PRIVATE_KEY = os.getenv('RECAPTCHA_PRIVATE_KEY')
 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'formatters': {
+#         'verbose': {
+#             'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
+#             'style': '{',
+#         },
+#     },
+#     'handlers': {
+#         'console': {
+#             'level': 'DEBUG',
+#             'class': 'logging.StreamHandler',
+#             'formatter': 'verbose'
+#         },
+#     },
+#     'loggers': {
+#         'django.db.backends': {
+#             'handlers': ['console'],
+#             'level': 'ERROR',
+#             'propagate': False,
+#         },
+#     }
+# }
+#     'loggers': {
+#         'django': {
+#             'handlers': ['console'],
+#             'level': 'WARNING',
+#             'propagate': True,
+#         },
+#     },
+# }

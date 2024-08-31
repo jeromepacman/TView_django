@@ -1,38 +1,46 @@
 from django import forms
 from django_recaptcha.fields import ReCaptchaField
 from django.utils.translation import gettext_lazy as _
-from crispy_forms.helper import FormHelper
 
 
 class ContactForm(forms.Form):
     email = forms.EmailField(
         label=_("Email"),
-        max_length=50
+        max_length=50,
+        widget=forms.EmailInput(attrs={'class': 'form-control'})
     )
     subject = forms.ChoiceField(
         label=_("Subject"),
-        choices=(
-            ("No", _("...")),
-            ("Perso", _("About personal site")),
-            ("Pro", _("About pro site")),
-            ("Web3", _("About Web3 app")),
-            ("Bot", _(" About Telegram bot")),
-            ("Tech", _("Technical issue/offline service")),
-            ("Other", _("Other"))
-        )
+        choices=[
+            ("select", _("select a subject ...")),
+            ("perso", _("About personal site")),
+            ("pro", _("About pro site")),
+            ("web3", _("About Web3 app")),
+            ("bot", _("About Telegram bot")),
+            ("tech", _("Technical issue/offline service")),
+            ("other", _("Other"))
+        ],
+        widget=forms.Select(attrs={'class': 'form-control'}),
     )
+
     message = forms.CharField(
         label=_("Message"),
-        widget=forms.Textarea(attrs={'rows': '6', 'cols': '40'})
+        widget=forms.Textarea(attrs={'class': 'form-control'}),
+
     )
-    checkbox = forms.BooleanField(
+    terms = forms.BooleanField(
         label=_("I agree to share my info on the contact form for Tview only"),
-        widget=forms.CheckboxInput()
+        required=True,
+        widget=forms.CheckboxInput(),
     )
+
     captcha = ReCaptchaField()
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.helper = FormHelper()
-        self.helper.form_class = 'form-horizontal'
+
+
+
+
+
+
+
 

@@ -9,7 +9,7 @@ body{
 .page-container{overflow: hidden;} /* Prevents unwanted scroll space when scroll FX used. */
 a,button{transition: background .3s ease-in-out;outline: none!important;} /* Prevent blue selection glow on Chrome and Safari */
 a:hover{text-decoration: none; cursor:pointer;}
-.scroll-fx-lock-init{position:fixed!important;top: 0;bottom: 0;left: :0;right: 0;z-index:99999;} /* ScrollFX Lock */
+.scroll-fx-lock-init{position:fixed!important;top: 0;bottom: 0;left: 0;right: 0;z-index:99999;} /* ScrollFX Lock */
 .blocs-grid-container{display: grid!important;grid-template-columns: 1fr 1fr;grid-template-rows: auto auto;column-gap: 1.5rem;row-gap: 1.5rem;} /* CSS Grid */
 nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Down down Menu Link Color in Navigation */
 [data-bs-theme="dark"] nav .dropdown-menu .nav-link{color:var(--bs-dropdown-link-color)!important;} /* Maintain Down down Menu Link Color in Navigation in Dark mode */
@@ -518,7 +518,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .fixbg{
 	background-attachment:fixed;
-	background-size:length;
 	fill:rgba(152,125,132,0.89);
 	stroke-width:250;
 
@@ -547,8 +546,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .args1{
 	color:#FFFFFF!important;
-	background-size:length;
-	z-index:1;
+	background-size:contain;
+	z-index:4;
 	flex-direction:row;
 	justify-content:flex-end;
 	background-color:rgba(2,30,170,0.28);
@@ -968,7 +967,7 @@ h1{
 	z-index:999;
 }
 .cd-container[data-caption-position="top"] .cd-data {
-	align-items:top}.cd-container[data-caption-position="middle"] .cd-data {
+	align-items:start}.cd-container[data-caption-position="middle"] .cd-data {
 	align-items:center}.cd-container[data-caption-position="hover"] .cd-data, .cd-container[data-caption-position="end"] .cd-data {
 	align-items:end}/* Caption */.cd-container .cd-caption span {
 	font-size:.9em;
@@ -1507,7 +1506,7 @@ h1{
 @media (max-width: 991px)
 {
     .container{width:100%;}
-    .bloc{padding-left: constant(safe-area-inset-left);padding-right: constant(safe-area-inset-right);} /* iPhone X Notch Support*/
+
     .bloc-group, .bloc-group .bloc{display:block;width:100%;}
 
 	.bloc-divider-t-fill{
@@ -1515,7 +1514,7 @@ h1{
 	}
 	.active{
 		display:flex;
-		background-size:length;
+		background-size:contain;
 		background-position:center center;
 		background-blend-mode:normal;
 	}
@@ -1588,7 +1587,6 @@ h1{
 	}
 	.active{
 		display:flex;
-		background-size:length;
 		background-position:center center;
 		background-blend-mode:normal;
 	}
@@ -1630,7 +1628,7 @@ h1{
 	}
 	.active{
 		display:flex;
-		background-size:length;
+		background-size:contain;
 		background-position:center center;
 		background-blend-mode:normal;
 	}

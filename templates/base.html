@@ -4,47 +4,43 @@
 <html lang="{{ LANGUAGE_CODE }}">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}{% endblock title %}</title>
-    <meta name="description"
-          content="{% trans 'Creation of secure, reliable and high-performance websites and web applications' %}">
-    <meta name="keywords"
-          content="blog, chat, portfolio, shop, e-commerce, boutique, site, ligne, vitrine, perso, sur mesure, apps, web3, bot, telegram">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="{% trans 'Creation of secure, reliable and high-performance websites and web applications' %}">
+    <meta name="keywords" content="blog, chat, portfolio, shop, e-commerce, boutique, site, ligne, vitrine, perso, sur mesure, apps, web3, bot, telegram">
     <meta name="theme-color" content="#110344">
-    <meta name="robots" content="max-image-preview:standard">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Tview">
-    <meta name="twitter:description" content="{% trans 'Creation of websites and web applications' %}">
-    <meta name="twitter:image" content="https://viewcdn.sirv.com/TView_card.jpg">
+    <meta name="robots" content="max-image-preview:large">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="TView">
     <meta property="og:title" content="TView">
     <meta property="og:description" content="{% trans 'Creation of websites and web applications' %}">
     <meta property="og:url" content="https://tview.fr/">
     <meta property="og:image" content="https://viewcdn.sirv.com/TView_card.jpg">
+    {% get_available_languages as LANGUAGES %}
+    {% for language_code, language_name in LANGUAGES %}
+        <link rel="alternate" hreflang="{{ language_code }}" href="{% translate_url language_code %}">
+    {% endfor %}
+    <link rel="alternate" hreflang="x-default" href="{% translate_url LANGUAGE_CODE %}">
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
-    <link rel="apple-touch-icon" href="{% static 'img/apple-touch-icon.png' %}">
-    <link rel="preload" href="{% static 'fonts/lato-v17-latin-regular.woff2' %}" as="font" type="font/woff2"
-          crossorigin>
-    <link rel="preload" href="{% static 'fonts/inter-v3-latin-regular.woff2' %}" as="font" type="font/woff2"
-          crossorigin>
+    <link rel="apple-touch-icon" href="https://viewcdn.sirv.com/apple-touch-icon.png">
+    <link rel="preload" href="{% static 'fonts/lato-v17-latin-regular.woff2' %}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{% static 'fonts/inter-v3-latin-regular.woff2' %}" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/animate.min.css' %}">
-{% get_available_languages as LANGUAGES %}
-{% for language_code, language_name in LANGUAGES %}
-    <link rel="alternate" hreflang="{{ language_code }}" href="{% translate_url language_code %}">
-{% endfor %}
-    <link rel="alternate" hreflang="x-default" href="{% translate_url LANGUAGE_CODE %}">
+    <title>{% block title %}{% endblock %}</title>
 </head>
 
 {#<script async src="https://www.googletagmanager.com/gtag/js?id=G-E0MC5SEL1B"></script>#}
 {#<script>#}
-{#  window.dataLayer = window.dataLayer || [];#}
-{#  function gtag(){dataLayer.push(arguments);}#}
-{#  gtag('js', new Date());#}
+{#    window.dataLayer = window.dataLayer || [];#}
 {##}
-{#  gtag('config', 'G-E0MC5SEL1B');#}
+{#    function gtag() {#}
+{#        dataLayer.push(arguments);#}
+{#    }#}
+{##}
+{#    gtag('js', new Date());#}
+{##}
+{#    gtag('config', 'G-E0MC5SEL1B');#}
 {#</script>#}
 
 <body class="mob-disable-anim">
@@ -55,7 +51,7 @@
             <div class="video-bg-container">
                 <video class="bloc-video" preload="auto" loop="loop" muted="muted" playsinline="playsinline"
                        autoplay="autoplay">
-                    <source src="{% static 'vid/tview_waves.mp4' %}" type="video/mp4">
+                    <source src="https://viewcdn.sirv.com/tview_waves.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="container bloc-sm bloc-sm-md bloc-sm-lg">
@@ -70,7 +66,7 @@
                         <h2 class="h2-style text-lg-center text-center mx-auto mt-md-3 tc-5322 h2-xs mt-lg-3">
                             {% trans 'Sites and applications web creation' %}
                         </h2>
-                    </div>@
+                    </div>
                     <div class="col text-center col-12 mt-3">
                         <img src="{% static 'img/tview_logo.jpg' %}"
                              class="img-fluid img-protected rounded-circle img-style mx-auto d block"
@@ -125,29 +121,32 @@
     </div>
     <!-- bloc-nav -->}
     <!-- block -->
-    
+
     <style>
-li{
-display:inline;
-text-decoration:none;
-padding:5px;
-}
-a{
-text-decoration:none;
-color:#DDAF94;
-}
-a:hover{
-color:#4F4846;
-}
-.active{
-background-color: #264561;
-padding:0;
-text-align:right;
-border-radius:5px;
-}
-    </style>    
-        {% block content %}
-        {% endblock content %}
+        li {
+            display: inline;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #DDAF94;
+        }
+
+        a:hover {
+            color: #4F4846;
+        }
+
+        .active {
+            background-color: #264561;
+            padding: 0;
+            text-align: right;
+            border-radius: 5px;
+        }
+    </style>
+    {% block content %}
+    {% endblock content %}
 
     <footer id="footer">
         <div class=" bg-tr-edge full-width-bloc d-bloc"

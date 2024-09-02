@@ -87,7 +87,7 @@ pip-selfcheck.json
 *.iml
 out
 gen
-tview/.env
+.env
 venv
 ### macOS template
 # General

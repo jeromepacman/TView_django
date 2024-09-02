@@ -1,4 +1,5 @@
 import os
+from os import environ
 from pathlib import Path
 from django.utils.translation import gettext_lazy as _
 from dotenv import load_dotenv
@@ -7,13 +8,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 load_dotenv()
 
-SECRET_KEY = os.getenv("SECRET_KEY")
+DEBUG = bool(os.getenv('DEBUG'))
 
-DEBUG = bool(os.getenv('DEBUG', False))
+SECRET_KEY = str(os.getenv("SECRET_KEY"))
 
 ALLOWED_HOSTS = ['*']
 
-# CSRF_TRUSTED_ORIGINS = ['https://tview.fr/']
+CSRF_TRUSTED_ORIGINS = ['https://tview.fr']
 
 AUTH_USER_MODEL = 'account.User'
 
@@ -127,8 +128,8 @@ EMAIL_USE_TLS = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
-RECAPTCHA_PUBLIC_KEY = os.getenv('RECAPTCHA_PUBLIC_KEY')
-RECAPTCHA_PRIVATE_KEY = os.getenv('RECAPTCHA_PRIVATE_KEY')
+RECAPTCHA_PUBLIC_KEY = environ.get('RECAPTCHA_PUBLIC_KEY')
+RECAPTCHA_PRIVATE_KEY = environ.get('RECAPTCHA_PRIVATE_KEY')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 

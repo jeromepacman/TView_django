@@ -10,8 +10,8 @@ admin.site.site_title = 'Admin'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('rosetta/', include('rosetta.urls')),
-]
 
+]
 urlpatterns += i18n_patterns(
     path('sendmail/', include('sendmail.urls', namespace='sendmail')),
     path('', include('pages.urls', namespace='pages')),

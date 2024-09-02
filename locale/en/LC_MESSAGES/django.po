@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-28 13:30+0200\n"
+"POT-Creation-Date: 2024-09-02 15:59+0200\n"
 "PO-Revision-Date: 2024-07-15 21:05+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: sendmail/forms.py:9
+#: sendmail/forms.py:8
 msgid "Email"
 msgstr ""
 
@@ -45,7 +45,7 @@ msgid "About Web3 app"
 msgstr ""
 
 #: sendmail/forms.py:19
-msgid " About Telegram bot"
+msgid "Telegram bot"
 msgstr ""
 
 #: sendmail/forms.py:20
@@ -56,59 +56,50 @@ msgstr ""
 msgid "Other"
 msgstr ""
 
-#: sendmail/forms.py:25
+#: sendmail/forms.py:26
 msgid "Message"
 msgstr ""
 
-#: sendmail/forms.py:29
+#: sendmail/forms.py:30
 msgid "I agree to share my info on the contact form for Tview only"
 msgstr ""
 
-#: sendmail/views.py:18
+#: sendmail/views.py:20
 msgid "Your message has been sent. Thank you for your interest"
 msgstr ""
 
-#: sendmail/views.py:20
+#: sendmail/views.py:22
 msgid "Invalid header found !"
 msgstr ""
 
-#: sendmail/views.py:22
+#: sendmail/views.py:24
 msgid "You haven't resolved the captcha. Please try again"
 msgstr ""
 
-#: templates/base.html:9
+#: templates/base.html:10
 msgid ""
 "Creation of secure, reliable and high-performance websites and web "
 "applications"
 msgstr ""
 
-#: templates/base.html:17 templates/base.html:22
+#: templates/base.html:17
 msgid "Creation of websites and web applications"
 msgstr ""
 
-#: templates/base.html:71
+#: templates/base.html:68
 msgid "Sites and applications web creation"
 msgstr ""
 
-#: templates/carousel.html:24 templates/home.html:29
-msgid "A site you own"
-msgstr ""
-
-#: templates/carousel.html:32
-msgid "Customized, autonomous, efficient"
-msgstr ""
-
-#: templates/carousel.html:40
-#, python-format
-msgid "Up to 50%% off for humanitarian or ecological projects"
-msgstr ""
-
-#: templates/contact.html:30
+#: templates/contact.html:29
 msgid "Submit"
 msgstr ""
 
 #: templates/home.html:4
 msgid "Home"
+msgstr ""
+
+#: templates/home.html:29
+msgid "A site you own"
 msgstr ""
 
 #: templates/home.html:37
@@ -226,209 +217,209 @@ msgstr ""
 msgid "Tview is able to provide the ressources you need to succeed online."
 msgstr ""
 
-#: templates/infos.html:17
+#: templates/infos.html:23
 msgid "Prices"
 msgstr ""
 
-#: templates/infos.html:20
+#: templates/infos.html:26
 msgid ""
 "Single or monthly payments. You own your site. Prices include domain name, "
 "site construction and web deployment."
 msgstr ""
 
-#: templates/infos.html:21
+#: templates/infos.html:27
 msgid "Development coasts:"
 msgstr ""
 
-#: templates/infos.html:22
+#: templates/infos.html:28
 msgid ""
 "Our Python-coded websites are built from the ground up using Django as the "
 "main framework with few other tools. This allow us to create"
 msgstr ""
 
-#: templates/infos.html:23
+#: templates/infos.html:29
 msgid ""
 "a tailored solution that is easy to maintain and easy to use, without the "
 "need for costly add-ons that you have to subscribe to on a monthly basis."
 msgstr ""
 
-#: templates/infos.html:24
+#: templates/infos.html:30
 msgid ""
 "The development process is more about writing natively than relying on a "
 "patchwork of plugins."
 msgstr ""
 
-#: templates/infos.html:31
+#: templates/infos.html:37
 msgid "Support and maintenance"
 msgstr ""
 
-#: templates/infos.html:34
+#: templates/infos.html:40
 msgid ""
 "Support is free for the first month and up to 2 additional months for "
 "complex or particular configurations."
 msgstr ""
 
-#: templates/infos.html:35
+#: templates/infos.html:41
 msgid ""
 "In all other cases, it is invoiced according to the intervention, needs, "
 "time and assistance provided."
 msgstr ""
 
-#: templates/infos.html:36
+#: templates/infos.html:42
 msgid "Contact us for more information."
 msgstr ""
 
-#: templates/infos.html:37
+#: templates/infos.html:43
 msgid ""
 "Being hosted on your own space with no shared ressources means performance "
 "and autonomy."
 msgstr ""
 
-#: templates/infos.html:38
+#: templates/infos.html:44
 msgid ""
 "We can (optionally) duplicate your environment up to 4 times for "
 "simultaneous and instantaneous distribution on different continents to serve "
 "file locally."
 msgstr ""
 
-#: templates/infos.html:39
+#: templates/infos.html:45
 msgid ""
 "A clone can also take over in the event of a server or network failure. You "
 "are truly online 24/24."
 msgstr ""
 
-#: templates/infos.html:45
+#: templates/infos.html:51
 msgid "Content management"
 msgstr ""
 
-#: templates/infos.html:48
+#: templates/infos.html:54
 msgid ""
 "Most of our configurations allow you to make your own modifications and "
 "updates on site with ease."
 msgstr ""
 
-#: templates/infos.html:49
+#: templates/infos.html:55
 msgid ""
 "You can access them directly from your website, via a personalized "
 "administrator interface."
 msgstr ""
 
-#: templates/infos.html:56
+#: templates/infos.html:62
 msgid "Options"
 msgstr ""
 
-#: templates/infos.html:59
+#: templates/infos.html:65
 msgid ""
 "The list of functions given in the formulas is indicative only. Any "
 "configuration can be enhanced with various options."
 msgstr ""
 
-#: templates/infos.html:60
+#: templates/infos.html:66
 msgid ""
 "Prices are set in advance, based on project evaluation and technical "
 "considerations."
 msgstr ""
 
-#: templates/infos.html:61
+#: templates/infos.html:67
 msgid "No calculation of \"hourly rate\" = no unpleasant surprises."
 msgstr ""
 
-#: templates/infos.html:68
+#: templates/infos.html:74
 msgid "Custom-made websites"
 msgstr ""
 
-#: templates/infos.html:71
+#: templates/infos.html:77
 msgid ""
 "Custom-coded websites are websites that have their own code written and "
 "built independently."
 msgstr ""
 
-#: templates/infos.html:72
+#: templates/infos.html:78
 msgid ""
 "Security, manageability, scalability and, of course, originality are its "
 "main assets."
 msgstr ""
 
-#: templates/infos.html:78
+#: templates/infos.html:85
 msgid "The SEO myth"
 msgstr ""
 
-#: templates/infos.html:81
+#: templates/infos.html:88
 msgid ""
 "Search engine optimization (SEO) is seen as a vast subject that required "
 "special, often costly, skills."
 msgstr ""
 
-#: templates/infos.html:82
+#: templates/infos.html:89
 msgid "At least, that's how it's usually presented."
 msgstr ""
 
-#: templates/infos.html:83
+#: templates/infos.html:90
 msgid ""
 "However, there are a lot of myths surrounding this subject, because there's "
 "simply no magic method for getting good."
 msgstr ""
 
-#: templates/infos.html:84
+#: templates/infos.html:91
 msgid ""
 "Today's algorithms for evaluating web content are very smart and in constant "
 "development,"
 msgstr ""
 
-#: templates/infos.html:85
+#: templates/infos.html:92
 msgid ""
 "You won't fool them by overloading your content with scripts, plugins and "
 "other tricks designed to simulate traffic - quite the opposite."
 msgstr ""
 
-#: templates/infos.html:86
+#: templates/infos.html:93
 msgid "What's analyzed is how your site handles the user experience"
 msgstr ""
 
-#: templates/infos.html:87
+#: templates/infos.html:94
 msgid "This is the fundamental point"
 msgstr ""
 
-#: templates/infos.html:88
+#: templates/infos.html:95
 #, python-format
 msgid ""
 "Here, the site has an SEO success rate of over 90%%. You can verify this "
 "with the performance test at the bottom of the page."
 msgstr ""
 
-#: templates/infos.html:95
+#: templates/infos.html:102
 msgid "Special rates for non-commercial projects"
 msgstr ""
 
-#: templates/infos.html:98
+#: templates/infos.html:105
 msgid ""
 "We're living in an age where big websites become data vacuum cleaners, "
 "analyzing every move"
 msgstr ""
 
-#: templates/infos.html:99
+#: templates/infos.html:106
 msgid "to better satisfy their advertisers"
 msgstr ""
 
-#: templates/infos.html:99
+#: templates/infos.html:109
 msgid "may be an innovative technology, but it can also be a dangerous one."
 msgstr ""
 
-#: templates/infos.html:100
+#: templates/infos.html:110
 msgid ""
 "Tview is committed to spreading quality on the web by promoting "
 "humanitarian, innovative and public-interest initiatives"
 msgstr ""
 
-#: templates/infos.html:107
+#: templates/infos.html:117
 msgid "Additional information"
 msgstr ""
 
-#: templates/infos.html:112
+#: templates/infos.html:124
 msgid "website performance"
 msgstr ""
 
-#: templates/infos.html:112
+#: templates/infos.html:126
 msgid "Security"
 msgstr ""
 
@@ -456,10 +447,10 @@ msgstr ""
 msgid "Various apps"
 msgstr ""
 
-#: tview/settings.py:116
+#: tview/settings.py:107
 msgid "English"
 msgstr ""
 
-#: tview/settings.py:117
+#: tview/settings.py:108
 msgid "French"
 msgstr ""

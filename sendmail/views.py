@@ -15,9 +15,8 @@ def sendmail_view(request):
             subject = form.cleaned_data['subject']
             from_email = form.cleaned_data['email']
             message = form.cleaned_data['message']
-            terms = form.cleaned_data['terms']
             try:
-                send_mail(subject, message, from_email, [settings.EMAIL_HOST_USER])
+                send_mail(subject, message, from_email, ['contact@tview.fr'])
                 messages.success(request, _("Your message has been sent. Thank you for your interest"))
             except BadHeaderError:
                 messages.error(request, _("Invalid header found !"))

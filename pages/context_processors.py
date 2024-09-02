@@ -1,5 +1,4 @@
 from typing import Dict, Any
-
 from django.conf import settings
 
 

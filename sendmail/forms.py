@@ -12,29 +12,32 @@ class ContactForm(forms.Form):
     subject = forms.ChoiceField(
         label=_("Subject"),
         choices=[
-            ("select", _("select a subject ...")),
+            ("select", _("...")),
             ("perso", _("About personal site")),
             ("pro", _("About pro site")),
             ("web3", _("About Web3 app")),
-            ("bot", _("About Telegram bot")),
+            ("bot", _("Telegram bot")),
             ("tech", _("Technical issue/offline service")),
             ("other", _("Other"))
         ],
-        widget=forms.Select(attrs={'class': 'form-control'}),
+        widget=forms.Select(attrs={'class': 'form-control'})
     )
-
     message = forms.CharField(
         label=_("Message"),
-        widget=forms.Textarea(attrs={'class': 'form-control'}),
-
+        widget=forms.Textarea(attrs={'class': 'form-control'})
     )
     terms = forms.BooleanField(
         label=_("I agree to share my info on the contact form for Tview only"),
         required=True,
-        widget=forms.CheckboxInput(),
+        widget=forms.CheckboxInput()
+    )
+    captcha = ReCaptchaField(
+        label="",
+        required=True
     )
 
-    captcha = ReCaptchaField()
+    def __init__(self, *args, **kwargs):
+        super(ContactForm, self).__init__(*args, **kwargs)
 
 
 

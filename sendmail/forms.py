@@ -1,4 +1,5 @@
 from django import forms
+from django.conf import settings
 from django_recaptcha.fields import ReCaptchaField
 from django.utils.translation import gettext_lazy as _
 
@@ -20,7 +21,7 @@ class ContactForm(forms.Form):
             ("tech", _("Technical issue/offline service")),
             ("other", _("Other"))
         ],
-        widget=forms.Select(attrs={'class': 'form-control'})
+        widget=forms.RadioSelect(attrs={'class': 'form-control'})
     )
     message = forms.CharField(
         label=_("Message"),
@@ -28,16 +29,19 @@ class ContactForm(forms.Form):
     )
     terms = forms.BooleanField(
         label=_("I agree to share my info on the contact form for Tview only"),
-        required=True,
-        widget=forms.CheckboxInput()
+
     )
     captcha = ReCaptchaField(
         label="",
         required=True
     )
 
-    def __init__(self, *args, **kwargs):
-        super(ContactForm, self).__init__(*args, **kwargs)
+    # def __init__(self, *args, **kwargs):
+    #     super(ContactForm, self).__init__(*args, **kwargs)
+
+
+
+
 
 
 

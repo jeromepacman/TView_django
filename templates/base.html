@@ -10,6 +10,7 @@
     <meta name="keywords" content="blog, chat, portfolio, shop, e-commerce, boutique, site, ligne, vitrine, perso, sur mesure, apps, web3, bot, telegram">
     <meta name="theme-color" content="#110344">
     <meta name="robots" content="max-image-preview:large">
+    <link rel="canonical" href="{% translate_url language_code %}">
 {% for language_code, language_name in LANGUAGES %}
     <link rel="alternate" hreflang="{{ language_code }}" href="{% translate_url language_code %}">
 {% endfor %}
@@ -26,7 +27,7 @@
     <link rel="preload" href="{% static 'fonts/lato-v17-latin-regular.woff2' %}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{% static 'fonts/inter-v3-latin-regular.woff2' %}" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'style_brut.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/animate.min.css' %}">
 </head>
 
@@ -63,7 +64,7 @@
                         </h1>
                     </div>
                     <div class="col-12">
-                        <h2 class="h2-style text-lg-center text-center mx-auto mt-md-3 tc-5322 h2-xs mt-lg-3">
+                        <h2 class="h2-style text-lg-center text-center mx-auto mt-md-3 tc-5322 mt-lg-3">
                             {% trans 'Sites and applications web creation' %}
                         </h2>
                     </div>
@@ -148,9 +149,16 @@
     {% block content %}
     {% endblock content %}
 
-    <footer id="footer">
-        <div class=" bg-tr-edge full-width-bloc d-bloc"
-             style="background-image: url({% static 'img/backhead.webp' %});">
+    <!-- bloc-footer -->
+    <footer>
+        <div class="bloc none bgc-3319 d-bloc" id="footer">
+            <div class="video-bg-container">
+                <video class="bloc-video lazyload" preload="auto" loop="loop" muted="muted" playsinline="playsinline"
+                    autoplay="autoplay" data-src="https://viewcdn.sirv.com/tview_waves.mp4">
+                    <source src="{% static 'img/lazyload-ph.png' %}" data-src="{% static 'vid/tview_waves.mp4' %}"
+                        type="video/mp4"/>
+                </video>
+            </div>
             <div class="container">
                 <div class="row voffset g-0">
                     <div class="col-sm-4 col-lg-2 text-start offset-0 col-md-3 col-4 offset-sm-1 offset-md-2 offset-lg-4 align-self-end"
@@ -160,7 +168,7 @@
                         </h5><a href="https://python.org" class="a-btn footer-link text-lg-left text-left a-block"
                                 rel="nofollow noopener noreferrer" target="_blank">Python</a><a
                             href="https://www.djangoproject.com/start/overview/"
-                            class="a-btn a-block footer-link text-lg-left" rel="nofollow noopener noreferrer"
+                            class="a-btn a-block footer-link text-lg-left"
                             target="_blank">Django<br></a><a
                             href="https://www.geeksforgeeks.org/difference-between-sql-and-nosql/"
                             class="a-btn footer-link a-block text-lg-left link-style" rel="nofollow noopener noreferrer"
@@ -170,8 +178,9 @@
                         <h5 class="mg-md text-center text-sm-start footer-title float-lg-none text-lg-start">
                             Frontend
                         </h5><a href="https://wikipedia.org/wiki/HTML" class="a-btn footer-link text-lg-left a-block"
-                                rel="nofollow noopener noreferrer" target="_blank">HTML</a><a
-                            href="https://wikipedia.org/wiki/CSS" class="a-btn a-block footer-link text-lg-left">CSS</a><a
+                                target="_blank">HTML</a><a
+                            href="https://wikipedia.org/wiki/CSS" class="a-btn a-block footer-link text-lg-left"
+                                target="_blank">CSS</a><a
                             href="https://wikipedia.org/wiki/JavaScript" class="a-btn a-block footer-link text-lg-left">JS</a>
                     </div>
                     <div class="align-self-end col-lg-2 col-md-3 col-sm-3 col-3" id="confs">
@@ -182,7 +191,12 @@
                             href="https://www.docker.com/" class="a-btn a-block footer-link text-lg-left text-left"
                             rel="nofollow noopener noreferrer" target="_blank">Docker</a><a
                             href="https://www.nginx.com/" class="a-btn a-block footer-link text-lg-center"
-                            rel="nofollow noopener noreferrer" target="_blank">Nginx</a>
+                            target="_blank">Nginx</a>
+                    </div>
+                    <div class="mg-sm offset-sm-10 align-self-end" id="infomaniak">
+                        <a href="https://infomaniak.com/"
+                           target="_blank">
+                        <img src="{% static 'infomaniak.svg' %}" alt="infomaniak"></a>
                     </div>
                 </div>
             </div>

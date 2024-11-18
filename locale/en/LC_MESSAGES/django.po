@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-02 15:59+0200\n"
+"POT-Creation-Date: 2024-11-18 20:08+0100\n"
 "PO-Revision-Date: 2024-07-15 21:05+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,69 +20,69 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: sendmail/forms.py:8
+#: sendmail/forms.py:9
 msgid "Email"
 msgstr ""
 
-#: sendmail/forms.py:13
+#: sendmail/forms.py:14
 msgid "Subject"
 msgstr ""
 
-#: sendmail/forms.py:15
+#: sendmail/forms.py:16
 msgid "..."
 msgstr ""
 
-#: sendmail/forms.py:16
+#: sendmail/forms.py:17
 msgid "About personal site"
 msgstr ""
 
-#: sendmail/forms.py:17
+#: sendmail/forms.py:18
 msgid "About pro site"
 msgstr ""
 
-#: sendmail/forms.py:18
+#: sendmail/forms.py:19
 msgid "About Web3 app"
 msgstr ""
 
-#: sendmail/forms.py:19
+#: sendmail/forms.py:20
 msgid "Telegram bot"
 msgstr ""
 
-#: sendmail/forms.py:20
+#: sendmail/forms.py:21
 msgid "Technical issue/offline service"
 msgstr ""
 
-#: sendmail/forms.py:21
+#: sendmail/forms.py:22
 msgid "Other"
 msgstr ""
 
-#: sendmail/forms.py:26
+#: sendmail/forms.py:27
 msgid "Message"
 msgstr ""
 
-#: sendmail/forms.py:30
+#: sendmail/forms.py:31
 msgid "I agree to share my info on the contact form for Tview only"
 msgstr ""
 
-#: sendmail/views.py:20
+#: sendmail/views.py:21
 msgid "Your message has been sent. Thank you for your interest"
 msgstr ""
 
-#: sendmail/views.py:22
+#: sendmail/views.py:23
 msgid "Invalid header found !"
 msgstr ""
 
-#: sendmail/views.py:24
+#: sendmail/views.py:25
 msgid "You haven't resolved the captcha. Please try again"
 msgstr ""
 
-#: templates/base.html:10
+#: templates/base.html:9
 msgid ""
 "Creation of secure, reliable and high-performance websites and web "
 "applications"
 msgstr ""
 
-#: templates/base.html:17
+#: templates/base.html:22
 msgid "Creation of websites and web applications"
 msgstr ""
 
@@ -161,60 +161,68 @@ msgstr ""
 
 #: templates/home.html:364
 msgid ""
-"The robustness of a Python environment is nothing like the underlying "
-"vulnerability"
+"Our customized websites, coded in Python, offer first-rate security, "
+"versatility and efficiency."
 msgstr ""
 
 #: templates/home.html:365
 msgid ""
-"of many of the turnkey solutions that rely on a patchwork of modules and "
-"plugins."
+"Unlike many turnkey solutions that rely on a patchwork of plugins and "
+"modules, our websites are developed natively using Python and the Django web "
+"framework."
 msgstr ""
 
 #: templates/home.html:366
-msgid "No ongoing security updates means peace of mind and long-term savings."
+msgid ""
+"This provides a level of security that traditional content management "
+"systems simply cannot match."
 msgstr ""
 
-#: templates/home.html:377
+#: templates/home.html:367
 msgid ""
-"Python is a simple, precise and reliable language. It is particularly "
-"appreciated for its robustness."
+"With no need for ongoing security updates, our Python-powered sites are a "
+"one-and-done investment, giving you peace of mind and saving you time and "
+"money in the long run."
 msgstr ""
 
 #: templates/home.html:378
 msgid ""
-"Django is a toolbox dedicated to web development renowned for its efficiency "
-"and versatility."
+"Python is renowned for its simplicity, precision, and reliability - "
+"qualities that are essential for building high-performance, secure web "
+"applications."
 msgstr ""
 
 #: templates/home.html:379
-msgid "Starting with a solid architecture with concise and organized code,"
+msgid ""
+"Thanks to Django's efficiency and versatility, we can create sites that are "
+"not only visually stunning, but also highly scalable and adaptable to your "
+"evolving needs."
 msgstr ""
 
 #: templates/home.html:380
-msgid "coupled with 'best practices', is essential for natural referencing."
+msgid ""
+"Starting with a solid, Python-based architecture means your website will be "
+"built on a foundation of good practices for natural search engine "
+"optimization."
 msgstr ""
 
-#: templates/home.html:381
-msgid "Sites such as"
+#: templates/home.html:406
+msgid "In fact, some of the world's most successful websites, like"
 msgstr ""
 
-#: templates/home.html:383
+#: templates/home.html:408
 msgid " or "
 msgstr ""
 
-#: templates/home.html:386
-msgid "have been built using these tools."
+#: templates/home.html:411
+msgid "have been built using the very same tools we employ at TView. "
 msgstr ""
 
-#: templates/home.html:418
+#: templates/home.html:412
 msgid ""
-"So whether you're looking for a user-friendly website, an e-commerce "
-"solution or a feature-rich application, "
-msgstr ""
-
-#: templates/home.html:419
-msgid "Tview is able to provide the ressources you need to succeed online."
+"So whether you're looking to establish a simple, user-friendly web presence "
+"or create a complex, feature-rich application, our configurations deliver "
+"what's is needed to succeed online."
 msgstr ""
 
 #: templates/infos.html:23
@@ -447,10 +455,10 @@ msgstr ""
 msgid "Various apps"
 msgstr ""
 
-#: tview/settings.py:107
+#: tview/settings.py:108
 msgid "English"
 msgstr ""
 
-#: tview/settings.py:108
+#: tview/settings.py:109
 msgid "French"
 msgstr ""

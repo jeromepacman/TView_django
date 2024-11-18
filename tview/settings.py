@@ -1,14 +1,15 @@
 import os
-from os import environ
 from pathlib import Path
 from django.utils.translation import gettext_lazy as _
 from dotenv import load_dotenv
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-load_dotenv()
+load_dotenv(os.path.join(BASE_DIR, '.env'))
 
-DEBUG = bool(os.getenv('DEBUG'))
+# DEBUG = bool(os.getenv('DEBUG'))
+
+DEBUG = True
 
 SECRET_KEY = str(os.getenv("SECRET_KEY"))
 

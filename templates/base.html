@@ -7,7 +7,7 @@
     <title>{% block title %}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="{% trans 'Creation of secure, reliable and high-performance websites and web applications' %}">
-    <meta name="keywords" content="blog, chat, portfolio, shop, e-commerce, boutique, site, ligne, vitrine, perso, sur mesure, apps, web3, bot, telegram">
+    <meta name="keywords" content="portfolio, shop, e-commerce, boutique, site, ligne, vitrine, perso, apps, web3, bot, telegram, Vesoul">
     <meta name="theme-color" content="#110344">
     <meta name="robots" content="max-image-preview:large">
     <link rel="canonical" href="{% translate_url language_code %}">
@@ -27,7 +27,7 @@
     <link rel="preload" href="{% static 'fonts/lato-v17-latin-regular.woff2' %}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{% static 'fonts/inter-v3-latin-regular.woff2' %}" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'style_brut.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/animate.min.css' %}">
 </head>
 
@@ -193,10 +193,12 @@
                             href="https://www.nginx.com/" class="a-btn a-block footer-link text-lg-center"
                             target="_blank">Nginx</a>
                     </div>
-                    <div class="mg-sm offset-sm-10 align-self-end" id="infomaniak">
-                        <a href="https://infomaniak.com/"
-                           target="_blank">
-                        <img src="{% static 'infomaniak.svg' %}" alt="infomaniak"></a>
+                </div>
+                <div class="row voffset">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <h5></h5>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -9,58 +9,57 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 20:08+0100\n"
-"PO-Revision-Date: 2024-07-15 21:05+0000\n"
-"Last-Translator:   <>\n"
+"POT-Creation-Date: 2025-05-24 18:40+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: sendmail/forms.py:9
+#: sendmail/forms.py:8
 msgid "Email"
 msgstr ""
 
-#: sendmail/forms.py:14
+#: sendmail/forms.py:13
 msgid "Subject"
 msgstr ""
 
-#: sendmail/forms.py:16
+#: sendmail/forms.py:15
 msgid "..."
 msgstr ""
 
-#: sendmail/forms.py:17
+#: sendmail/forms.py:16
 msgid "About personal site"
 msgstr ""
 
-#: sendmail/forms.py:18
+#: sendmail/forms.py:17
 msgid "About pro site"
 msgstr ""
 
-#: sendmail/forms.py:19
+#: sendmail/forms.py:18
 msgid "About Web3 app"
 msgstr ""
 
-#: sendmail/forms.py:20
+#: sendmail/forms.py:19
 msgid "Telegram bot"
 msgstr ""
 
-#: sendmail/forms.py:21
+#: sendmail/forms.py:20
 msgid "Technical issue/offline service"
 msgstr ""
 
-#: sendmail/forms.py:22
+#: sendmail/forms.py:21
 msgid "Other"
 msgstr ""
 
-#: sendmail/forms.py:27
+#: sendmail/forms.py:26
 msgid "Message"
 msgstr ""
 
-#: sendmail/forms.py:31
+#: sendmail/forms.py:30
 msgid "I agree to share my info on the contact form for Tview only"
 msgstr ""
 
@@ -161,8 +160,8 @@ msgstr ""
 
 #: templates/home.html:364
 msgid ""
-"Our customized websites, coded in Python, offer first-rate security, "
-"versatility and efficiency."
+"Our customized websites offer first-rate security, versatility and "
+"efficiency."
 msgstr ""
 
 #: templates/home.html:365
@@ -187,42 +186,20 @@ msgstr ""
 
 #: templates/home.html:378
 msgid ""
-"Python is renowned for its simplicity, precision, and reliability - "
-"qualities that are essential for building high-performance, secure web "
-"applications."
+"Python is renowned for its simplicity, robustness, and reliability - "
+"qualities that are essential for building reliable, secure websites."
 msgstr ""
 
-#: templates/home.html:379
-msgid ""
-"Thanks to Django's efficiency and versatility, we can create sites that are "
-"not only visually stunning, but also highly scalable and adaptable to your "
-"evolving needs."
+#: templates/home.html:405
+msgid "World's most successful websites like"
 msgstr ""
 
-#: templates/home.html:380
-msgid ""
-"Starting with a solid, Python-based architecture means your website will be "
-"built on a foundation of good practices for natural search engine "
-"optimization."
-msgstr ""
-
-#: templates/home.html:406
-msgid "In fact, some of the world's most successful websites, like"
-msgstr ""
-
-#: templates/home.html:408
+#: templates/home.html:407
 msgid " or "
 msgstr ""
 
-#: templates/home.html:411
-msgid "have been built using the very same tools we employ at TView. "
-msgstr ""
-
-#: templates/home.html:412
-msgid ""
-"So whether you're looking to establish a simple, user-friendly web presence "
-"or create a complex, feature-rich application, our configurations deliver "
-"what's is needed to succeed online."
+#: templates/home.html:410
+msgid "have been built using these tools. "
 msgstr ""
 
 #: templates/infos.html:23
@@ -236,198 +213,154 @@ msgid ""
 msgstr ""
 
 #: templates/infos.html:27
-msgid "Development coasts:"
+msgid "All websites are built from the ground up. This allow us to create"
 msgstr ""
 
 #: templates/infos.html:28
-msgid ""
-"Our Python-coded websites are built from the ground up using Django as the "
-"main framework with few other tools. This allow us to create"
-msgstr ""
-
-#: templates/infos.html:29
 msgid ""
 "a tailored solution that is easy to maintain and easy to use, without the "
 "need for costly add-ons that you have to subscribe to on a monthly basis."
 msgstr ""
 
-#: templates/infos.html:30
+#: templates/infos.html:29
 msgid ""
 "The development process is more about writing natively than relying on a "
 "patchwork of plugins."
 msgstr ""
 
-#: templates/infos.html:37
+#: templates/infos.html:36
 msgid "Support and maintenance"
 msgstr ""
 
-#: templates/infos.html:40
+#: templates/infos.html:39
 msgid ""
 "Support is free for the first month and up to 2 additional months for "
 "complex or particular configurations."
 msgstr ""
 
-#: templates/infos.html:41
+#: templates/infos.html:40
 msgid ""
 "In all other cases, it is invoiced according to the intervention, needs, "
 "time and assistance provided."
 msgstr ""
 
-#: templates/infos.html:42
+#: templates/infos.html:41
 msgid "Contact us for more information."
 msgstr ""
 
-#: templates/infos.html:43
+#: templates/infos.html:42
 msgid ""
 "Being hosted on your own space with no shared ressources means performance "
 "and autonomy."
 msgstr ""
 
-#: templates/infos.html:44
-msgid ""
-"We can (optionally) duplicate your environment up to 4 times for "
-"simultaneous and instantaneous distribution on different continents to serve "
-"file locally."
+#: templates/infos.html:43
+msgid "The servers are located in Switzerland to ensure data protection."
 msgstr ""
 
-#: templates/infos.html:45
-msgid ""
-"A clone can also take over in the event of a server or network failure. You "
-"are truly online 24/24."
-msgstr ""
-
-#: templates/infos.html:51
+#: templates/infos.html:49
 msgid "Content management"
 msgstr ""
 
-#: templates/infos.html:54
+#: templates/infos.html:52
 msgid ""
 "Most of our configurations allow you to make your own modifications and "
 "updates on site with ease."
 msgstr ""
 
-#: templates/infos.html:55
+#: templates/infos.html:53
 msgid ""
 "You can access them directly from your website, via a personalized "
 "administrator interface."
 msgstr ""
 
-#: templates/infos.html:62
+#: templates/infos.html:60
 msgid "Options"
 msgstr ""
 
-#: templates/infos.html:65
-msgid ""
-"The list of functions given in the formulas is indicative only. Any "
-"configuration can be enhanced with various options."
+#: templates/infos.html:63
+msgid "The list of functions given in the formulas is indicative only."
 msgstr ""
 
-#: templates/infos.html:66
+#: templates/infos.html:64
 msgid ""
 "Prices are set in advance, based on project evaluation and technical "
 "considerations."
 msgstr ""
 
-#: templates/infos.html:67
-msgid "No calculation of \"hourly rate\" = no unpleasant surprises."
+#: templates/infos.html:65
+msgid "No calculation of \"hourly rate\". no unpleasant surprises."
 msgstr ""
 
-#: templates/infos.html:74
+#: templates/infos.html:72
 msgid "Custom-made websites"
 msgstr ""
 
-#: templates/infos.html:77
+#: templates/infos.html:75
 msgid ""
 "Custom-coded websites are websites that have their own code written and "
 "built independently."
 msgstr ""
 
-#: templates/infos.html:78
+#: templates/infos.html:76
 msgid ""
 "Security, manageability, scalability and, of course, originality are its "
 "main assets."
 msgstr ""
 
-#: templates/infos.html:85
+#: templates/infos.html:83
 msgid "The SEO myth"
 msgstr ""
 
-#: templates/infos.html:88
+#: templates/infos.html:86
 msgid ""
 "Search engine optimization (SEO) is seen as a vast subject that required "
 "special, often costly, skills."
 msgstr ""
 
-#: templates/infos.html:89
-msgid "At least, that's how it's usually presented."
-msgstr ""
-
-#: templates/infos.html:90
+#: templates/infos.html:87
 msgid ""
 "However, there are a lot of myths surrounding this subject, because there's "
 "simply no magic method for getting good."
 msgstr ""
 
-#: templates/infos.html:91
-msgid ""
-"Today's algorithms for evaluating web content are very smart and in constant "
-"development,"
+#: templates/infos.html:88
+msgid "Today's algorithms for evaluating web content are very smart, "
 msgstr ""
 
-#: templates/infos.html:92
+#: templates/infos.html:89
 msgid ""
-"You won't fool them by overloading your content with scripts, plugins and "
+"you won't fool them by overloading your content with scripts, plugins and "
 "other tricks designed to simulate traffic - quite the opposite."
 msgstr ""
 
-#: templates/infos.html:93
-msgid "What's analyzed is how your site handles the user experience"
+#: templates/infos.html:90
+msgid "What's analyzed is how your site handles the user experience, "
 msgstr ""
 
-#: templates/infos.html:94
-msgid "This is the fundamental point"
+#: templates/infos.html:91
+msgid "this is the fundamental point."
 msgstr ""
 
-#: templates/infos.html:95
-#, python-format
-msgid ""
-"Here, the site has an SEO success rate of over 90%%. You can verify this "
-"with the performance test at the bottom of the page."
-msgstr ""
-
-#: templates/infos.html:102
+#: templates/infos.html:98
 msgid "Special rates for non-commercial projects"
 msgstr ""
 
-#: templates/infos.html:105
-msgid ""
-"We're living in an age where big websites become data vacuum cleaners, "
-"analyzing every move"
-msgstr ""
-
-#: templates/infos.html:106
-msgid "to better satisfy their advertisers"
-msgstr ""
-
-#: templates/infos.html:109
-msgid "may be an innovative technology, but it can also be a dangerous one."
-msgstr ""
-
-#: templates/infos.html:110
+#: templates/infos.html:101
 msgid ""
 "Tview is committed to spreading quality on the web by promoting "
-"humanitarian, innovative and public-interest initiatives"
+"humanitarian, innovative and public-interest initiatives."
 msgstr ""
 
-#: templates/infos.html:117
+#: templates/infos.html:108
 msgid "Additional information"
 msgstr ""
 
-#: templates/infos.html:124
+#: templates/infos.html:115
 msgid "website performance"
 msgstr ""
 
-#: templates/infos.html:126
+#: templates/infos.html:117
 msgid "Security"
 msgstr ""
 
@@ -455,10 +388,10 @@ msgstr ""
 msgid "Various apps"
 msgstr ""
 
-#: tview/settings.py:108
+#: tview/settings.py:107
 msgid "English"
 msgstr ""
 
-#: tview/settings.py:109
+#: tview/settings.py:108
 msgid "French"
 msgstr ""
